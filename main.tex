@@ -1,0 +1,71 @@
+% main.tex
+%--------------------------------------------------------------------------------------------------------------
+% Vorlage Bachelor-/ Master-Thesis laut Vorgaben der Hochschule Wismar, Fakultät für Ingenieurwissenschaften
+% Überarbeitete Version von Prof. Dr. Manfred Krüger vom 17.03.2010
+%--------------------------------------------------------------------------------------------------------------
+% Author:               Florian Drews
+% Erstellt am:          11. Februar 2015
+% Zuletzt geändert am:  11. Februar 2015
+%--------------------------------------------------------------------------------------------------------------
+
+\input{header}    % Header-Datei einfügen --> beinhaltet sämtliche Vorgaben
+
+%--------------------------------------------------------------------------------------------------------------
+% Beginn des Dokumentes --> Hauptdatei zum kompilieren
+%--------------------------------------------------------------------------------------------------------------
+
+\begin{document}                   
+
+  %-----------------------------------------------------------------------------
+	% Titelseite
+	%-----------------------------------------------------------------------------
+  \include{kapitel/titel}               % Einbinden der Titelseite 
+  \onehalfspacing 					            % 1 1/2-zeilig (package 'setspace'
+  %-----------------------------------------------------------------------------
+	% Aufgabenstellung, Zusammenfassung/Abstract
+	%-----------------------------------------------------------------------------
+	\include{kapitel/aufgabenstellung}	% Aufgabenstellung einfügen
+	\include{kapitel/zusammenfassung}		% Zusammenfassung und englischen Abstract einfügen
+	
+	%-----------------------------------------------------------------------------
+	% Inhaltsverzeichnis
+	%-----------------------------------------------------------------------------
+  \include{verzeichnisse/inhaltsverzeichnis}
+	
+	%-----------------------------------------------------------------------------
+	% Hauptteil
+	%-----------------------------------------------------------------------------
+	\include{kapitel/einleitung}				% Einleitung einbinden
+	\include{kapitel/grundlagen}				% Grundlagen Kapitel einfügen (grund.tex)
+	\include{kapitel/schluss}						% Schlusskapitel einfügen (schluss.tex)
+	
+	%-----------------------------------------------------------------------------
+	% Literaturverzeichnis einfügen, 
+	% Nutzung der BibTeX-Technologie --> literatur.bib 
+	%-----------------------------------------------------------------------------
+	%\nocite{*}								              % Für diejenigen die alle Einträge die in Literatur.bib stehen auch verarbeitet haben möchten, ansonsten werden nur die Einträge/Verweise verwendet die auch im Text verwendet werden  
+	\bibliography{verzeichnisse/literatur}	% gibt Datei mit der Literatur an
+	
+	%-----------------------------------------------------------------------------
+	% Verzeichnisse
+	%-----------------------------------------------------------------------------
+	\singlespacing 						          % 1-zeilig
+	\listoffigures						          % Bildverzeichnis einfügen
+	\listoftables							          % Tabellenverzeichnis einfügen
+	\printglossary[type=\acronymtype, title=Abkürzungsverzeichnis, toctitle= Abkürzungsverzeichnis, style=super]
+	
+	%-----------------------------------------------------------------------------
+	% Anhänge z.B. Quellcodebeispiele
+	%-----------------------------------------------------------------------------
+	
+	%\include{kapitel/anhang}
+	
+	%-----------------------------------------------------------------------------
+	% Selbstständigkeitserklärung und Thesen
+	%-----------------------------------------------------------------------------
+	
+	\include{kapitel/selbststaendigkeitserklaerung}
+	
+	\include{kapitel/thesen}
+
+\end{document}

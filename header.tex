@@ -1,0 +1,187 @@
+%--------------------------------------------------------------------------------------------------------------
+% header.tex
+%--------------------------------------------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------------------------------------------
+% Art des Dokumentes, Layout, Papierformat, Schriftgröße
+%--------------------------------------------------------------------------------------------------------------
+\documentclass[12pt,					              % Grundschriftgöße
+							 oneside,				              % einseitiges Dokument
+							 a4paper,				              % Papiergröße
+							 toc=listof,		              % Verzeichnis (Abbildungen etc.) in das Inhaltsverzeichnis
+							 toc=bibliography,			      % Literaturverzeichnis ins Inhaltsverzeichnis
+							 fleqn,					              % Mathematische Formeln linksbündig darstellen
+							 numbers=noenddot,
+							 headsepline]	          % Punkt am Ende der Nummerierung des Inhaltsverzeichnisses entfernen
+							 {scrreprt}
+
+%--------------------------------------------------------------------------------------------------------------
+% Daten für die Titelseite
+%--------------------------------------------------------------------------------------------------------------
+\title{\Kategorie}
+\author{\Verfasser}
+\date{\today{}}
+							 
+%--------------------------------------------------------------------------------------------------------------
+% Schriftarten anpassen
+%--------------------------------------------------------------------------------------------------------------
+\setkomafont{sectioning}{\rmfamily\bfseries}					% Titelzeilen
+\setkomafont{caption}{\small}													% Schrift für Caption
+\setkomafont{captionlabel}{\sffamily\bfseries\small}	% Schrift für 'Abbildung'
+\setkomafont{chapterentry}{\small\bfseries}						% Schrift für Inhaltsverzeichnis
+\setkomafont{chapter}{\large\bfseries}								% Schrift für Kapitel
+\setkomafont{section}{\normalsize}										% Schrift für Section
+\setkomafont{subsection}{\normalsize}									% Schrift für Subsection
+							 
+%--------------------------------------------------------------------------------------------------------------
+% Konstanten festlegen 
+%--------------------------------------------------------------------------------------------------------------
+\newcommand{\Kategorie}{Seminararbeit}
+\newcommand{\Titel}{Titel des Themas}
+\newcommand{\Verfasser}{Name des Verfassers}
+\newcommand{\Geburtstag}{Geburtstag}
+\newcommand{\Geburtsort}{Geburtsort}
+\newcommand{\Betreuer}{Jane Doe}
+\newcommand{\ZweitBetreuer}{John Doe}
+
+%--------------------------------------------------------------------------------------------------------------
+% benötigte Pakete
+%--------------------------------------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}             % Zeichensatzkodierung. Direkte Angabe von Umlauten im Dokument. 
+\usepackage[english, ngerman]{babel}    % Deutsche und Englische Sprachanpassung
+\usepackage[T1]{fontenc}                % Silbentrennung bei Sonderzeichen
+\usepackage{lmodern}					          % bietet neuere Schriften, sieht besser aus im Acrobat Reader
+\usepackage{graphicx}                   % einfaches Einbinden von Grafiken
+\usepackage{subfigure}				          % erweiterte Darstellung von Bildern
+\usepackage{listings}                   % ermöglicht Einbinden von Quelltexten
+\usepackage{amsmath,amssymb}	          % erweiterter Formelsatz und zusätzliche Mathe-Symbole
+\usepackage{booktabs}					          % professionelle Tabellen setzen, typographisch richtig
+\usepackage{shortvrb}					          % benutzen der Verbatim-Umgebung, stellt Quelltexte exakt da
+\usepackage{setspace}					          % Package zum Kontrollieren von Leerräumen
+\usepackage{color,moreverb}		          % Farben
+\usepackage{scrhack}                    % behebt Warnungen die mit float und dem Koma-Skript zu tun haben
+\usepackage{blindtext}                  % zum Einbinden von Blindtexten
+\usepackage[plainheadsepline, nouppercase,]{scrpage2}                   % Koma-Skript konforme Möglichkeit Kopf- und Fußzeile anzupassen
+
+
+%--------------------------------------------------------------------------------------------------------------
+% Definition Seitenränder
+%--------------------------------------------------------------------------------------------------------------
+\usepackage[left=3cm,					  % linker Rand
+						right=3cm,				  % rechter Rand
+						top=1.5cm,				  % oberer Rand
+						bottom=1.5cm,			  % unterer Rand
+						includeheadfoot,	  % bezieht die Kopf- und Fußzeile mit ein
+						bindingoffset=0cm,]	% Bundsteg
+						{geometry}
+
+%--------------------------------------------------------------------------------------------------------------
+% Metadaten für die PDF-Erzeugung
+%--------------------------------------------------------------------------------------------------------------
+\usepackage[pdftex,
+						pdfauthor={\Verfasser},	                                    % Name des Autors
+						pdftitle={\Titel},			                                    % Name der Arbeit
+						pdfcreator={Latexmk, KOMA-Script},                          % Von was erzeugt
+						pdfsubject={\Kategorie},	                                  % Was für eine Arbeit ist es
+						pdfkeywords={\Titel},
+						plainpages=false,
+						hypertexnames=false,
+						pdfpagelabels]{hyperref}
+
+%--------------------------------------------------------------------------------------------------------------
+% Farbe für Links in PDF-Dokumenten definieren
+%--------------------------------------------------------------------------------------------------------------
+\definecolor{LinkColor}{rgb}{0,0,0.5}	% Festlegen einer neuen Farbe
+
+\hypersetup{colorlinks=true,			% farbliche Links
+						breaklinks=true,			% Zeilenumbruch erlauben
+						linkcolor=black,			% Farbe für interne Links
+						citecolor=black,			% Farbe für Links zum Literaturverzeichnis
+						filecolor=LinkColor,	% Farbe für externe Dateilinks
+						menucolor=LinkColor,	%
+						urlcolor=LinkColor}		% Farbe für externe Links
+
+%--------------------------------------------------------------------------------------------------------------
+% Darstellung des Literaturverzeichnisses einstellen
+%--------------------------------------------------------------------------------------------------------------
+\bibliographystyle{alpha}	% Stil des Literaturverzeichnisses (hier nach DIN 1505)
+
+%--------------------------------------------------------------------------------------------------------------
+% Darstellung des Glossars und des Abkürzungsverzeichnisses einstellen
+%--------------------------------------------------------------------------------------------------------------
+\usepackage[nomain,style=list,nonumberlist,acronym,toc]{glossaries}
+\usepackage{glossary-longragged} 
+\renewcommand{\glspostdescription}{}        % Punkt am Ende der vollständigen Beschreibung entfernen
+\loadglsentries{verzeichnisse/abkuerzungen} % Alternativdatei für die Definition der Abkürzungen
+\makeglossaries
+
+%--------------------------------------------------------------------------------------------------------------
+% Abbildung in Bild umbenennen
+%--------------------------------------------------------------------------------------------------------------
+\addto{\captionsngerman}{
+	\renewcommand*{\figurename}{Bild}}
+	
+	
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+%--------------------------------------------------------------------------------------------------------------
+% Quellcodeformatierung
+%--------------------------------------------------------------------------------------------------------------
+
+\lstloadlanguages{Matlab,[Visual]C++,C, Python}
+
+%\definecolor{lbcolor}{white}{0.9}			% Farbe für den Hintergrund definieren				
+\definecolor{darkblue}{rgb}{0,0,.6}		% Farbe für Schlüsselwörter
+\definecolor{darkred}{rgb}{.6,0,0}		% Farbe für Strings
+\definecolor{darkgreen}{rgb}{0,.6,0}	% Farbe für Kommentare
+
+%\lstset{language=Matlab,					% Programmiersprache der Listings
+%				numbers=left,							% Zeilennummern links angeben
+%				stepnumber=1,							% in welchem Abstand sollen Zeilennummern angeben werden (1 2 3..)
+%				numbersep=5pt,
+%				numberstyle=\tiny,				% grösse der Nummern
+%				breaklines=true,					% Zeilenumbruch zulassen
+%				breakautoindent=true,
+%				postbreak=\space,
+%				tabsize=2,								% Tabulator auf 2 setzen
+%				basicstyle=\ttfamily\footnotesize,
+%				showspaces=false,					% leerzeichen nicht anzeigen
+%				showstringspaces=false,		% keine Leerzeichen bei Strings anzeigen
+%				extendedchars=true,
+%				backgroundcolor=\color{lbcolor}}	% Hintergrundfarbe des Listings
+
+\lstset{language=Python,								% Programmiersprache der Listings
+				%alsolanguage=Matlab,			% alternative Programmiersprache der Listings
+				frame=none,								% keinen Rahmen
+				frameround=ffff,					% wenn ein Rahmen dargestellt werden soll, sind die Ecken spitz
+				captionpos=b,							% Position der Benennung
+				numbers=left,							% Zeilennummern links angeben
+				stepnumber=1,							% in welchem Abstand sollen Zeilennummern angeben werden (1 2 3..)
+				numbersep=5pt,						% Abstand zwischen Nummerierung und Listing
+				numberstyle=\tiny,				% grösse der Nummern
+				breaklines=true,					% Zeilenumbruch zulassen
+				breakautoindent=true,
+				postbreak=\space,
+				tabsize=4,								% Tabulator auf 4 setzen
+				escapechar=\$,
+				basicstyle=\scriptsize\ttfamily,
+				keywordstyle=\color{darkblue}\bfseries\ttfamily,	% Darstelung der Schlüsselwörter
+				stringstyle=\ttfamily\color{darkred},  						% Darstellung der Strings
+				commentstyle=\itshape\color{darkgreen},						% Darstellung der Kommentare
+				showspaces=false,					% leerzeichen nicht anzeigen
+				showstringspaces=false,		% keine Leerzeichen bei Strings anzeigen
+				xleftmargin=.52cm,
+				xrightmargin=.52cm,				
+				backgroundcolor=\color{white}}	% Hintergrundfarbe des Listings}
+
+%--------------------------------------------------------------------------------------------------------------
+% Darstellung Kopf- und Fußzeile einstellen
+%--------------------------------------------------------------------------------------------------------------
+
+\pagestyle{scrheadings}
+\automark[chapter]{chapter}
+\clearscrheadfoot
+\renewcommand{\headfont}{\normalfont}
+\renewcommand*{\chaptermarkformat}{\chapapp\ \thechapter.\ \ }% Nummer in Kopfzeile verschwindet
+\rohead[\headmark]{\headmark}
+\rofoot[\pagemark]{\pagemark}

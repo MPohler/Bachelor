@@ -1,0 +1,37 @@
+%--------------------------------------------------------------------------------------------------------------
+% titel.tex - Titelseite
+%--------------------------------------------------------------------------------------------------------------
+
+\begin{titlepage}
+	\setlength\headsep{-5mm}
+	\begin{figure}[!h]
+		\begin{minipage}{0.8\textwidth}
+			\textbf{Hochschule Wismar} \\
+			University of Applied Sciences \\
+			Technology, Business and Design \\
+			Fakultät für Ingenieurwissenschaften, Bereich EuI \\
+		\rule{\textwidth}{0.5pt}
+		\end{minipage}
+		\begin{minipage}[r]{0.1\textwidth}
+			\begin{flushright}
+				\includegraphics[height=6\baselineskip]{bilder/hs-wismar_logo-fiw.jpg}\hfuzz=25pt %hfuzz verhindert Warnung "Overfull \hbox "
+			\end{flushright}
+		\end{minipage}
+	\end{figure}
+	\vspace*{6cm}
+	\begin{center}
+		\Huge
+		\textbf{\Kategorie}  \\
+		\vspace{2cm}
+		\large \Titel
+		\begin{table*}[b]
+			\begin{tabular}{rl}
+				Eingereicht am: & \today \\
+				\\
+				von: & \Verfasser \\
+				& geboren am \Geburtstag \\
+				& in \Geburtsort
+			\end{tabular}
+		\end{table*}
+	\end{center}
+\end{titlepage}
