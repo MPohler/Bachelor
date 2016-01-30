@@ -36,7 +36,7 @@
 %--------------------------------------------------------------------------------------------------------------
 % Konstanten festlegen 
 %--------------------------------------------------------------------------------------------------------------
-\newcommand{\Kategorie}{Bachelor-Thesis}
+\newcommand{\Kategorie}{Seminararbeit}
 \newcommand{\Titel}{Titel des Themas}
 \newcommand{\Verfasser}{Name des Verfassers}
 \newcommand{\Geburtstag}{Geburtstag}
