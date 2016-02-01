@@ -37,12 +37,12 @@
 % Konstanten festlegen 
 %--------------------------------------------------------------------------------------------------------------
 \newcommand{\Kategorie}{Bachelor-Thesis}
-\newcommand{\Titel}{Titel des Themas}
-\newcommand{\Verfasser}{Name des Verfassers}
-\newcommand{\Geburtstag}{Geburtstag}
-\newcommand{\Geburtsort}{Geburtsort}
-\newcommand{\Betreuer}{Jane Doe}
-\newcommand{\ZweitBetreuer}{John Doe}
+\newcommand{\Titel}{Untersuchung zum Einsatz des ETL-Tools Tensei-Data im Prozess der Datenmigration bei der SIV.AG}
+\newcommand{\Verfasser}{Martin Pohl}
+\newcommand{\Geburtstag}{13. April 1981}
+\newcommand{\Geburtsort}{Rostock}
+\newcommand{\Betreuer}{Prof. Dr.-Ing. Antje Raab-D\"usterh\"oft}
+\newcommand{\ZweitBetreuer}{Betriebswirt (VWA) Detlef Herold}
 
 %--------------------------------------------------------------------------------------------------------------
 % benötigte Pakete
@@ -62,6 +62,8 @@
 \usepackage{scrhack}                    % behebt Warnungen die mit float und dem Koma-Skript zu tun haben
 \usepackage{blindtext}                  % zum Einbinden von Blindtexten
 \usepackage[plainheadsepline, nouppercase,]{scrpage2}                   % Koma-Skript konforme Möglichkeit Kopf- und Fußzeile anzupassen
+\usepackage{graphicx}
+\usepackage{url}
 
 
 %--------------------------------------------------------------------------------------------------------------
@@ -110,11 +112,11 @@
 % Darstellung des Glossars und des Abkürzungsverzeichnisses einstellen
 %--------------------------------------------------------------------------------------------------------------
 \usepackage[nomain,style=list,nonumberlist,acronym,toc]{glossaries}
-\usepackage{glossary-longragged} 
+\usepackage{glossary-longragged}
 \renewcommand{\glspostdescription}{}        % Punkt am Ende der vollständigen Beschreibung entfernen
-\loadglsentries{verzeichnisse/abkuerzungen} % Alternativdatei für die Definition der Abkürzungen
+%\loadglsentries{verzeichnisse/abkuerzungen} % Alternativdatei für die Definition der Abkürzungen
 \makeglossaries
-
+\input{verzeichnisse/abkuerzungen}				% die Datei abkürzungen.tex zum Verwalten der Abkürzungen verwenden
 %--------------------------------------------------------------------------------------------------------------
 % Abbildung in Bild umbenennen
 %--------------------------------------------------------------------------------------------------------------

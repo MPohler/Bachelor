@@ -1,0 +1,12 @@
+%--------------------------------------------------------------------------------------------------------------
+% kapitel/einleitung.tex
+%--------------------------------------------------------------------------------------------------------------
+
+\chapter{Einleitung}
+max. 2--3 Seiten
+\begin{itemize}
+	\item Einführung in die Thematik und das wissenschaftlich-technische Umfeld
+ 	\item Einordnung in das Wissenschaftsgebiet / tangierte Gebiete
+ 	\item Analyse der Aufgabenstellung (Problemerfassung)
+ 	\item Realisierungsumfeld und Randbedingungen
+\end{itemize}

@@ -7,7 +7,7 @@
 \pdfbookmark[0]{Thesen}{Thesen}	% Thesen zu den Lesezeichen hinzufügen
 \thispagestyle{empty}						% keine Kopf- oder Fusszeile
 \begin{large}
-\textbf{Thesen} \\
+	\textbf{Thesen} \\ \\
 \end{large}
 \textbf{Bachelor-Thesis} \\
 \textbf{\Titel} \\

@@ -37,9 +37,6 @@
 	%-----------------------------------------------------------------------------
 	\include{kapitel/einleitung}				% Einleitung einbinden
 	\include{kapitel/grundlagen}				% Grundlagen Kapitel einfügen (grund.tex)
-	\include{kapitel/iststand}
-	\include{kapitel/etltool}
-	\include{kapitel/implementierungundtest}
 	\include{kapitel/schluss}						% Schlusskapitel einfügen (schluss.tex)
 	
 	%-----------------------------------------------------------------------------
@@ -61,7 +58,7 @@
 	% Anhänge z.B. Quellcodebeispiele
 	%-----------------------------------------------------------------------------
 	
-	\include{kapitel/anhang}
+	%\include{kapitel/anhang}
 	
 	%-----------------------------------------------------------------------------
 	% Selbstständigkeitserklärung und Thesen

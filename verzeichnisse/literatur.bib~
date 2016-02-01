@@ -1,0 +1,38 @@
+% This file was created with JabRef 2.10b2.
+% Encoding: UTF8
+
+
+@Book{Dalheimer2005,
+  Title                    = {{\LaTeX} kurz \& gut},
+  Author                   = {Dalheimer, Mathias K.},
+  Publisher                = {O'Reilly Verlag, Köln},
+  Year                     = {2005},
+
+  Owner                    = {drews},
+  Timestamp                = {2015.02.12}
+}
+
+@Misc{Peters2005,
+  Title                    = {Mathematik mit {\LaTeX}},
+
+  Author                   = {Peters, Jan},
+  Year                     = {2005},
+
+  Owner                    = {drews},
+  Timestamp                = {2015.02.12},
+  Url                      = {http://matheplanet.com/matheplanet/nuke/html/article.php?sid=740#download}
+}
+
+@Misc{wiki:bibtex,
+  Title                    = {Bib{T}e{X} --- {W}ikipedia{,} {D}ie freie {E}nzyklopädie},
+
+  Author                   = {Wikipedia},
+  Note                     = {[Online and accessed 12-Februar-2015] - \url{http://de.wikipedia.org/w/index.php?title=BibTeX}},
+  Year                     = {2003},
+
+  LastChecked              = {6. April 2008},
+  Owner                    = {drews},
+  Timestamp                = {2015.02.12},
+  Url                      = {http://de.wikipedia.org/w/index.php?title=BibTeX&oldid=44468732}
+}
+
