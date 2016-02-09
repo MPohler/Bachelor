@@ -9,33 +9,38 @@
 \BOOKMARK [2][-]{subsection.13}{Schema}{section.10}% 9
 \BOOKMARK [1][-]{section.14}{Datenintegration/Datenmigration}{chapter.7}% 10
 \BOOKMARK [1][-]{section.15}{Transformationen}{chapter.7}% 11
-\BOOKMARK [1][-]{section.16}{ETL-Tools}{chapter.7}% 12
-\BOOKMARK [1][-]{section.17}{Qualit\344tskontrolle/Protokollierung}{chapter.7}% 13
-\BOOKMARK [1][-]{section.18}{Kriterien f\374r erfolgreiche Migrationen}{chapter.7}% 14
-\BOOKMARK [2][-]{subsection.19}{Ziele einer Migration}{section.18}% 15
-\BOOKMARK [2][-]{subsection.20}{Wirtschaftliche Aspekte}{section.18}% 16
-\BOOKMARK [2][-]{subsection.21}{Qualitative Aspekte}{section.18}% 17
-\BOOKMARK [2][-]{subsection.22}{Organisatorische Aspekte}{section.18}% 18
-\BOOKMARK [2][-]{subsection.23}{Vorgehensweise/Migrationsplanung}{section.18}% 19
-\BOOKMARK [2][-]{subsection.24}{Anforderung an die Datenmigration}{section.18}% 20
-\BOOKMARK [0][-]{chapter.25}{Ist-Stand-Analyse}{}% 21
-\BOOKMARK [1][-]{section.26}{Migrationsprozess}{chapter.25}% 22
-\BOOKMARK [1][-]{section.27}{Transformationen}{chapter.25}% 23
-\BOOKMARK [1][-]{section.28}{Qualit\344tskontrolle/Protokollierung}{chapter.25}% 24
-\BOOKMARK [1][-]{section.29}{Ablaufsteuerung}{chapter.25}% 25
-\BOOKMARK [0][-]{chapter.30}{ETL-Tool Tensei-Data}{}% 26
-\BOOKMARK [1][-]{section.31}{Allgemeine Informationen}{chapter.30}% 27
-\BOOKMARK [1][-]{section.32}{Migrationsprozess}{chapter.30}% 28
-\BOOKMARK [1][-]{section.33}{Transformationen}{chapter.30}% 29
-\BOOKMARK [1][-]{section.34}{Qualit\344tskontrolle/Protokollierung}{chapter.30}% 30
-\BOOKMARK [1][-]{section.35}{Ablaufsteuerung}{chapter.30}% 31
-\BOOKMARK [0][-]{chapter.36}{Implementierung und Test}{}% 32
-\BOOKMARK [0][-]{chapter.37}{Bewertung, Zusammenfassung und Ausblick}{}% 33
-\BOOKMARK [1][-]{section.38}{Bewertung}{chapter.37}% 34
-\BOOKMARK [1][-]{section.39}{Ausblick}{chapter.37}% 35
-\BOOKMARK [1][-]{section.40}{Zusammenfassung}{chapter.37}% 36
-\BOOKMARK [0][-]{chapter*.41}{Literaturverzeichnis}{}% 37
-\BOOKMARK [0][-]{chapter*.42}{Abbildungsverzeichnis}{}% 38
-\BOOKMARK [0][-]{chapter*.43}{Tabellenverzeichnis}{}% 39
-\BOOKMARK [0][-]{chapter*.44}{Selbstst\344ndigkeitserkl\344rung}{}% 40
-\BOOKMARK [0][-]{Thesen.0}{Thesen}{}% 41
+\BOOKMARK [1][-]{section.16}{etl}{chapter.7}% 12
+\BOOKMARK [2][-]{subsection.17}{Extraktion}{section.16}% 13
+\BOOKMARK [2][-]{subsection.18}{Transformation}{section.16}% 14
+\BOOKMARK [2][-]{subsection.19}{Laden}{section.16}% 15
+\BOOKMARK [1][-]{section.20}{Qualit\344tskontrolle/Protokollierung}{chapter.7}% 16
+\BOOKMARK [1][-]{section.21}{Kriterien f\374r erfolgreiche Migrationen}{chapter.7}% 17
+\BOOKMARK [2][-]{subsection.22}{Ziele einer Migration}{section.21}% 18
+\BOOKMARK [2][-]{subsection.23}{Wirtschaftliche Aspekte}{section.21}% 19
+\BOOKMARK [2][-]{subsection.24}{Qualitative Aspekte}{section.21}% 20
+\BOOKMARK [2][-]{subsection.25}{Organisatorische Aspekte}{section.21}% 21
+\BOOKMARK [2][-]{subsection.26}{Vorgehensweise/Migrationsplanung}{section.21}% 22
+\BOOKMARK [2][-]{subsection.27}{Anforderung an die Datenmigration}{section.21}% 23
+\BOOKMARK [0][-]{chapter.28}{Ist-Stand-Analyse}{}% 24
+\BOOKMARK [1][-]{section.29}{Migrationsprozess}{chapter.28}% 25
+\BOOKMARK [1][-]{section.30}{Transformationen}{chapter.28}% 26
+\BOOKMARK [1][-]{section.31}{Qualit\344tskontrolle/Protokollierung}{chapter.28}% 27
+\BOOKMARK [1][-]{section.32}{Ablaufsteuerung}{chapter.28}% 28
+\BOOKMARK [0][-]{chapter.33}{ETL-Tool Tensei-Data}{}% 29
+\BOOKMARK [1][-]{section.34}{Allgemeine Informationen}{chapter.33}% 30
+\BOOKMARK [1][-]{section.35}{Migrationsprozess}{chapter.33}% 31
+\BOOKMARK [1][-]{section.36}{Transformationen}{chapter.33}% 32
+\BOOKMARK [1][-]{section.37}{Qualit\344tskontrolle/Protokollierung}{chapter.33}% 33
+\BOOKMARK [1][-]{section.38}{Ablaufsteuerung}{chapter.33}% 34
+\BOOKMARK [0][-]{chapter.39}{Implementierung und Test}{}% 35
+\BOOKMARK [0][-]{chapter.40}{Bewertung, Zusammenfassung und Ausblick}{}% 36
+\BOOKMARK [1][-]{section.41}{Bewertung}{chapter.40}% 37
+\BOOKMARK [1][-]{section.42}{Ausblick}{chapter.40}% 38
+\BOOKMARK [1][-]{section.43}{Zusammenfassung}{chapter.40}% 39
+\BOOKMARK [0][-]{chapter*.44}{Literaturverzeichnis}{}% 40
+\BOOKMARK [0][-]{chapter*.45}{Abbildungsverzeichnis}{}% 41
+\BOOKMARK [0][-]{chapter*.46}{Tabellenverzeichnis}{}% 42
+\BOOKMARK [0][-]{section*.47}{Abk\374rzungsverzeichnis}{}% 43
+\BOOKMARK [0][-]{appendix.49}{Auflistung von Quellcode und \344hnliches}{}% 44
+\BOOKMARK [0][-]{appendix*.50}{Selbstst\344ndigkeitserkl\344rung}{}% 45
+\BOOKMARK [0][-]{Thesen.0}{Thesen}{}% 46

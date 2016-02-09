@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
-The style file: alpha.bst
+The style file: alphadin.bst
 A level-1 auxiliary file: kapitel/titel.aux
 A level-1 auxiliary file: kapitel/aufgabenstellung.aux
 A level-1 auxiliary file: kapitel/zusammenfassung.aux
@@ -15,45 +15,57 @@ A level-1 auxiliary file: kapitel/schluss.aux
 A level-1 auxiliary file: kapitel/anhang.aux
 A level-1 auxiliary file: kapitel/selbststaendigkeitserklaerung.aux
 A level-1 auxiliary file: kapitel/thesen.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: verzeichnisse/literatur.bib
-You've used 1 entry,
-            2543 wiz_defined-function locations,
-            578 strings with 4938 characters,
-and the built_in function-call counts, 302 in all, are:
-= -- 28
-> -- 8
-< -- 1
-+ -- 2
-- -- 2
-* -- 13
-:= -- 56
-add.period$ -- 4
-call.type$ -- 1
-change.case$ -- 5
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 11
-empty$ -- 26
-format.name$ -- 4
-if$ -- 61
+You're missing a field name---line 78 of file verzeichnisse/literatur.bib
+ :   
+ :   %Year                     = {2015},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty year in wiki:plsql
+You've used 4 entries,
+            4793 wiz_defined-function locations,
+            924 strings with 7149 characters,
+and the built_in function-call counts, 1787 in all, are:
+= -- 166
+> -- 49
+< -- 34
++ -- 40
+- -- 15
+* -- 101
+:= -- 329
+add.period$ -- 5
+call.type$ -- 4
+change.case$ -- 18
+chr.to.int$ -- 4
+cite$ -- 5
+duplicate$ -- 63
+empty$ -- 142
+format.name$ -- 34
+if$ -- 359
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 9
-num.names$ -- 3
-pop$ -- 9
+missing$ -- 18
+newline$ -- 33
+num.names$ -- 12
+pop$ -- 31
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 26
 quote$ -- 0
-skip$ -- 11
+skip$ -- 90
 stack$ -- 0
-substring$ -- 7
-swap$ -- 1
-text.length$ -- 1
-text.prefix$ -- 1
+substring$ -- 73
+swap$ -- 10
+text.length$ -- 9
+text.prefix$ -- 3
 top$ -- 0
-type$ -- 8
-warning$ -- 0
-while$ -- 2
-width$ -- 2
-write$ -- 16
+type$ -- 32
+warning$ -- 1
+while$ -- 15
+width$ -- 7
+write$ -- 57
+(There was 1 error message)

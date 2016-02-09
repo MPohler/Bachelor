@@ -367,6 +367,8 @@ INPUT kapitel/schluss.tex
 INPUT kapitel/schluss.tex
 INPUT main.bbl
 INPUT main.bbl
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmcsc10.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
@@ -376,7 +378,12 @@ OUTPUT main.lof
 INPUT main.lot
 INPUT main.lot
 OUTPUT main.lot
+INPUT main.acr
+INPUT main.acr
+INPUT main.acr
 OUTPUT kapitel/anhang.aux
+INPUT kapitel/anhang.tex
+INPUT kapitel/anhang.tex
 OUTPUT kapitel/selbststaendigkeitserklaerung.aux
 INPUT kapitel/selbststaendigkeitserklaerung.tex
 INPUT kapitel/selbststaendigkeitserklaerung.tex
@@ -419,11 +426,12 @@ INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbsy10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
-INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx6.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr6.pfb
-INPUT /usr/share/texmf/fonts/type1/public/lm/lmr8.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmri12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb

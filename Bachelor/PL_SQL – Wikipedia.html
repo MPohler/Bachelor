@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://de.wikipedia.org/wiki/PL/SQL -->
+<html lang="de" dir="ltr" class="client-js ve-not-available"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>PL/SQL – Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ = window.RLQ || []).push(function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"PL/SQL","wgTitle":"PL/SQL","wgCurRevisionId":144249792,"wgRevisionId":144249792,"wgArticleId":543438,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["SQL","Oracle","Programmiersprache"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"PL/SQL","wgRelevantArticleId":543438,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"de","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSAcceptLanguageList":[],"wgULSCurrentAutonym":"Deutsch","wgFlaggedRevsParams":{"tags":{"accuracy":{"levels":1,"quality":2,"pristine":4}}},"wgStableRevisionId":144249792,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCentralAuthMobileDomain":false,"wgWikibaseItemId":"Q41574","wgVisualEditorToolbarScrollOffset":0}); /* @nomin */mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"de"});});mw.loader.implement("user.tokens",function ( $, jQuery ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"}); /* @nomin */ ;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","mw.MediaWikiPlayer.loader","mw.PopUpMediaTransform","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="./PL_SQL – Wikipedia_files/load.php">
+<style>
+@-webkit-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-webkit-transform:translateY(-20px)}100%{opacity:1;-webkit-transform:translateY(0)}}@-moz-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-moz-transform:translateY(-20px)}100%{opacity:1;-moz-transform:translateY(0)}}@-o-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-o-transform:translateY(-20px)}100%{opacity:1;-o-transform:translateY(0)}}@keyframes centralAuthPPersonalAnimation{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}.centralAuthPPersonalAnimation{-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:centralAuthPPersonalAnimation;-moz-animation-name:centralAuthPPersonalAnimation;-o-animation-name:centralAuthPPersonalAnimation;animation-name:centralAuthPPersonalAnimation}
+.ve-activated #toc,.ve-activated #siteNotice,.ve-activated .mw-indicators, .ve-active #bodyContent > :not( #siteSub ):not( #contentSub ):not( .ve-ui-mwTocWidget ),.ve-activated #t-print,.ve-activated #t-permalink,.ve-activated #p-coll-print_export,.ve-activated #t-cite,.ve-activating .ve-ui-surface,.ve-deactivating .ve-ui-surface{display:none}.ve-activated #bodyContent,.ve-activated #firstHeading{opacity:0.6;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.ve-activated #firstHeading{cursor:default} .ve-activated #content{position:relative}.ve-init-mw-desktopArticleTarget-loading-overlay{position:absolute;left:0;right:0;z-index:1;margin-top:-0.5em}.ve-init-mw-desktopArticleTarget-progress{height:1em;overflow:hidden;margin:0 25%}.ve-init-mw-desktopArticleTarget-progress-bar{height:1em;width:0} .mw-editsection{white-space:nowrap; unicode-bidi:-moz-isolate;unicode-bidi:-webkit-isolate;unicode-bidi:isolate}.mw-editsection-divider{color:#555} .ve-init-mw-desktopArticleTarget-progress{height:0.75em;border:1px solid #347bff;background:#fff;border-radius:2px;box-shadow:0 0.1em 0 0 rgba(0,0,0,0.15) }.ve-init-mw-desktopArticleTarget-progress-bar{height:0.75em;background:#347bff}
+.uls-menu a{cursor:pointer}.uls-menu.callout .caret-before{border-top:20px solid transparent;border-right:20px solid #C9C9C9;border-bottom:20px solid transparent;display:inline-block;left:-21px;top:30px;position:absolute}.uls-menu.callout .caret-after{border-top:20px solid transparent;border-right:20px solid #FCFCFC;border-bottom:20px solid transparent;display:inline-block;left:-20px;top:30px;position:absolute}.uls-ui-languages button{width:23%;text-overflow:ellipsis;margin-right:4%}button.uls-more-languages{width:auto}.settings-title{font-size:11pt}.settings-text{color:#555555;font-size:9pt}div.display-settings-block:hover .settings-text{color:#252525}
+#container{position:relative;min-height:100%}#container,video{width:100%;height:100%}#playerContainer{overflow:hidden;position:relative;height:100%;background:#000}#videoHolder{position:relative;overflow:hidden}.fullscreen #playerContainer{position:absolute !important;width:100% !important;height:100%! important;z-index:9999;min-height:100%;top:0;left:0;margin:0}.mwEmbedPlayer{width:100%;height:100%;overflow:hidden;position:absolute;top:0;left:0}.modal_editor{ left:10px;top:10px;right:10px;bottom:10px;position:fixed;z-index:100}.displayHTML a:visited{color:white}.loadingSpinner{width:32px;height:32px;display:block;padding:0px;background-image:url(//de.wikipedia.org/static/1.27.0-wmf.10/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/loading_ani.gif?a51c5)}.mw-imported-resource{border:thin solid black}.kaltura-icon{background-image:url(//de.wikipedia.org/static/1.27.0-wmf.10/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/kaltura_logo_sm_transparent.png?28082) !important;background-repeat:no-repeat;display:block;height:12px;width:12px;margin-top:2px !important;margin-left:3px !important}.mw-fullscreen-overlay{background:rgb(0,0,0) none repeat scroll 0% 0%;position:fixed;top:0pt;left:0pt;width:100%;height:100%;-moz-background-clip:border;-moz-background-origin:padding;-moz-background-inline-policy:continuous} .play-btn-large{width:70px;height:53px;background :url(//de.wikipedia.org/static/1.27.0-wmf.10/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/player_big_play_button.png?aff14);position :absolute;cursor :pointer;border :none !important; }.play-btn-large:hover{background :url(//de.wikipedia.org/static/1.27.0-wmf.10/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/player_big_play_button_hover.png?24580)}.carouselContainer{position :absolute;width :100%;z-index :2}.carouselVideoTitle{position :absolute;top :0px;left :0px;width :100%;background :rgba(0,0,0,0.8);color :white;font-size :small;font-weight :bold;z-index :2}.carouselVideoTitleText{display :block;padding :10px 10px 10px 20px}.carouselTitleDuration{position :absolute;top :0px;right :0px;padding :2px;background-color :#5A5A5A;color :#D9D9D9;font-size :smaller;z-index :2}.carouselImgTitle{position :absolute;width :100%;text-align :center;color :white;font-size :small;background :rgba(0,0,0,0.4)}.carouselImgDuration{position :absolute;top :2px;left :2px;background :rgba( 0,0,0,0.7 );color :white;padding :1px 6px;font-size :small}.carouselPrevButton,.carouselNextButton{display :block;position :absolute;bottom:23px}.carouselPrevButton{left :5px}.carouselNextButton{right:6px}.alert-container{-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-image:linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-o-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-moz-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-webkit-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-ms-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0.04,rgb(215,215,215)),color-stop(0.55,rgb(230,230,230)),color-stop(1,rgb(255,255,255)));margin:auto;position:absolute;top:0;left:0;right:0;bottom:0;max-width:80%;max-height:30%}.alert-title{background-color :#E6E6E6;padding :5px;border-bottom :1px solid #D1D1D1;font-weight :normal !important;font-size:14px !important;-webkit-border-top-left-radius:3px;-moz-border-radius-topleft:3px;border-top-left-radius:3px;-webkit-border-top-right-radius:3px;-moz-border-radius-topright:3px;border-top-right-radius:3px }.alert-message{padding :5px;font-weight :normal !important;text-align:center;font-size:14px !important}.alert-buttons-container{text-align:center;padding-bottom:5px}.alert-button{background-color:#474747;color:white;-webkit-border-radius:.5em;-moz-border-radius:.5em;border-radius:.5em;padding:2px 10px;background-image:linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-o-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-moz-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-webkit-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-ms-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-webkit-gradient( linear,left bottom,left top,color-stop(0.04,rgb(25,25,25)),color-stop(0.55,rgb(47,47,47)),color-stop(0.68,rgb(71,71,71)) )}.alert-text{color :black !important}
+.PopUpMediaTransform a .play-btn-large{top:50%;left :50%;width:70px;height:53px;margin-left:-35px;margin-top:-25px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAA1CAMAAADLRm3ZAAABnlBMVEUAAAAAAAAAAABaWlp4eHh7e3t/f393d3eDg4N0dHRtbW2FhYVra2uJiYmNjY1nZ2eRkZFkZGSUlJRiYmKYmJhgYGCcnJxeXl5cXFyfn58AAACioqKlpaWsrKwAAACpqakAAAAAAAAAAAAAAABEREQFBQUHBwdMTEwAAAAYGBgAAAAAAAABAQEXFxcAAAAAAAAAAABxcXGoqKh3d3eampp8fHyIiIgUFBQcHBw0NDSFhYV+fn5FRUUmJiaNjY11dXWPj4+Hh4c9PT14eHifn59nZ2eBgYFISEiBgYFubm5vb28ODg4lJSVra2tiYmJoaGgEBAQmJiZmZmaLi4saGhpiYmKYmJhZWVlgYGBfX19vb29DQ0MGBgZcXFyBgYFKSkoPDw9ZWVlzc3NQUFBXV1eKiopUVFQdHR1VVVUQEBBYWFglJSVTU1NXV1cKCgosLCySkpJRUVFISEgyMjJPT08dHR2GhoY4ODhNTU09PT0MDAwuLi57e3sTExNJSUkgICBOTk4hISEbGxtTU1MoKChBQUEsLCxXV1cAAABycnIdNM6eAAAAinRSTlOzj6jO1dbX1NfU09nS2drR29Hc0N3Q3c/O3gDf3+Ce4EgIGW7HtbXKnLouq7S5cHIq1ODQ3NTXuLq/1tXEvNjT2NjC093N18bW0dC2vNHM0LW90Ne5z9rLzsrTxbXN1Me3zdDKzdfLu8y3zb3Lyba/2svFwcq618PKxLa/1LjJu8q8u8y+xsDKrdJqj5XQAAABYklEQVR4Xu3XVVNCQRjH4VdQEbvFVRAOIRl2d3d3d3d317d2GEaGOOfM1oUXPB/gN7NX/30BIYPeGMPAqDcgBMhrBUZWLwJBAcwcAriBAzfogAMdKIADBUUmmqm64JAxl2m1k/XMmZkin+YaxsxYqd9iA1OmsfDPajVDZqMgoL1jhzpTmR+k/OCQMlObG+L4dJgq050d5rKVJlOXGaHijjxzny6i94k005YqatBFlmlKEdfy1UeS+UmS0tllwc/0JEhT9WNnBuJlqCy4maE4OSO4mdFYOeO4mQm1jCnAzUyXSJqdm8fOLCRKWVomWIaVZHFrLqJlWE8Ts7lFuAzbGZF294iXYT8rnPLICcSZk5xQyjMzzTKc5wXTXFnoluFaE+TmlnYZipUBpgcA5syjjWU1Tf7I8wvbhr/6Im/vTmDLgO3D9Gn+R5+2aIbXzeABDjwgOIDZtwDIzvwsnR1xujV/AS6zSfMs2bS9AAAAAElFTkSuQmCC);background-image:url(//de.wikipedia.org/static/1.27.0-wmf.10/extensions/TimedMediaHandler/resources/player_big_play_button.png?aff14)!ie}.PopUpMediaTransform a .play-btn-large :hover{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAA1CAMAAADLRm3ZAAABtlBMVEUAAAAAAAAAAAC5ubm1tbWwsLC+vr6Li4vExMSrq6umpqbIyMjOzs6ioqLT09OdnZ3Y2NiZmZnc3NyWlpbh4eGSkpLn5+eQkJCNjY0AAADr6+vv7+/z8/P39/cAAAD9/f0AAAAAAAAAAAAAAAB2dnYAAAAoKCj5+flra2sMDAwAAAAAAAAAAAAAAAAAAAACAgLW1tbPz88wMDCHh4fExMS8vLxKSkpubm6vr6+qqqo0NDQQEBDCwsK1tbUmJiaysrLT09PLy8uIiIgXFxetra2+vr7r6+tycnIbGxvMzMyTk5O1tbU8PDyjo6PR0dG0tLQLCwufn58HBwc9PT2bm5shISEqKiqXl5cICAiJiYmTk5Pj4+OoqKhpaWkKCgqOjo5TU1OXl5cYGBiKioo9PT18fHwlJSWGhoYuLi6CgoIvLy+Dg4Ofn5+oqKg7OzuAgIDk5OSLi4tHR0fIyMh9fX3Z2dlycnJPT08JCQl7e3vJyclhYWFZWVl4eHhhYWEUFBS6urpqamofHx9ycnK2trZzc3N6eno1NTUsLCyKioqAgIBBQUFmZmZHR0cICAjBwcEAAACIiIg+YVJpAAAAknRSTlOzj6jt6+ru4O/p5/Hy5vPl9eT24/ji+eHgAPr7/P2e/hlICG7YLr7+07accipwq7Tw777X6erGzuLjv7fs4rzn8PDYuObr+dK57tjqwuTu6rbjtcPiur3htdvg8+jRtt7H3Lndwdi83b7bwNze5cPb9t/G7drz0Mq22e7MzdjPuOrUu9fo1NnCwN/cxdLItu6t3VahkKcAAAFlSURBVHhe7dfFcgJBFIbRGyLEXegIDBAITtzd3d3d3d3d88ZJigqFzExNyyILzgN8Vb36+wJCGrXWj4JWrUEIkMUElEwWBJwMqNk4sAIDVlACA0qQAQMygowv05fNIDNYplKNFFBnmjN+ZU5SZtrTHHJnqTKVqX8KFykyWSlO9auNxJmmZBebOSWEmZ1EN3v73USZ0ngPxyckmbpYL3n5+JnLaB5FxbiZ20heU+V4mYpwflXVNTiZ2jAhHw1G6Zm1YGEtrZIzbUEiOjqlZrr8xfRIzfQGiOmXmhkIFDEEUjPDIYJGx8YlZyZChdxNYyzDTAS/uXmsZViI4rO0jLkMKzHevtaxl2EjztPWth2wM7sJ7uQHhyTLcJTkSnFqJFuGM4WL8wvSZUiXO11dA1BnbvQ0q2lwRO4f6Db88ekn8vxiB7oM6F8Nb+//6NPmy7C6GczAgBk4G1D75ADpqJ+l1CFGt+Y3XGRJEJqP8KwAAAAASUVORK5CYII=);background-image:url(//de.wikipedia.org/static/1.27.0-wmf.10/extensions/TimedMediaHandler/resources/player_big_play_button_hover.png?24580)!ie} .mw-tmh-playtext{display:block;height:0;overflow:hidden}
+@media print{#centralNotice{display:none}}.cn-closeButton{display:inline-block;zoom:1;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAMAAABFjsb+AAABelBMVEX///////80NDT///////////////////////////8yMjIzMzM5OTkMDAxlZWWCgoIvLy////8AAAD9/f3////8/PxjY2Pa2tpqamo7Ozvp6elFRUWEhITCwsLNzc1WVlbY2Ng3Nzf+/v57e3vb29ufn58LCwthYWExMTFSUlJDQ0Py8vJXV1cvLy9WVlbExMQBAQH+/v59fX14eHg2NjYuLi5VVVXc3Nz6+vrIyMjj4+Pn5+dGRkZ5eXmBgYHp6elsbGwwMDB8fHz8/PzOzs5XV1c1NTXQ0NDn5+dkZGRnZ2ft7e3l5eUtLS3d3d07OztDQ0PHx8eRkZGysrJbW1v8/Pzu7u40NDRUVFRsbGzb29uIiIiXl5fi4uLy8vJmZmbh4eHp6elpaWmioqKCgoJ5eXk5OTmcnJxsbGzy8vJiYmKwsLDk5ORAQEA8PDw6OjrAwMCqqqqCgoLx8fHz8/Pr6+vx8fHj4+NlZWXn5+dtbW2jo6OdnZ16enp8kgr/AAAAfnRSTlMAqOd5JlJZc5YX5+flANTK6SMAmaap1L/c5Lngyre12rHlqc2xzADd6NrhsNno37cAqMzZ5unasJq1vbjf2Ne40ujLmrTf5sK23tOyteq95eC2xsneq7Hm4Ny/yNG5ttuws9zJ1dfky9q31cu65OPkxsbWtrezsLrbudrJy9cUNT7KAAAA+ElEQVQYV2NgAAEWVmYOEQ5mVhYGCOBV42QT1pfhE+PjlxVm4zQQAokJsqsYSYdzc3MzaSkrsAuCxDjZ5eS5FDNUk9NT0zQ0Ldk5gWJsCTq6rlGihoyMolJJpmbmbEDjnfm5IqzsExkZGbVzrOMdnSxYGFhdbEzcPZg8Mxm9bX39pPwDAlkZmIPcQkLDJAQio1IE9OIY7ZiimRk4HJhilBh9jHkkedRjGRmDubw4GESymLKBZonn5uUXAOlCLjERrOoQ5hUJ6BVDzIPZW4JkL9R9pUCzysqtK8Dug/hDHOyPSgmIP6D+rVKtrqmVhPkXW7hgCz/McAYAItEzkWDsbM4AAAAASUVORK5CYII=);background:url(//de.wikipedia.org/static/1.27.0-wmf.10/extensions/CentralNotice/resources/subscribing/CloseWindow19x19.png?d968e)!ie;width:19px;height:19px;text-indent:19px;white-space:nowrap;overflow:hidden}
+.cite-accessibility-label{position:absolute !important; top:-99999px;clip:rect(1px 1px 1px 1px); clip:rect(1px,1px,1px,1px);padding:0 !important;border:0 !important;height:1px !important;width:1px !important;overflow:hidden}
+@media screen {
+	.tochidden,.toctoggle{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.toctoggle{font-size:94%}}
+@media print {
+	#toc.tochidden,.toctoggle{display:none}}
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(//de.wikipedia.org/static/1.27.0-wmf.10/resources/src/mediawiki.action/images/green-checkmark.png?9048a)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+.Person{font-variant:small-caps} div.NavFrame{border:1px solid #aaa;clear:both;font-size:95%;margin-top:1.5em;min-height:0; padding:2px;text-align:center}div.NavPic{float:left;padding:2px}div.NavHead{background:#efefef;font-weight:bold}div.NavFrame:after{clear:both;content:"";display:block} .NavToggle{float:right;font-size:x-small} div.NavFrame + div.NavFrame{margin-top:-1px} div.BoxenVerschmelzen{border:1px solid #aaa;clear:both;font-size:95%;margin-top:1.5em;padding-top:2px}div.BoxenVerschmelzen div.NavFrame{border:none;font-size:100%;margin:0;padding-top:0} div.sideBox{background:white;border:1px solid gray;clear:right;float:right;margin-left:1em;padding:.3em;width:200px}div.sideBox dl{font-size:96%;margin:0 0 .3em}div.sideBox dt{margin:.4em 0 0}div.sideBox dd{background:#f3f3f3;margin:.1em 0 0 1.1em} table.taxobox{background:white;border:1px solid gray;border-collapse:collapse; clear:right;float:right;margin:1em 0 1em 1em}table.taxobox > * > * > th{background:#9bcd9b;border:1px solid gray;text-align:center}table.taxobox.palaeobox > * > * > th{background:#e7dcc3}table.taxobox > * > * > td.Person,table.taxobox > * > * > td.taxo-name,table.taxobox > * > * > td.taxo-bild,table.taxobox.palaeobox > * > * > td.taxo-zeit{text-align:center}table.taxobox.palaeobox > * > * > td.taxo-ort{text-align:left} table.taxobox div.thumb,table.taxobox div.thumb *{background:#f9f9f9;border:none;float:none;margin:0 auto;padding:0}table.taxobox div.magnify{display:none}table.taxobox div.thumbcaption{text-align:center}    .prettytable{background-color:#f9f9f9;border:1px solid #aaa;border-collapse:collapse;color:black;margin:1em 0}table.prettytable > * > tr > th,table.prettytable > * > tr > td{border:1px solid #aaa;padding:.3em .4em}table.prettytable > * > tr > th{ text-align:center}table.prettytable > caption{font-weight:bold} table.wikitable.zebra > tbody > :nth-child(even):not([class*="hintergrundfarbe"]){background:white}div.float-left,table.float-left,ul.float-left,.float-left{clear:left;float:left;margin:1em 1em 1em 0}div.float-right,table.float-right,ul.float-right,.float-right{clear:right;float:right;margin:1em 0 1em 1em}div.centered,table.centered,ul.centered,.centered{margin-left:auto;margin-right:auto}.toptextcells > * > * > td{vertical-align:top} table ul,table p{margin-top:.3em} .rahmenfarbe1{ border:1px #aaa}.rahmenfarbe2{ border:1px #e9e9e9}.rahmenfarbe3{ border:1px #c00000}.rahmenfarbe4{ border:1px #88a}.rahmenfarbe5{ border:1px #000}table > * > tr.hintergrundfarbe1 > th,table > * > tr > th.hintergrundfarbe1,table.hintergrundfarbe1,.hintergrundfarbe1{ background-color:#f9f9f9}table > * > tr.hintergrundfarbe2 > th,table > * > tr > th.hintergrundfarbe2,table.hintergrundfarbe2,.hintergrundfarbe2{ background-color:#fff}table > * > tr.hintergrundfarbe3 > th,table > * > tr > th.hintergrundfarbe3,table.hintergrundfarbe3,.hintergrundfarbe3{ background-color:#ffff40}table > * > tr.hintergrundfarbe4 > th,table > * > tr > th.hintergrundfarbe4,table.hintergrundfarbe4,.hintergrundfarbe4{ background-color:#fa0}table > * > tr.hintergrundfarbe5 > th,table > * > tr > th.hintergrundfarbe5,table.hintergrundfarbe5,.hintergrundfarbe5{ background-color:#e0e0e0}table > * > tr.hintergrundfarbe6 > th,table > * > tr > th.hintergrundfarbe6,table.hintergrundfarbe6,.hintergrundfarbe6{ background-color:#b3b7ff}table > * > tr.hintergrundfarbe7 > th,table > * > tr > th.hintergrundfarbe7,table.hintergrundfarbe7,.hintergrundfarbe7{ background-color:#ffcbcb}table > * > tr.hintergrundfarbe8 > th,table > * > tr > th.hintergrundfarbe8,table.hintergrundfarbe8,.hintergrundfarbe8{ background-color:#ffebad}table > * > tr.hintergrundfarbe9 > th,table > * > tr > th.hintergrundfarbe9,table.hintergrundfarbe9,.hintergrundfarbe9{ background-color:#b9ffc5}sup.reference{font-style:normal;font-weight:normal} ol.references li a[href|="#cite_ref"]{font-style:italic} ol.references li div.sisterproject{display:inline} div#mw-missingcommentheader b{color:#900} div#mw-anon-edit-warning,div#mw-anon-preview-warning,div#mw-missingsummary{background:#d3e1f2;border:1px solid #1a47ff;margin:1em auto;padding:1em;width:80%} #mw-content-text a.external[href^="//de.wikipedia.org"],#mw-content-text a.external[href^="http://de.wikipedia.org"],#mw-content-text a.external[href^="https://de.wikipedia.org"],#mw-content-text a.external[href^="//www.wikidata.org"],#mw-content-text a.external[href^="http://www.wikidata.org"],#mw-content-text a.external[href^="https://www.wikidata.org"],#mw-content-text a.external[href^="//tools.wmflabs.org"],#mw-content-text a.external[href^="http://tools.wmflabs.org"],#mw-content-text a.external[href^="https://tools.wmflabs.org"]{background-image:none;padding-right:0} .mw-summarymissed{border:5px solid red;padding:2px} div#editpage-copywarn{background:#fff;border:1px solid #c00000;margin:1em 0} .toclimit-2 .toclevel-1 ul,.toclimit-3 .toclevel-2 ul,.toclimit-4 .toclevel-3 ul,.toclimit-5 .toclevel-4 ul,.toclimit-6 .toclevel-5 ul,.toclimit-7 .toclevel-6 ul{display:none} .nonumtoc .tocnumber{display:none} span.tocnumber{margin-right:.3em}   #commons-icon,#coordinates,#editcount,#issnlink,#shortcut,#spoken-icon,.topicon{display:none} .geo{display:none} .metadata{display:none} div#mw-subcategories,div#mw-pages,div#mw-category-media{clear:both} td#wpDestFile-warning ul{border:1px solid red;padding:1.5em} textarea#wpUploadDescription{height:20em} .mw-titleprotectedwarning{background:#eee;border:2px solid red;padding:1em} .mw-editinginterface,.mw-translateinterface{background:#f9f9f9;border:1px solid #c00000;padding:2px}.mw-editinginterface + .mw-translateinterface{border-top:none;margin-top:-8px} div#specialchars{background:white;border:1px solid #aaa;margin-top:3px;padding:1px;text-align:left} .mw-history-legend{background:#f9f9f9;border:1px solid #e9e9e9;clear:both;font-size:90%;margin:2px 0;padding:0 5px 5px} abbr[title],.explain[title]{border-bottom-color:#ccc; }abbr[title],.explain[title]{border-bottom-color:rgba(50%,50%,50%,.5)}abbr[title]:hover,.explain[title]:hover{border-bottom:1px dotted} .sp-cached{background:url(//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Clock_and_warning.svg/20px-Clock_and_warning.svg.png) 5px 3px no-repeat #ffffe0; background:url(//upload.wikimedia.org/wikipedia/commons/8/8c/Clock_and_warning.svg) 5px 3px/20px no-repeat #ffffe0;border:1px solid #eeee80;color:#606000;font-style:italic;margin:.3em 0;padding:4px 0 4px 30px} .IPA a{text-decoration:none}  :first-child ~ html .Unicode{font-family:Code2000,Sun-ExtA,"Arial Unicode MS",NSimSun,sans-serif} :first-child ~ html .IPA{font-family:Quivira,Code2000,Sun-ExtA,"DejaVu Sans","Gentium Plus",Gentium,"Doulos SIL",Helvetica,"Arial Unicode MS","Lucida Sans Unicode",sans-serif} :first-child ~ html .hebrew{font-family:Quivira,Sun-ExtA,"Arial Unicode MS","SBL Hebrew",Code2000,"MPH 2B Damase",sans-serif} :first-child ~ html .spanAr{font-family:"Arial Unicode MS",Scheherazade,Code2000,"DejaVu Sans",sans-serif} .fr-watchlist-pending-notice{background:transparent;border:none;margin:0;padding:0} .fr-comment-box{display:none} .mw-fr-reviewlink{background:transparent} #mw-fr-revisiondetails-wrapper{z-index:1} .patrollink,.mw-changeslist .unpatrolled{visibility:hidden}.not-patrolled{background-color:transparent}dt.unpatrolled,dt.unpatrolled + dd{display:none} .mw-special-Watchlist .mw-rollback-link{display:none} .limitreport{display:none} .client-js .noscript{display:none}  .action-view.page-Wikipedia_Hauptseite h1.firstHeading,.action-view.page-Wikipedia_Hauptseite #contentSub,.action-view.page-Wikipedia_Hauptseite #catlinks{display:none}div#hauptseite h2{background:#d8e8ff;border:1px solid #8898bf;font-family:inherit;font-size:1em;font-weight:bold;line-height:1.5;margin:0;padding:.1em 0}#hauptseite .inhalt{background:#fff;border:1px solid #8898bf;border-top:0;min-height:0; padding:.3em .8em .4em}#hauptseite .inhalt hr{background:#8898bf;color:#8898bf; height:1px;margin:.5em 0}#hauptseite .inhalt .mehr{clear:both;font-size:95%;margin-top:.8em;text-align:right}.hauptseite-oben,.hauptseite-links,.hauptseite-rechts{margin-bottom:1em}.hauptseite-links{margin-right:.5em}.hauptseite-rechts{margin-left:.5em}.hauptseite-oben h2,.hauptseite-unten h2{text-align:center}.hauptseite-oben .inhalt .portale{font-weight:bold;margin:.2em 0}.hauptseite-oben .inhalt .intern{font-size:90%;text-align:center}.hauptseite-links h2,.hauptseite-rechts h2{text-indent:.8em}#hauptseite-schwesterprojekte .inhalt a{font-weight:bold}#hauptseite .mw-headline-anchor{display:none}
+#content{position:relative;z-index:0; }.mw-body-content{position:static}#coordinates,#editcount,#issnlink,#shortcut{display:block;font-size:x-small;line-height:1.5;position:absolute;right:2.4em;text-align:right;text-indent:0;top:.2em;white-space:nowrap} div.topicon{float:right;font-size:.8em;line-height:1;margin-left:3px}#firstHeading{overflow:visible}
+@media print {
+	div.NavFrame,div.BoxenVerschmelzen{display:none} #content .plainlinks-print a.external.text:after,#content .plainlinks-print a.external.autonumber:after{content:""}}
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}  .mw-content-ltr .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr .mw-collapsible-toggle{float:right} .mw-content-rtl .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl .mw-collapsible-toggle{float:left}.mw-customtoggle,.mw-collapsible-toggle{cursor:pointer} caption .mw-collapsible-toggle,.mw-content-ltr caption .mw-collapsible-toggle,.mw-content-rtl caption .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr caption .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle,.mw-content-ltr li .mw-collapsible-toggle,.mw-content-rtl li .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr li .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+.mw-ui-button{font-family:inherit;font-size:1em;display:inline-block;padding:.5em 1em;margin:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-appearance:none;*display:inline;zoom:1;background:#ffffff;color:#555555;border:1px solid #cccccc;border-radius:2px;min-width:4em;vertical-align:middle;text-align:center;font-weight:bold;cursor:pointer}.mw-ui-button:hover{background-color:#cccccc}.mw-ui-button:focus{border-color:#ffffff;box-shadow:0 0 0 1px #cccccc;outline:none}.mw-ui-button:focus::-moz-focus-inner{border-color:transparent}.mw-ui-button:active,.mw-ui-button.mw-ui-checked{background:#777777;box-shadow:none}.mw-ui-button:hover,.mw-ui-button:active,.mw-ui-button:visited{color:#555555}.mw-ui-button:focus{background-color:#cccccc}.mw-ui-button:disabled{color:#cccccc}.mw-ui-button:disabled:hover,.mw-ui-button:disabled:active{background:#ffffff;box-shadow:none}.mw-ui-button:disabled{text-shadow:none;cursor:default}.mw-ui-button.mw-ui-big{font-size:1.3em}.mw-ui-button.mw-ui-block{display:block;width:100%}.mw-ui-button.mw-ui-progressive,.mw-ui-button.mw-ui-primary{background:#347bff;color:#fff;border:1px solid #347bff;text-shadow:0 1px rgba(0,0,0,0.1)}.mw-ui-button.mw-ui-progressive:hover,.mw-ui-button.mw-ui-primary:hover{background-color:#2962cc}.mw-ui-button.mw-ui-progressive:focus,.mw-ui-button.mw-ui-primary:focus{border-color:#ffffff;box-shadow:0 0 0 1px #2962cc;outline:none}.mw-ui-button.mw-ui-progressive:focus::-moz-focus-inner,.mw-ui-button.mw-ui-primary:focus::-moz-focus-inner{border-color:transparent}.mw-ui-button.mw-ui-progressive:active,.mw-ui-button.mw-ui-primary:active,.mw-ui-button.mw-ui-progressive.mw-ui-checked,.mw-ui-button.mw-ui-primary.mw-ui-checked{background:#2962cc;box-shadow:none}.mw-ui-button.mw-ui-progressive:disabled,.mw-ui-button.mw-ui-primary:disabled{background:#dddddd;border-color:#dddddd}.mw-ui-button.mw-ui-progressive:disabled:hover,.mw-ui-button.mw-ui-primary:disabled:hover,.mw-ui-button.mw-ui-progressive:disabled:active,.mw-ui-button.mw-ui-primary:disabled:active,.mw-ui-button.mw-ui-progressive:disabled.mw-ui-checked,.mw-ui-button.mw-ui-primary:disabled.mw-ui-checked{box-shadow:none}.mw-ui-button.mw-ui-progressive.mw-ui-quiet,.mw-ui-button.mw-ui-primary.mw-ui-quiet{color:#555555}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:hover,.mw-ui-button.mw-ui-primary.mw-ui-quiet:hover,.mw-ui-button.mw-ui-progressive.mw-ui-quiet:focus,.mw-ui-button.mw-ui-primary.mw-ui-quiet:focus{background:transparent;color:#347bff}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:active,.mw-ui-button.mw-ui-primary.mw-ui-quiet:active,.mw-ui-button.mw-ui-progressive.mw-ui-quiet.mw-ui-checked,.mw-ui-button.mw-ui-primary.mw-ui-quiet.mw-ui-checked{color:#2962cc}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:disabled,.mw-ui-button.mw-ui-primary.mw-ui-quiet:disabled{color:#cccccc}.mw-ui-button.mw-ui-constructive{background:#00af89;color:#fff;border:1px solid #00af89;text-shadow:0 1px rgba(0,0,0,0.1)}.mw-ui-button.mw-ui-constructive:hover{background-color:#008c6d}.mw-ui-button.mw-ui-constructive:focus{border-color:#ffffff;box-shadow:0 0 0 1px #008c6d;outline:none}.mw-ui-button.mw-ui-constructive:focus::-moz-focus-inner{border-color:transparent}.mw-ui-button.mw-ui-constructive:active,.mw-ui-button.mw-ui-constructive.mw-ui-checked{background:#008c6d;box-shadow:none}.mw-ui-button.mw-ui-constructive:disabled{background:#dddddd;border-color:#dddddd}.mw-ui-button.mw-ui-constructive:disabled:hover,.mw-ui-button.mw-ui-constructive:disabled:active,.mw-ui-button.mw-ui-constructive:disabled.mw-ui-checked{box-shadow:none}.mw-ui-button.mw-ui-constructive.mw-ui-quiet{color:#555555}.mw-ui-button.mw-ui-constructive.mw-ui-quiet:hover,.mw-ui-button.mw-ui-constructive.mw-ui-quiet:focus{background:transparent;color:#00af89}.mw-ui-button.mw-ui-constructive.mw-ui-quiet:active,.mw-ui-button.mw-ui-constructive.mw-ui-quiet.mw-ui-checked{color:#008c6d}.mw-ui-button.mw-ui-constructive.mw-ui-quiet:disabled{color:#cccccc}.mw-ui-button.mw-ui-destructive{background:#d11d13;color:#fff;border:1px solid #d11d13;text-shadow:0 1px rgba(0,0,0,0.1)}.mw-ui-button.mw-ui-destructive:hover{background-color:#a7170f}.mw-ui-button.mw-ui-destructive:focus{border-color:#ffffff;box-shadow:0 0 0 1px #a7170f;outline:none}.mw-ui-button.mw-ui-destructive:focus::-moz-focus-inner{border-color:transparent}.mw-ui-button.mw-ui-destructive:active,.mw-ui-button.mw-ui-destructive.mw-ui-checked{background:#a7170f;box-shadow:none}.mw-ui-button.mw-ui-destructive:disabled{background:#dddddd;border-color:#dddddd}.mw-ui-button.mw-ui-destructive:disabled:hover,.mw-ui-button.mw-ui-destructive:disabled:active,.mw-ui-button.mw-ui-destructive:disabled.mw-ui-checked{box-shadow:none}.mw-ui-button.mw-ui-destructive.mw-ui-quiet{color:#555555}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:hover,.mw-ui-button.mw-ui-destructive.mw-ui-quiet:focus{background:transparent;color:#d11d13}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:active,.mw-ui-button.mw-ui-destructive.mw-ui-quiet.mw-ui-checked{color:#a7170f}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:disabled{color:#cccccc}.mw-ui-button.mw-ui-quiet{background:transparent;border:0;text-shadow:none;color:#555555}.mw-ui-button.mw-ui-quiet:hover,.mw-ui-button.mw-ui-quiet:focus{background:transparent;color:#555555}.mw-ui-button.mw-ui-quiet:active,.mw-ui-button.mw-ui-quiet.mw-ui-checked{color:#777777}.mw-ui-button.mw-ui-quiet:disabled{color:#cccccc}.mw-ui-button.mw-ui-quiet:hover,.mw-ui-button.mw-ui-quiet:focus{box-shadow:none}.mw-ui-button.mw-ui-quiet:active,.mw-ui-button.mw-ui-quiet:disabled{background:transparent}a.mw-ui-button{text-decoration:none;line-height:normal}a.mw-ui-button:hover,a.mw-ui-button:focus{text-decoration:none}.mw-ui-button-group > *{min-width:48px;border-radius:0;float:left}.mw-ui-button-group > *:first-child{border-top-left-radius:2px;border-bottom-left-radius:2px}.mw-ui-button-group > *:not( :first-child ){border-left:0}.mw-ui-button-group > *:last-child{border-top-right-radius:2px;border-bottom-right-radius:2px}
+.mw-ui-icon{position:relative;min-height:1.5em;min-width:1.5em}.mw-ui-icon.mw-ui-icon-element{text-indent:-999px;overflow:hidden;width:3.5em;min-width:3.5em;max-width:3.5em}.mw-ui-icon.mw-ui-icon-element:before{left:0;right:0;position:absolute;margin:0 1em}.mw-ui-icon.mw-ui-icon-before:before,.mw-ui-icon.mw-ui-icon-element:before{background-position:50% 50%;background-repeat:no-repeat;background-size:100% auto;float:left;display:block;min-height:1.5em;content:''}.mw-ui-icon.mw-ui-icon-before:before{position:relative;width:1.5em;margin-right:1em}
+#p-lang .uls-settings-trigger{background:transparent no-repeat right top;background-image:url(//de.wikipedia.org/static/1.27.0-wmf.12/extensions/UniversalLanguageSelector/resources/images/cog-sprite.png?fae8e);background-image:linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2214%22%20height%3D%2232%22%3E%3Cdefs%3E%3Cpath%20d%3D%22M14%209.3V6.73l-1.575-.264c-.117-.44-.292-.848-.496-1.2l.93-1.285-1.81-1.84-1.31.908c-.38-.205-.79-.38-1.196-.497L8.284%201H5.716l-.263%201.578c-.437.117-.816.293-1.196.497L2.975%202.17%201.137%203.98l.934%201.287c-.2.38-.376.79-.493%201.228L0%206.73V9.3l1.575.264c.117.438.292.818.496%201.198l-.93%201.315L2.95%2013.89l1.312-.938c.38.205.787.38%201.224.497L5.746%2015h2.566l.263-1.578c.408-.117.817-.293%201.196-.497l1.315.935%201.81-1.812-.935-1.315c.203-.38.38-.76.495-1.2L14%209.303zm-7%201.404c-1.488%200-2.683-1.2-2.683-2.69S5.542%205.327%207%205.327c1.458%200%202.683%201.198%202.683%202.69%200%201.49-1.195%202.688-2.683%202.688z%22%20id%3D%22a%22%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23808080%22%2F%3E%3Cuse%20transform%3D%22translate%280%2016%29%22%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E%0A);background-image:linear-gradient(transparent,transparent),url(//de.wikipedia.org/static/1.27.0-wmf.12/extensions/UniversalLanguageSelector/resources/images/cog-sprite.svg?624e4)!ie;background-image:-o-linear-gradient(transparent,transparent),url(//de.wikipedia.org/static/1.27.0-wmf.12/extensions/UniversalLanguageSelector/resources/images/cog-sprite.png?fae8e);height:16px;width:14px;float:right;cursor:pointer}.skin-vector #p-lang .uls-settings-trigger{ margin-top:3px}#p-lang .uls-settings-trigger:hover{background-position:right -16px}</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}
+.mw-mmv-overlay{position:fixed;top:0px;left:0px;right:0px;bottom:0px;z-index:1000;background-color:#000000}body.mw-mmv-lightbox-open{overflow-y:auto}body.mw-mmv-lightbox-open #mw-page-base,body.mw-mmv-lightbox-open #mw-head-base,body.mw-mmv-lightbox-open #mw-navigation,body.mw-mmv-lightbox-open #content,body.mw-mmv-lightbox-open #footer,body.mw-mmv-lightbox-open #globalWrapper{ display:none}body.mw-mmv-lightbox-open > *{ display:none}body.mw-mmv-lightbox-open > .mw-mmv-overlay,body.mw-mmv-lightbox-open > .mw-mmv-wrapper{display:block}.mw-mmv-filepage-buttons{margin-top:5px}.mw-mmv-filepage-buttons .mw-mmv-view-expanded,.mw-mmv-filepage-buttons .mw-mmv-view-config{display:block}.mw-mmv-filepage-buttons .mw-mmv-view-expanded.mw-ui-icon:before{background-image:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%20768%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22%23777%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M851.2%2071.6L690.7%20232.1l-40.1-40.3-9.6%20164.8%20164.8-9.3-40.3-40.4L926%20146.4l58.5%2058.5L997.6%200%20792.7%2013.1%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M769.6%2089.3H611.9l70.9%2070.8%207.9%207.5m-47.1%20234.6l-51.2%203%203-51.2%209.4-164.4%205.8-100.3H26.4V768h883.1V387l-100.9%205.8-165%209.4zM813.9%20678H113.6l207.2-270.2%2031.5-12.9L548%20599.8l105.9-63.2%20159.8%20140.8.2.6zm95.6-291.9V228l-79.1%2078.9%207.8%207.9%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A);background-image:url(//de.wikipedia.org/static/1.27.0-wmf.10/extensions/MultimediaViewer/resources/mmv/img/expand.svg?b714e)!ie}.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before{background-image:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%20768%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M897%20454.6V313.4L810.4%20299c-6.4-23.3-16-45.7-27.3-65.8l50.5-71.4-99.4-100.2-71.4%2050.5c-20.9-11.2-42.5-20.9-65.8-27.3L582.6-1H441.4L427%2085.6c-23.3%206.4-45.7%2016-65.8%2027.3l-71.4-50.5-100.3%2099.5%2050.5%2071.4c-11.2%2020.9-20.9%2042.5-27.3%2066.6L127%20313.4v141.2l85.8%2014.4c6.4%2023.3%2016%2045.7%2027.3%2066.6L189.6%20607l99.5%2099.5%2071.4-50.5c20.9%2011.2%2042.5%2020.9%2066.6%2027.3l14.4%2085.8h141.2l14.4-86.6c23.3-6.4%2045.7-16%2065.8-27.3l71.4%2050.5%2099.5-99.5-50.5-71.4c11.2-20.9%2020.9-42.5%2027.3-66.6l86.4-13.6zm-385%2077c-81.8%200-147.6-66.6-147.6-147.6%200-81.8%2066.6-147.6%20147.6-147.6S659.6%20302.2%20659.6%20384%20593.8%20531.6%20512%20531.6z%22%20fill%3D%22%23777%22%2F%3E%0A%3C%2Fsvg%3E%0A);background-image:url(//de.wikipedia.org/static/1.27.0-wmf.10/extensions/MultimediaViewer/resources/mmv/img/gear_gray.svg?330ae)!ie;opacity:0.75}.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before:hover{opacity:1}</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="./PL_SQL – Wikipedia_files/load(1).php">
+<script async="" src="./PL_SQL – Wikipedia_files/load(2).php"></script>
+<meta name="generator" content="MediaWiki 1.27.0-wmf.12">
+<link rel="alternate" href="android-app://org.wikipedia/http/de.m.wikipedia.org/wiki/PL/SQL">
+<link rel="alternate" type="application/x-wiki" title="Seite bearbeiten" href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit">
+<link rel="edit" title="Seite bearbeiten" href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit">
+<link rel="apple-touch-icon" href="https://de.wikipedia.org/static/apple-touch/wikipedia.png">
+<link rel="shortcut icon" href="https://de.wikipedia.org/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://de.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (de)">
+<link rel="EditURI" type="application/rsd+xml" href="https://de.wikipedia.org/w/api.php?action=rsd">
+<link rel="copyright" href="https://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="canonical" href="https://de.wikipedia.org/wiki/PL/SQL">
+<link rel="dns-prefetch" href="https://meta.wikimedia.org/">
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.27.0-wmf.12/skins/Vector/csshover.min.htc")}</style><![endif]-->
+<script src="./PL_SQL – Wikipedia_files/load(3).php"></script></head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns ns-0 ns-subject page-PL_SQL skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><div id="centralNotice"></div><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="de">PL/SQL</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">aus Wikipedia, der freien Enzyklopädie</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Wechseln zu:					<a href="https://de.wikipedia.org/wiki/PL/SQL#mw-head">Navigation</a>, 					<a href="https://de.wikipedia.org/wiki/PL/SQL#p-search">Suche</a>
+				</div>
+				<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><table cellspacing="5" class="float-right infobox toccolours toptextcells" style="font-size:90%; margin-top:0; width:21em;">
+<tbody><tr>
+<th class="hintergrundfarbe6" colspan="2" style="font-size:larger;">PL/SQL</th>
+</tr>
+<tr>
+<td><b><a href="https://de.wikipedia.org/wiki/Programmierparadigma" title="Programmierparadigma">Paradigmen</a>:</b></td>
+<td>prozedural</td>
+</tr>
+<tr>
+<td><b>Erscheinungsjahr:</b></td>
+<td>1991</td>
+</tr>
+<tr>
+<td><b>Entwickler:</b></td>
+<td><a href="https://de.wikipedia.org/wiki/Oracle" title="Oracle">Oracle</a></td>
+</tr>
+<tr>
+<td><b>Aktuelle&nbsp;<a href="https://de.wikipedia.org/wiki/Version_(Software)" title="Version (Software)">Version</a>:</b></td>
+<td style="white-space:nowrap;">10.2 &nbsp;<small>(2005)</small></td>
+</tr>
+<tr>
+<td><b><a href="https://de.wikipedia.org/wiki/Typisierung_(Informatik)" title="Typisierung (Informatik)">Typisierung</a>:</b></td>
+<td><a href="https://de.wikipedia.org/wiki/Starke_Typisierung" title="Starke Typisierung">stark</a>, <a href="https://de.wikipedia.org/wiki/Statische_Typisierung" title="Statische Typisierung">statisch</a>, <a href="https://de.wikipedia.org/w/index.php?title=Explizite_Typisierung&amp;action=edit&amp;redlink=1" class="new" title="Explizite Typisierung (Seite nicht vorhanden)">explizit</a></td>
+</tr>
+<tr>
+<td><b>Beeinflusst von:</b></td>
+<td><a href="https://de.wikipedia.org/wiki/COBOL" title="COBOL">COBOL</a>, <a href="https://de.wikipedia.org/wiki/PL/I" title="PL/I">PL/I</a>, <a href="https://de.wikipedia.org/wiki/Ada_(Programmiersprache)" title="Ada (Programmiersprache)">Ada</a></td>
+</tr>
+<tr>
+<td><b><a href="https://de.wikipedia.org/wiki/Betriebssystem" title="Betriebssystem">Betriebssystem</a>:</b></td>
+<td><a href="https://de.wikipedia.org/wiki/Plattformunabh%C3%A4ngigkeit" title="Plattformunabhängigkeit">plattformunabhängig</a></td>
+</tr>
+<tr>
+<td><b><a href="https://de.wikipedia.org/wiki/Lizenz" title="Lizenz">Lizenz</a>:</b></td>
+<td>proprietär</td>
+</tr>
+<tr>
+<td colspan="2" class="hintergrundfarbe5" style="text-align:center;"><a rel="nofollow" class="external text" href="http://technet.oracle.com/">Oracle Technology Network</a></td>
+</tr>
+</tbody></table>
+<p><b>PL/SQL</b> (<b>P</b>rocedural <b>L</b>anguage/<b>S</b>tructured <b>Q</b>uery <b>L</b>anguage) ist eine <a href="https://de.wikipedia.org/wiki/Propriet%C3%A4r" title="Proprietär">proprietäre</a> <a href="https://de.wikipedia.org/wiki/Programmiersprache" title="Programmiersprache">Programmiersprache</a> der Firma <a href="https://de.wikipedia.org/wiki/Oracle" title="Oracle">Oracle</a>.</p>
+<p>PL/SQL verbindet die <a href="https://de.wikipedia.org/wiki/Abfragesprache" title="Abfragesprache">Abfragesprache</a> <a href="https://de.wikipedia.org/wiki/SQL" title="SQL">SQL</a> mit einer <a href="https://de.wikipedia.org/wiki/Prozedurale_Programmierung" title="Prozedurale Programmierung">prozeduralen</a> Programmiersprache. Die Syntax ist stark an die Programmiersprache <a href="https://de.wikipedia.org/wiki/Ada_(Programmiersprache)" title="Ada (Programmiersprache)">Ada</a> angelehnt.</p>
+<p>Unterstützt werden <a href="https://de.wikipedia.org/wiki/Variable_(Programmierung)" title="Variable (Programmierung)">Variablen</a>, <a href="https://de.wikipedia.org/wiki/Verzweigung_(Programmierung)" title="Verzweigung (Programmierung)" class="mw-redirect">Bedingungen</a>, <a href="https://de.wikipedia.org/wiki/Schleife_(Programmierung)" title="Schleife (Programmierung)">Schleifen</a> und <a href="https://de.wikipedia.org/wiki/Ausnahmebehandlung" title="Ausnahmebehandlung">Ausnahmebehandlungen</a>. Ab Version acht des <a href="https://de.wikipedia.org/wiki/Oracle_(Datenbanksystem)" title="Oracle (Datenbanksystem)">Oracle-RDBMS</a> halten auch <a href="https://de.wikipedia.org/wiki/Objektorientierung" title="Objektorientierung">objektorientierte</a> Merkmale Einzug.</p>
+<p>PL/SQL ist für das Arbeiten mit <a href="https://de.wikipedia.org/wiki/Oracle_(Datenbanksystem)" title="Oracle (Datenbanksystem)">Oracle-Datenbanken</a> ausgelegt. Insbesondere kann man im Quelltext SQL-Befehle nach dem Oracle-Standard einfügen. Dabei werden die SQL-Anweisungen nicht als Zeichenketten erzeugt und an eine Datenbankschnittstelle übergeben (wie z.&nbsp;B. bei <a href="https://de.wikipedia.org/wiki/Open_Database_Connectivity" title="Open Database Connectivity">ODBC</a>, <a href="https://de.wikipedia.org/wiki/Java_Database_Connectivity" title="Java Database Connectivity">JDBC</a> u.&nbsp;ä.), sondern fügen sich nahtlos in den Programmcode ein. Die Syntax kann damit bereits zum Zeitpunkt der Kompilierung überprüft werden.</p>
+<p>Die <a href="https://de.wikipedia.org/wiki/Gespeicherte_Prozedur" title="Gespeicherte Prozedur">prozedurale Erweiterung</a> der SQL-Abfragesprache wird inzwischen auch von vielen anderen Datenbankherstellern implementiert. Daher wurde diese prozedurale SQL-Erweiterung inzwischen vom <a href="https://de.wikipedia.org/wiki/American_National_Standards_Institute" title="American National Standards Institute">ANSI-Gremium</a> standardisiert.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+<span class="toctoggle">&nbsp;[<a href="https://de.wikipedia.org/wiki/PL/SQL#" id="togglelink">Verbergen</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="https://de.wikipedia.org/wiki/PL/SQL#Verwendung"><span class="tocnumber">1</span> <span class="toctext">Verwendung</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="https://de.wikipedia.org/wiki/PL/SQL#Grundlegender_Aufbau"><span class="tocnumber">2</span> <span class="toctext">Grundlegender Aufbau</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="https://de.wikipedia.org/wiki/PL/SQL#Variablendefinitionen"><span class="tocnumber">3</span> <span class="toctext">Variablendefinitionen</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="https://de.wikipedia.org/wiki/PL/SQL#Zahlenvariablen"><span class="tocnumber">3.1</span> <span class="toctext">Zahlenvariablen</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="https://de.wikipedia.org/wiki/PL/SQL#Textvariablen"><span class="tocnumber">3.2</span> <span class="toctext">Textvariablen</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="https://de.wikipedia.org/wiki/PL/SQL#Boolean"><span class="tocnumber">3.3</span> <span class="toctext">Boolean</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="https://de.wikipedia.org/wiki/PL/SQL#Datum"><span class="tocnumber">3.4</span> <span class="toctext">Datum</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="https://de.wikipedia.org/wiki/PL/SQL#Datentyp_.C3.BCber_Spalte_festlegen"><span class="tocnumber">3.5</span> <span class="toctext">Datentyp über Spalte festlegen</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="https://de.wikipedia.org/wiki/PL/SQL#Datentyp_.C3.BCber_Tabelle_festlegen"><span class="tocnumber">3.6</span> <span class="toctext">Datentyp über Tabelle festlegen</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="https://de.wikipedia.org/wiki/PL/SQL#G.C3.BCltigkeitsbereich_von_Variablen"><span class="tocnumber">3.7</span> <span class="toctext">Gültigkeitsbereich von Variablen</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="https://de.wikipedia.org/wiki/PL/SQL#Konstanten"><span class="tocnumber">3.8</span> <span class="toctext">Konstanten</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="https://de.wikipedia.org/wiki/PL/SQL#Benutzerdefinierte_Datentypen"><span class="tocnumber">4</span> <span class="toctext">Benutzerdefinierte Datentypen</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="https://de.wikipedia.org/wiki/PL/SQL#Schleifen"><span class="tocnumber">5</span> <span class="toctext">Schleifen</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="https://de.wikipedia.org/wiki/PL/SQL#Loop-Schleife_.28Basisschleife.29"><span class="tocnumber">5.1</span> <span class="toctext">Loop-Schleife (Basisschleife)</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="https://de.wikipedia.org/wiki/PL/SQL#While-Schleife"><span class="tocnumber">5.2</span> <span class="toctext">While-Schleife</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="https://de.wikipedia.org/wiki/PL/SQL#For-Schleife"><span class="tocnumber">5.3</span> <span class="toctext">For-Schleife</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="https://de.wikipedia.org/wiki/PL/SQL#Cursor-For-Schleife"><span class="tocnumber">5.4</span> <span class="toctext">Cursor-For-Schleife</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="https://de.wikipedia.org/wiki/PL/SQL#Bedingungen"><span class="tocnumber">6</span> <span class="toctext">Bedingungen</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="https://de.wikipedia.org/wiki/PL/SQL#IF-THEN-ELSE"><span class="tocnumber">6.1</span> <span class="toctext">IF-THEN-ELSE</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="https://de.wikipedia.org/wiki/PL/SQL#CASE-WHEN"><span class="tocnumber">6.2</span> <span class="toctext">CASE-WHEN</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-21"><a href="https://de.wikipedia.org/wiki/PL/SQL#Exception-Handling"><span class="tocnumber">7</span> <span class="toctext">Exception-Handling</span></a>
+<ul>
+<li class="toclevel-2 tocsection-22"><a href="https://de.wikipedia.org/wiki/PL/SQL#Vordefinierte_Exceptions"><span class="tocnumber">7.1</span> <span class="toctext">Vordefinierte Exceptions</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="https://de.wikipedia.org/wiki/PL/SQL#Benutzerdefinierte_Exceptions"><span class="tocnumber">7.2</span> <span class="toctext">Benutzerdefinierte Exceptions</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="https://de.wikipedia.org/wiki/PL/SQL#Exceptionblock"><span class="tocnumber">7.3</span> <span class="toctext">Exceptionblock</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-25"><a href="https://de.wikipedia.org/wiki/PL/SQL#Vergleich_mit_T-SQL"><span class="tocnumber">8</span> <span class="toctext">Vergleich mit T-SQL</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="https://de.wikipedia.org/wiki/PL/SQL#Vergleichbare_M.C3.B6glichkeiten_der_Programmierung_bei_anderen_Datenbanken"><span class="tocnumber">9</span> <span class="toctext">Vergleichbare Möglichkeiten der Programmierung bei anderen Datenbanken</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="https://de.wikipedia.org/wiki/PL/SQL#Weblinks"><span class="tocnumber">10</span> <span class="toctext">Weblinks</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="https://de.wikipedia.org/wiki/PL/SQL#Einzelnachweise"><span class="tocnumber">11</span> <span class="toctext">Einzelnachweise</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Verwendung">Verwendung</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=1" title="Abschnitt bearbeiten: Verwendung">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Man kann PL/SQL-Code wie SQL-Befehle über ein Datenbank-<a href="https://de.wikipedia.org/wiki/Frontend_und_Backend" title="Frontend und Backend" class="mw-redirect">Frontend</a> absetzen, der dann direkt abgearbeitet wird.</li>
+<li>Man kann einzelne Unterprogramme (<a href="https://de.wikipedia.org/wiki/Stored_Procedure" title="Stored Procedure" class="mw-redirect">Stored Procedures</a>) oder Bibliotheken mehrerer Unterprogramme (Stored Packages) als dauerhafte <a href="https://de.wikipedia.org/wiki/Datenbankobjekt" title="Datenbankobjekt">Datenbankobjekte</a> auf dem Datenbankserver speichern und damit die Funktionalität der Datenbank erweitern; jeder Benutzer der Datenbank kann diese Unterprogramme aufrufen und nutzen. Die Berechtigungen können für jedes einzelne PL/SQL-Paket an einzelne Benutzer oder Benutzergruppen (sogenannte „Rollen“) vergeben werden.</li>
+<li>Programmierung von <a href="https://de.wikipedia.org/wiki/Datenbanktrigger" title="Datenbanktrigger">Datenbanktriggern</a></li>
+<li>Programmierung in diversen Tools (<a href="https://de.wikipedia.org/wiki/Forms" title="Forms" class="mw-redirect">Oracle-Forms</a>, Oracle-Reports)</li>
+</ul>
+<p>PL/SQL-Programme können die Performance verbessern, wenn der Aufruf von einem Applikationsserver ausgeführt wird, der über eine langsame Netzwerkverbindung mit dem Datenbankserver verbunden ist. So muss in diesem Fall nur zu Beginn und am Ende der Ausführung eine Nachricht über das Netzwerk transportiert werden. Es gibt aber auch andere Möglichkeiten, bei einem langsamen Netzwerk die Performance einer Applikation zu verbessern. So kann z.&nbsp;B. die Oracle-Datenbank auch Java-Programme ausführen, die die Datenbank-Manipulationen vornehmen.</p>
+<h2><span class="mw-headline" id="Grundlegender_Aufbau">Grundlegender Aufbau</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=2" title="Abschnitt bearbeiten: Grundlegender Aufbau">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><b>PL/SQL</b> Programme bestehen aus Blöcken:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="k">declare</span>
+      <span class="c1">-- Deklarationsblock</span>
+  <span class="k">begin</span>
+     <span class="c1">-- Ausführungsteil</span>
+  <span class="k">exception</span>
+     <span class="c1">-- Ausnahmeverarbeitung</span>
+  <span class="k">end</span><span class="p">;</span>
+
+  <span class="cm">/* So kommentiert man</span>
+<span class="cm">  mehrzeilig */</span>
+  <span class="c1">--So kommentiert man einzeilig</span>
+</pre></div>
+<h2><span class="mw-headline" id="Variablendefinitionen">Variablendefinitionen</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=3" title="Abschnitt bearbeiten: Variablendefinitionen">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Variablen werden im (optionalen) Deklarationsabschnitt definiert und optional initialisiert.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="k">declare</span>
+      <span class="n">zahl1</span> <span class="nb">number</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+      <span class="n">zahl2</span> <span class="nb">number</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="p">:</span><span class="o">=</span> <span class="mi">17</span><span class="p">;</span>
+      <span class="nb">text</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="p">:</span><span class="o">=</span> <span class="s1">'Das ist ein Text'</span><span class="p">;</span>
+  <span class="k">begin</span>
+      <span class="k">select</span> <span class="n">hausnummer</span> <span class="k">into</span> <span class="n">zahl1</span> <span class="k">from</span> <span class="n">Adressverzeichnis</span> <span class="k">where</span> <span class="n">name</span><span class="o">=</span><span class="s1">'Meier'</span> <span class="k">AND</span> <span class="n">rownum</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+  <span class="k">end</span><span class="p">;</span>
+</pre></div>
+<p><tt>:=</tt> ist der Zuweisungsoperator, mit dem man einer Variable einen Wert zuweist.</p>
+<h3><span class="mw-headline" id="Zahlenvariablen">Zahlenvariablen</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=4" title="Abschnitt bearbeiten: Zahlenvariablen">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="n">variablenname</span> <span class="nb">number</span><span class="p">(</span><span class="n">P</span><span class="p">[,</span><span class="n">S</span><span class="p">])</span> <span class="p">:</span><span class="o">=</span> <span class="n">Wert</span><span class="p">;</span>
+</pre></div>
+<p>Um eine Zahlenvariable zu definieren, schreibt man zum Beispiel den Variablennamen, gefolgt vom Variablentyp <tt>NUMBER</tt>.</p>
+<p>Hinter diesem schreibt man in runden Klammern die Genauigkeit <tt>P</tt> sowie optional ein Komma und die Anzahl an Nachkommastellen <tt>S</tt>.</p>
+<p>Genauigkeit entspricht in diesem Fall der Anzahl an Stellen, welche die Variable enthalten kann, und <i>nicht</i> dem Wertebereich.</p>
+<p>Auswahl weiterer Datentypen für Zahlenvariablen:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="nb">dec</span><span class="p">,</span> <span class="nb">decimal</span><span class="p">,</span> <span class="n">double</span> <span class="k">precision</span><span class="p">,</span> <span class="nb">integer</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">numeric</span><span class="p">,</span> <span class="nb">real</span><span class="p">,</span> <span class="nb">smallint</span><span class="p">,</span> <span class="n">binary_integer</span><span class="p">,</span> <span class="n">pls_integer</span>
+</pre></div>
+<h3><span class="mw-headline" id="Textvariablen">Textvariablen</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=5" title="Abschnitt bearbeiten: Textvariablen">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="n">variablenname</span> <span class="nb">varchar</span><span class="p">(</span><span class="n">L</span><span class="p">)</span> <span class="p">:</span><span class="o">=</span> <span class="s1">'Text'</span><span class="p">;</span>
+</pre></div>
+<p>Um eine Textvariable zu definieren, schreibt man den Variablennamen gefolgt vom Variablentyp <tt>VARCHAR</tt>.</p>
+<p>Hinter diesem schreibt man die Anzahl der Zeichen, die in der Variable gespeichert werden können, in Klammern.</p>
+<p>Auswahl weiterer Datentypen für Textvariablen:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="nb">varchar</span><span class="p">,</span> <span class="n">varchar2</span><span class="p">,</span> <span class="nb">char</span><span class="p">,</span> <span class="n">long</span><span class="p">,</span> <span class="n">raw</span><span class="p">,</span> <span class="n">long</span> <span class="n">raw</span><span class="p">,</span> <span class="k">nchar</span><span class="p">,</span> <span class="n">nchar2</span><span class="p">,</span> <span class="k">clob</span>
+</pre></div>
+<h3><span class="mw-headline" id="Boolean">Boolean</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=6" title="Abschnitt bearbeiten: Boolean">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="n">variablenname</span> <span class="nb">boolean</span><span class="p">:</span><span class="o">=</span> <span class="k">true</span><span class="p">;</span>
+</pre></div>
+<p>Kann <tt>TRUE</tt>, <tt>FALSE</tt> oder <tt>NULL</tt> sein.</p>
+<h3><span class="mw-headline" id="Datum">Datum</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=7" title="Abschnitt bearbeiten: Datum">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="n">variablenname</span> <span class="nb">date</span> <span class="p">:</span><span class="o">=</span> <span class="n">to_date</span><span class="p">(</span> <span class="s1">'01.01.2005'</span> <span class="p">,</span> <span class="s1">'DD.MM.YYYY'</span><span class="p">);</span>
+</pre></div>
+<p>Um eine Datumsvariable zu definieren schreibt man den Variablennamen gefolgt vom Variablentyp <tt>DATE</tt>. Die Funktion <tt>TO_DATE</tt> wandelt den Text zwischen den ersten Hochkommas in ein Datum mit dem angegebenen Format zwischen den zweiten Hochkommas um. Um ein Datum in einen Text zu konvertieren, gibt es die Funktion <tt>TO_CHAR(Datum)</tt>. Neben dem Datentyp <tt>date</tt> gibt es noch den Datentyp <tt>timestamp</tt>, der eine größere Präzision hat. Hierzu gibt es weitere Subtypen: <tt>timestamp with time zone</tt> speichert die Zeitzone mit den Zeitinformationen, <tt>timestamp with local timezone</tt> konvertiert jeweils von der Zeitzone der Session in die lokale Zeitzone des Datenbankservers.</p>
+<h3><span class="mw-headline" id="Datentyp_.C3.BCber_Spalte_festlegen">Datentyp über Spalte festlegen</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=8" title="Abschnitt bearbeiten: Datentyp über Spalte festlegen">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="n">Variablenname</span> <span class="n">Tabellenname</span><span class="p">.</span><span class="n">Spaltenname</span><span class="o">%</span><span class="k">type</span><span class="p">;</span>
+</pre></div>
+<p>Definiert eine Variable des Typs der angegebenen Spalte.</p>
+<h3><span class="mw-headline" id="Datentyp_.C3.BCber_Tabelle_festlegen">Datentyp über Tabelle festlegen</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=9" title="Abschnitt bearbeiten: Datentyp über Tabelle festlegen">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="n">Variablenname</span> <span class="n">Tabellenname</span><span class="o">%</span><span class="n">rowtype</span><span class="p">;</span>
+</pre></div>
+<p>Definiert eine Variable für einen Datensatz/Row des Typs der angegebenen Tabelle.</p>
+<p>Beispiel:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>    <span class="k">CURSOR</span> <span class="k">cursor_name</span> <span class="k">IS</span>
+        <span class="k">SELECT</span> <span class="o">*</span>
+        <span class="k">FROM</span> <span class="n">tabelle</span><span class="p">;</span>
+
+    <span class="k">variable</span> <span class="n">tabelle</span><span class="o">%</span><span class="n">rowtype</span><span class="p">;</span>
+
+    <span class="p">...</span>
+
+    <span class="k">FOR</span> <span class="n">i</span> <span class="k">IN</span> <span class="k">cursor_name</span> <span class="n">LOOP</span>
+        <span class="k">variable</span> <span class="p">:</span><span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+        <span class="n">andere_variable</span> <span class="p">:</span><span class="o">=</span> <span class="k">variable</span><span class="p">.</span><span class="n">SPALTENNAME</span><span class="p">;</span>
+    <span class="k">END</span> <span class="n">LOOP</span><span class="p">;</span>
+</pre></div>
+<h3><span class="mw-headline" id="G.C3.BCltigkeitsbereich_von_Variablen">Gültigkeitsbereich von Variablen</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=10" title="Abschnitt bearbeiten: Gültigkeitsbereich von Variablen">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>PL/SQL erlaubt es, Blöcke zu verschachteln. Variablen, die in äußeren Blöcken deklariert werden, sind in allen inneren Blöcken gültig. Variablen, die in inneren Blöcken deklariert werden, sind nicht in äußeren Blöcken gültig.</p>
+<p>Je nachdem, wo Variablen deklariert werden, kann man zwischen zwei Arten unterscheiden.</p>
+<ul>
+<li>Lokale Variablen - Diese werden in einem inneren Block deklariert. Von außen kann nicht darauf zugegriffen werden.</li>
+<li>Globale Variablen - Diese werden in einem äußeren Block deklariert, und es kann von außen und innen darauf zugegriffen werden.</li>
+</ul>
+<p>In folgendem Beispiel werden zwei Variablen deklariert, und die Summe derer wird in einem inneren Block einer dritten Variable zugewiesen. Auf die Variablen <tt>var_num1</tt> und <tt>var_num2</tt> kann von überall des Blocks aus zugegriffen werden. Auf die Variable <tt>var_result</tt> dagegen, welche im inneren Block deklariert wurde, kann von außerhalb nicht zugegriffen werden.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre><span class="k">DECLARE</span>
+  <span class="n">var_num1</span> <span class="nb">NUMBER</span><span class="p">;</span>
+  <span class="n">var_num2</span> <span class="nb">NUMBER</span><span class="p">;</span>
+<span class="k">BEGIN</span> 
+  <span class="n">var_num1</span> <span class="p">:</span><span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="n">var_num2</span> <span class="p">:</span><span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
+  <span class="k">DECLARE</span> 
+    <span class="n">var_result</span> <span class="nb">NUMBER</span><span class="p">;</span>
+  <span class="k">BEGIN</span>
+    <span class="n">var_result</span> <span class="p">:</span><span class="o">=</span> <span class="n">var_num1</span> <span class="o">+</span> <span class="n">var_num2</span><span class="p">;</span>
+  <span class="k">END</span><span class="p">;</span>
+  <span class="cm">/* Auf var_result kann hier nicht zugegriffen werden */</span>
+<span class="k">END</span><span class="p">;</span>
+</pre></div>
+<h3><span class="mw-headline" id="Konstanten">Konstanten</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=11" title="Abschnitt bearbeiten: Konstanten">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Wie der Name schon sagt, ist eine Konstante ein Wert in einem PL/SQL Block, der sich während des Programmablaufes nicht verändert.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre><span class="k">DECLARE</span> 
+  <span class="n">konstantenname</span> <span class="n">CONSTANT</span> <span class="nb">NUMBER</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">:</span><span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</pre></div>
+<p>Die Wertzuweisung einer Konstante muss direkt bei der Deklaration erfolgen.</p>
+<h2><span class="mw-headline" id="Benutzerdefinierte_Datentypen">Benutzerdefinierte Datentypen</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=12" title="Abschnitt bearbeiten: Benutzerdefinierte Datentypen">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Benutzerdefinierte Datentypen werden definiert mit Hilfe von:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="k">type</span> <span class="n">datentyp</span> <span class="k">is</span> <span class="n">record</span><span class="p">(</span><span class="n">feld1</span> <span class="n">typ1</span> <span class="p">[:</span><span class="o">=</span><span class="n">xyz</span><span class="p">],</span> <span class="n">feld2</span> <span class="n">typ2</span> <span class="p">[:</span><span class="o">=</span><span class="n">xyz</span><span class="p">],</span> <span class="p">...,</span> <span class="n">feldn</span> <span class="n">typn</span> <span class="p">[:</span><span class="o">=</span><span class="n">xyz</span><span class="p">]);</span>
+</pre></div>
+<p><b>Beispiel:</b></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="k">declare</span>
+    <span class="k">type</span> <span class="n">t_adresse</span> <span class="k">is</span> <span class="n">record</span><span class="p">(</span>
+        <span class="n">hausname</span> <span class="n">adresse</span><span class="p">.</span><span class="n">hausname</span><span class="o">%</span><span class="k">type</span><span class="p">,</span>
+        <span class="n">strasse</span> <span class="n">adresse</span><span class="p">.</span><span class="n">strasse</span><span class="o">%</span><span class="k">type</span><span class="p">,</span>
+        <span class="n">hausnummer</span> <span class="n">adresse</span><span class="p">.</span><span class="n">hausnummer</span><span class="o">%</span><span class="k">type</span><span class="p">,</span>
+        <span class="n">postleitzahl</span> <span class="n">adresse</span><span class="p">.</span><span class="n">postleitzahl</span><span class="o">%</span><span class="k">type</span><span class="p">);</span>
+    <span class="n">v_adresse</span> <span class="n">t_adresse</span><span class="p">;</span>
+  <span class="k">begin</span>
+    <span class="k">select</span> <span class="n">hausname</span><span class="p">,</span> <span class="n">strasse</span><span class="p">,</span> <span class="n">hausnummer</span><span class="p">,</span> <span class="n">postleitzahl</span> <span class="k">into</span> <span class="n">v_adresse</span> <span class="k">from</span> <span class="n">adresse</span> <span class="k">where</span> <span class="n">rownum</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="k">end</span><span class="p">;</span>
+</pre></div>
+<p>Das Beispielprogramm definiert einen eigenen Datentyp mit Namen <tt>t_adresse</tt>, welcher die Felder <tt>hausname</tt>, <tt>strasse</tt>, <tt>hausnummer</tt> und <tt>postleitzahl</tt> enthält.</p>
+<p>Mit diesem Datentyp wird eine Variable <tt>v_adresse</tt> definiert, welche mit einem Datensatz aus der Tabelle <tt>adresse</tt> gefüllt wird.</p>
+<p>Mittels Punktnotation kann auf die Attribute zurückgegriffen werden</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="n">v_adresse</span><span class="p">.</span><span class="n">hausname</span> <span class="p">:</span><span class="o">=</span> <span class="s1">'Nollenburgerweg 115'</span><span class="p">;</span>
+</pre></div>
+<h2><span class="mw-headline" id="Schleifen">Schleifen</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=13" title="Abschnitt bearbeiten: Schleifen">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Schleifen wiederholen die in ihrem Rumpf enthaltenen Anweisungen.</p>
+<h3><span class="mw-headline" id="Loop-Schleife_.28Basisschleife.29">Loop-Schleife (Basisschleife)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=14" title="Abschnitt bearbeiten: Loop-Schleife (Basisschleife)">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="n">loop</span>
+    <span class="p">...</span>
+    <span class="n">exit</span> <span class="k">when</span> <span class="n">BEDINGUNG</span><span class="p">;</span>
+  <span class="k">end</span> <span class="n">loop</span><span class="p">;</span>
+</pre></div>
+<p>Die <tt>loop</tt>-Schleife wiederholt die in ihrem Körper enthaltenen Anweisungen. Sie kann durch ein <tt>exit when</tt> gefolgt von einer Abbruchbedingung beendet werden.</p>
+<p><b>Beachte:</b> Auch wenn die Bedingung für das <tt>exit</tt> erfüllt ist, werden die Anweisungen, die im Schleifenkörper vor der <tt>exit</tt>-Anweisung stehen, mindestens einmal ausgeführt.</p>
+<h3><span class="mw-headline" id="While-Schleife">While-Schleife</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=15" title="Abschnitt bearbeiten: While-Schleife">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="n">while</span> <span class="n">Bedingung</span> <span class="n">loop</span>
+    <span class="p">...</span>
+  <span class="k">end</span> <span class="n">loop</span><span class="p">;</span>
+</pre></div>
+<p>Die <tt>while</tt>-Schleife wiederholt die in ihrem Körper enthaltenen Anweisungen, so lange die Bedingung in ihrem Kopf erfüllt ist.</p>
+<p><b>Beachte:</b> Sollte die Bedingung im Kopf nicht erfüllt sein, werden die Anweisungen im Schleifenkörper nie ausgeführt.</p>
+<h3><span class="mw-headline" id="For-Schleife">For-Schleife</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=16" title="Abschnitt bearbeiten: For-Schleife">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="k">for</span> <span class="n">v_counter</span> <span class="k">in</span> <span class="mi">1</span><span class="p">..</span><span class="mi">10</span> <span class="n">loop</span>
+    <span class="p">...</span>
+  <span class="k">end</span> <span class="n">loop</span><span class="p">;</span>
+</pre></div>
+<p>Die <tt>for</tt>-Schleife zählt eine Indexvariable von einem festgelegten Startwert bis zu einem festgelegten Endwert. Der kleinere Wert steht immer links, der größere immer rechts. Gibt man das Schlüsselwort <tt>REVERSE</tt> nach dem <tt>IN</tt> an, so wird vom größeren zum kleineren Wert heruntergezählt.</p>
+<p><b>Beachte:</b> Auch hierbei muss der kleinere Wert links und der größere Wert rechts stehen.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="k">begin</span>
+     <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="n">reverse</span> <span class="mi">1</span> <span class="p">..</span> <span class="mi">5</span> <span class="n">loop</span>
+      <span class="n">dbms_output</span><span class="p">.</span><span class="n">put_line</span><span class="p">(</span><span class="n">to_char</span><span class="p">(</span><span class="n">i</span><span class="p">));</span>
+     <span class="k">end</span> <span class="n">loop</span><span class="p">;</span>
+  <span class="k">end</span><span class="p">;</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  5
+  4
+  3
+  2
+  1
+</pre></div>
+<p><b>Hinweis:</b> Wenn Sie beim Arbeiten mit SQL*Plus die erwarteten Zahlen 5 bis 1 nicht sehen, müssen Sie vorher die Ausgabe einschalten.</p>
+<dl>
+<dd>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="k">set</span> <span class="n">serveroutput</span> <span class="k">on</span>
+</pre></div>
+</dd>
+</dl>
+<h3><span class="mw-headline" id="Cursor-For-Schleife">Cursor-For-Schleife</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=17" title="Abschnitt bearbeiten: Cursor-For-Schleife">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="k">for</span> <span class="n">Record</span><span class="o">-</span><span class="k">Index</span> <span class="k">in</span> <span class="p">(</span><span class="k">Select</span> <span class="n">Mitarbeiter_Nummer</span> <span class="k">from</span> <span class="n">Personaltabelle</span><span class="p">)</span>
+  <span class="n">loop</span>
+    <span class="p">...</span>
+  <span class="k">end</span> <span class="n">loop</span><span class="p">;</span>
+</pre></div>
+<p>Die Cursor <tt>for</tt>-Schleife öffnet automatisch den Cursor, liest die Datensätze ein und schließt den Cursor wieder.</p>
+<p>Alternativ dazu kann das <tt>SELECT</tt>-Statement des Cursors auch vorher definiert werden, um es mehrfach zu verwenden bzw. um die Darstellung übersichtlicher zu gestalten (besonders bei längeren/komplexeren Abfragen von Vorteil).</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="k">cursor</span> <span class="n">cursor_mitarbeiter</span> <span class="k">is</span> 
+
+  <span class="k">Select</span> <span class="n">Mitarbeiter_Nummer</span> <span class="k">from</span> <span class="n">Personaltabelle</span><span class="p">;</span>
+  <span class="k">for</span> <span class="n">Record</span><span class="o">-</span><span class="k">Index</span> <span class="k">in</span> <span class="n">cursor_mitarbeiter</span> 
+
+  <span class="n">loop</span>
+    <span class="p">...</span>
+  <span class="k">end</span> <span class="n">loop</span><span class="p">;</span>
+</pre></div>
+<p>Der Zugriff auf die Mitarbeiter-Nummer innerhalb der <tt>FOR</tt>-Schleife erfolgt mit dem Verbindungsoperator <tt>.</tt>:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="n">Record</span><span class="o">-</span><span class="k">Index</span><span class="p">.</span><span class="n">Mitarbeiter_Nummer</span>
+</pre></div>
+<h2><span class="mw-headline" id="Bedingungen">Bedingungen</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=18" title="Abschnitt bearbeiten: Bedingungen">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Mit Hilfe von Bedingungen kann man auf verschiedene Situationen unterschiedlich reagieren.</p>
+<h3><span class="mw-headline" id="IF-THEN-ELSE">IF-THEN-ELSE</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=19" title="Abschnitt bearbeiten: IF-THEN-ELSE">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="k">declare</span>
+    <span class="n">v_land</span> <span class="n">welt</span><span class="p">.</span><span class="n">land</span><span class="o">%</span><span class="k">type</span><span class="p">;</span>
+  <span class="k">begin</span>
+    <span class="n">dbms_output</span><span class="p">.</span><span class="n">enable</span><span class="p">(</span><span class="mi">20000</span><span class="p">);</span>
+    <span class="k">select</span> <span class="n">land</span> <span class="k">into</span> <span class="n">v_land</span> <span class="k">from</span> <span class="n">welt</span>
+      <span class="k">where</span> <span class="n">rownum</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">if</span> <span class="n">v_land</span> <span class="o">=</span> <span class="mi">39</span> <span class="k">then</span>
+        <span class="n">dbms_output</span><span class="p">.</span><span class="n">put_line</span><span class="p">(</span><span class="s1">'Land ist 39'</span><span class="p">);</span>
+    <span class="n">elsif</span> <span class="n">v_land</span> <span class="o">=</span> <span class="mi">49</span> <span class="k">then</span>
+        <span class="n">dbms_output</span><span class="p">.</span><span class="n">put_line</span><span class="p">(</span><span class="s1">'Land ist 49'</span><span class="p">);</span>
+    <span class="k">else</span>
+        <span class="n">dbms_output</span><span class="p">.</span><span class="n">put_line</span><span class="p">(</span><span class="s1">'Land unbekannt'</span><span class="p">);</span>
+    <span class="k">end</span> <span class="n">if</span><span class="p">;</span>
+  <span class="k">end</span><span class="p">;</span>
+</pre></div>
+<p><tt>if</tt> prüft, ob eine Bedingung erfüllt ist. Ist die Bedingung erfüllt, wird der Code zwischen <tt>if</tt> und <tt>end if</tt> ausgeführt, ansonsten wird er übersprungen. Optional kann mit <tt>elsif</tt> eine weitere Bedingung mit zugehörigem Code angegeben werden, der ausgeführt wird, falls diese Bedingung erfüllt ist. Zu guter Letzt kann man ein allgemeines <tt>else</tt> angeben, dessen Code ausgeführt wird, wenn keine der vorangegangenen Bedingungen erfüllt waren.</p>
+<p>Bedingungsstrukturen kann man zudem mittels des <tt>CASE</tt>-Statements ausdrücken.</p>
+<h3><span class="mw-headline" id="CASE-WHEN">CASE-WHEN</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=20" title="Abschnitt bearbeiten: CASE-WHEN">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="k">DECLARE</span>
+    <span class="n">v_land</span> <span class="n">welt</span><span class="p">.</span><span class="n">land</span><span class="o">%</span><span class="k">TYPE</span><span class="p">;</span>
+  <span class="k">BEGIN</span>
+    <span class="n">DBMS_OUTPUT</span><span class="p">.</span><span class="n">enable</span><span class="p">(</span><span class="mi">20000</span><span class="p">);</span>
+    <span class="k">SELECT</span> <span class="n">land</span> <span class="k">INTO</span> <span class="n">v_land</span> <span class="k">FROM</span> <span class="n">welt</span>
+      <span class="k">WHERE</span> <span class="n">ROWNUM</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">CASE</span> <span class="k">WHEN</span> <span class="n">v_land</span> <span class="o">=</span> <span class="mi">39</span> <span class="k">THEN</span> <span class="n">DBMS_OUTPUT</span><span class="p">.</span><span class="n">put_line</span><span class="p">(</span><span class="s1">'Land ist 39'</span><span class="p">);</span>
+         <span class="k">WHEN</span> <span class="n">v_land</span> <span class="o">=</span> <span class="mi">49</span> <span class="k">THEN</span> <span class="n">DBMS_OUTPUT</span><span class="p">.</span><span class="n">put_line</span><span class="p">(</span><span class="s1">'Land ist 49'</span><span class="p">);</span>
+         <span class="k">WHEN</span> <span class="n">v_land</span> <span class="o">=</span> <span class="mi">59</span> <span class="k">THEN</span> <span class="n">DBMS_OUTPUT</span><span class="p">.</span><span class="n">put_line</span><span class="p">(</span><span class="s1">'Land ist 59'</span><span class="p">);</span>
+                          <span class="k">ELSE</span> <span class="n">DBMS_OUTPUT</span><span class="p">.</span><span class="n">put_line</span><span class="p">(</span><span class="s1">'Land unbekannt'</span><span class="p">);</span>
+    <span class="k">END</span> <span class="k">CASE</span><span class="p">;</span>
+  <span class="k">END</span><span class="p">;</span>
+</pre></div>
+<p>Vereinfachte Form für reine Wertelisten:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="k">DECLARE</span>
+    <span class="n">v_land</span> <span class="n">welt</span><span class="p">.</span><span class="n">land</span><span class="o">%</span><span class="k">TYPE</span><span class="p">;</span>
+  <span class="k">BEGIN</span>
+    <span class="n">DBMS_OUTPUT</span><span class="p">.</span><span class="n">enable</span><span class="p">(</span><span class="mi">20000</span><span class="p">);</span>
+    <span class="k">SELECT</span> <span class="n">land</span> <span class="k">INTO</span> <span class="n">v_land</span> <span class="k">FROM</span> <span class="n">welt</span>
+      <span class="k">WHERE</span> <span class="n">ROWNUM</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">CASE</span> <span class="n">v_land</span>
+       <span class="k">WHEN</span> <span class="mi">39</span> <span class="k">THEN</span> <span class="n">DBMS_OUTPUT</span><span class="p">.</span><span class="n">put_line</span><span class="p">(</span><span class="s1">'Land ist 39'</span><span class="p">);</span>
+       <span class="k">WHEN</span> <span class="mi">49</span> <span class="k">THEN</span> <span class="n">DBMS_OUTPUT</span><span class="p">.</span><span class="n">put_line</span><span class="p">(</span><span class="s1">'Land ist 49'</span><span class="p">);</span>
+       <span class="k">WHEN</span> <span class="mi">59</span> <span class="k">THEN</span> <span class="n">DBMS_OUTPUT</span><span class="p">.</span><span class="n">put_line</span><span class="p">(</span><span class="s1">'Land ist 59'</span><span class="p">);</span>
+               <span class="k">ELSE</span> <span class="n">DBMS_OUTPUT</span><span class="p">.</span><span class="n">put_line</span><span class="p">(</span><span class="s1">'Land unbekannt'</span><span class="p">);</span>
+    <span class="k">END</span> <span class="k">CASE</span><span class="p">;</span>
+  <span class="k">END</span><span class="p">;</span>
+</pre></div>
+<h2><span class="mw-headline" id="Exception-Handling">Exception-Handling</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=21" title="Abschnitt bearbeiten: Exception-Handling">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Es gibt zwei Arten von Exceptions:</p>
+<ul>
+<li>vordefinierte Exceptions und</li>
+<li>benutzerdefinierte Exceptions,</li>
+</ul>
+<p>deren Handling analog ist.</p>
+<h3><span class="mw-headline" id="Vordefinierte_Exceptions">Vordefinierte Exceptions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=22" title="Abschnitt bearbeiten: Vordefinierte Exceptions">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Diese Art von Exceptions werden automatisch von PL/SQL ausgelöst, wenn Fehler bei der Arbeit mit Datenbankobjekten (Tabellen, Views, Packages u.&nbsp;ä.) oder Programmierfehler (bspw. Division durch Null) bei der Abarbeitung des Programms auftreten. Die Exceptions haben vordefinierte Namen, die in PL/SQL-Programmen verwendet werden können. Jede Exception hat einen Fehlercode, der aus den Buchstaben <b>ORA-</b> und 5 Ziffern besteht. Typische Exceptions dieser Art sind</p>
+<p><b>no_data_found (ORA-00100)</b> – Eine SELECT-Anfrage liefert eine leere Datenmenge</p>
+<p><b>too_many_rows (ORA-01422)</b> – Eine SELECT-Anfrage liefert eine Datenmenge mit mehr als einem Satz, an einer Stelle, an der nur ein einzelner Satz als Ergebnis der Anfrage erwartet wurde.</p>
+<h3><span class="mw-headline" id="Benutzerdefinierte_Exceptions">Benutzerdefinierte Exceptions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=23" title="Abschnitt bearbeiten: Benutzerdefinierte Exceptions">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Für die Behandlung logischer Programmfehler können eigene Exceptions in der Form</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="o">&lt;</span><span class="n">exception_name</span><span class="o">&gt;</span> <span class="k">exception</span><span class="p">;</span>
+  <span class="n">pragma</span> <span class="n">exception_init</span><span class="p">(</span><span class="o">&lt;</span><span class="n">exception_name</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">-&lt;</span><span class="n">exception_number</span><span class="o">&gt;</span><span class="p">);</span>
+</pre></div>
+<p>definiert und durch das Kommando</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="n">raise</span> <span class="o">&lt;</span><span class="n">exception_name</span><span class="o">&gt;</span><span class="p">;</span>
+</pre></div>
+<p>ausgelöst werden.</p>
+<h3><span class="mw-headline" id="Exceptionblock">Exceptionblock</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=24" title="Abschnitt bearbeiten: Exceptionblock">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Der Exceptionblock dient dazu, alle Exceptions des dazugehörigen Ausführungsteiles abzufangen. Es besteht damit die Möglichkeit, nach einer Exception eine individuelle Fehlerbehandlung anzuschließen. Zum einen kann der Fehler nach dem Abfangen behandelt werden, danach kann im Programm weitergearbeitet werden; zum anderen kann die Exception an den umschließenden Block weitergereicht werden. Falls die Exception bis zum äußersten Block propagiert wird und dort keine entsprechende Fehlerbehandlung definiert wurde, führt dies zu einem unkontrollierten Abbruch des Programms.</p>
+<p>Der generelle Aufbau eines Exceptionblocks ist folgender:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>  <span class="k">begin</span>
+     <span class="c1">-- Programmcode der eine Exception auslösen kann</span>
+     <span class="n">Ausf</span><span class="err">ü</span><span class="n">hrungsteil</span>
+     <span class="p">...</span>
+  <span class="k">exception</span>
+  <span class="k">when</span> <span class="o">&lt;</span><span class="n">exception_name_1</span><span class="o">&gt;</span> <span class="k">then</span>
+     <span class="c1">-- Exceptionbehandlung für die Exception &lt;exception_name_1&gt;</span>
+     <span class="n">Ausf</span><span class="err">ü</span><span class="n">hrungsteil</span> 
+  <span class="p">...</span>
+  <span class="k">when</span> <span class="o">&lt;</span><span class="n">exception_name_n</span><span class="o">&gt;</span> <span class="k">then</span>
+     <span class="c1">-- Exceptionbehandlung für die Exception &lt;exception_name_n&gt;</span>
+     <span class="n">Ausf</span><span class="err">ü</span><span class="n">hrungsteil</span>
+  <span class="k">when</span> <span class="n">others</span> <span class="k">then</span>
+    <span class="c1">-- Exceptionbehandlung für alle restlichen, nicht erwarteten Exceptions</span>
+     <span class="n">Ausf</span><span class="err">ü</span><span class="n">hrungsteil</span> 
+  <span class="k">end</span><span class="p">;</span>
+</pre></div>
+<p>Der <tt>when others</tt>-Zweig ist optional; er fängt alle bis dahin im Exceptionblock nicht behandelten Exceptions ab. Fehlt dieser Zweig, werden unbehandelte Exceptions implizit an den umschließenden Block weitergereicht. Soll eine Exception explizit weitergereicht werden, muss der <i>Ausführungsteil</i> mit der Programmzeile <tt>raise &lt;exception_name&gt;;</tt> enden.</p>
+<h2><span class="mw-headline" id="Vergleich_mit_T-SQL">Vergleich mit T-SQL</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=25" title="Abschnitt bearbeiten: Vergleich mit T-SQL">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Allerdings ist PL/SQL trotz oberflächlicher Ähnlichkeiten grundsätzlich anders als <a href="https://de.wikipedia.org/wiki/Transact-SQL" title="Transact-SQL">Transact-SQL</a>. Bei der Übernahme von Quellcode handelt es sich daher in der Regel um eine nicht ganz einfache Arbeit. Nicht nur auf Grund der Unterschiede in den Feature-Sets der beiden Sprachen <sup id="cite_ref-1" class="reference"><a href="https://de.wikipedia.org/wiki/PL/SQL#cite_note-1">[1]</a></sup>, sondern auch wegen der sehr deutlichen Unterschiede, wie Oracle und SQL Server mit der Steuerung der Parallelität und dem <a href="https://de.wikipedia.org/wiki/Lock" title="Lock">Locking</a> umgehen. Es gibt jedoch Software-Tools die die Übernahme erleichtern können, zum Beispiel Oracle Translation Scratch Editor <sup id="cite_ref-2" class="reference"><a href="https://de.wikipedia.org/wiki/PL/SQL#cite_note-2">[2]</a></sup>, CEITON MSSQL/Oracle Compiler <sup id="cite_ref-3" class="reference"><a href="https://de.wikipedia.org/wiki/PL/SQL#cite_note-3">[3]</a></sup> und SwisSQL. <sup id="cite_ref-4" class="reference"><a href="https://de.wikipedia.org/wiki/PL/SQL#cite_note-4">[4]</a></sup></p>
+<h2><span class="mw-headline" id="Vergleichbare_M.C3.B6glichkeiten_der_Programmierung_bei_anderen_Datenbanken">Vergleichbare Möglichkeiten der Programmierung bei anderen Datenbanken</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=26" title="Abschnitt bearbeiten: Vergleichbare Möglichkeiten der Programmierung bei anderen Datenbanken">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="https://de.wikipedia.org/wiki/PL/pgSQL" title="PL/pgSQL">PL/pgSQL</a> in der <a href="https://de.wikipedia.org/wiki/Open_Source" title="Open Source">Open-Source</a>-<a href="https://de.wikipedia.org/wiki/Datenbank" title="Datenbank">Datenbank</a> <a href="https://de.wikipedia.org/wiki/PostgreSQL" title="PostgreSQL">PostgreSQL</a></li>
+<li><a href="https://de.wikipedia.org/w/index.php?title=SQL-PL&amp;action=edit&amp;redlink=1" class="new" title="SQL-PL (Seite nicht vorhanden)">SQL-PL</a> für <a href="https://de.wikipedia.org/wiki/Adabas" title="Adabas">Adabas</a></li>
+<li><a href="https://de.wikipedia.org/wiki/DB2#SQL_PL" title="DB2">SQL PL</a> für <a href="https://de.wikipedia.org/wiki/DB2" title="DB2">DB2</a></li>
+<li><a href="https://de.wikipedia.org/wiki/Transact_SQL" title="Transact SQL" class="mw-redirect">Transact SQL</a> (TSQL) ist die entsprechende Programmiersprache für RDBMS von <a href="https://de.wikipedia.org/wiki/Sybase" title="Sybase">Sybase</a> und <a href="https://de.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a></li>
+<li><a href="https://de.wikipedia.org/wiki/Stored_Procedures" title="Stored Procedures" class="mw-redirect">Stored Procedures</a> in <a href="https://de.wikipedia.org/wiki/MySQL" title="MySQL">MySQL</a> ab Version 5</li>
+</ul>
+<h2><span class="mw-headline" id="Weblinks">Weblinks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=27" title="Abschnitt bearbeiten: Weblinks">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="sisterproject" style="margin:0.1em 0 0 0;"><img alt="" src="./PL_SQL – Wikipedia_files/16px-Wikibooks-logo.svg.png" title="Wikibooks" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/24px-Wikibooks-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/32px-Wikibooks-logo.svg.png 2x" data-file-width="300" data-file-height="300">&nbsp;<b><a href="https://de.wikibooks.org/wiki/PL/SQL" class="extiw" title="b:PL/SQL">Wikibooks: PL/SQL</a></b>&nbsp;– Lern- und Lehrmaterialien</div>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://download.oracle.com/docs/cd/B28359_01/server.111/b28286/toc.htm">PL/SQL Dokumentation von Oracle (englisch)</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.orafaq.com/faq/plsql/">Oracle FAQ’s: PL/SQL</a></li>
+<li><a rel="nofollow" class="external text" href="http://edb.gm.fh-koeln.de/plsql_trainer/index.jsp?action=wl">Interaktiver PL/SQL-Trainer</a></li>
+</ul>
+<h2><span class="mw-headline" id="Einzelnachweise">Einzelnachweise</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit&amp;section=28" title="Abschnitt bearbeiten: Einzelnachweise">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="https://de.wikipedia.org/wiki/PL/SQL#cite_ref-1"><span class="cite-accessibility-label">Hochspringen </span>↑</a></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://vyaskn.tripod.com/oracle_sql_server_differences_equivalents.htm">http://vyaskn.tripod.com/oracle_sql_server_differences_equivalents.htm</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="https://de.wikipedia.org/wiki/PL/SQL#cite_ref-2"><span class="cite-accessibility-label">Hochspringen </span>↑</a></span> <span class="reference-text">Scratchlauncher <a rel="nofollow" class="external text" href="http://www.oracle.com/technetwork/database/migration/scratchlauncher-098387.html">"Oracle Scratchlauncher"</a></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="https://de.wikipedia.org/wiki/PL/SQL#cite_ref-3"><span class="cite-accessibility-label">Hochspringen </span>↑</a></span> <span class="reference-text">CEITON <a rel="nofollow" class="external text" href="http://www.ceiton.com/CMS/EN/technologies/sql-compiler.html#Solution">"MSSQL/Oracle Compiler"</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><a href="https://de.wikipedia.org/wiki/PL/SQL#cite_ref-4"><span class="cite-accessibility-label">Hochspringen </span>↑</a></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.swissql.com/">http://www.swissql.com/</a></span></li>
+</ol>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1250
+Cached time: 20160208213359
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.047 seconds
+Real time usage: 0.061 seconds
+Preprocessor visited node count: 558/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 1942/2097152 bytes
+Template argument size: 624/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/500
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   26.377      1 - -total
+ 14.77%    3.896      1 - Vorlage:Infobox_Programmiersprache
+  8.51%    2.246      1 - Vorlage:Wikibooks
+-->
+
+<!-- Saved in parser cache with key dewiki:stable-pcache:idhash:543438-0!*!0!!de!4!* and timestamp 20160208213359 and revision id 144249792
+ -->
+<noscript>&lt;img src="//de.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /&gt;</noscript></div>					<div class="printfooter">
+						Abgerufen von „<a dir="ltr" href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;oldid=144249792">https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;oldid=144249792</a>“					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://de.wikipedia.org/wiki/Wikipedia:Kategorien" title="Wikipedia:Kategorien">Kategorien</a>: <ul><li><a href="https://de.wikipedia.org/wiki/Kategorie:SQL" title="Kategorie:SQL">SQL</a></li><li><a href="https://de.wikipedia.org/wiki/Kategorie:Oracle" title="Kategorie:Oracle">Oracle</a></li><li><a href="https://de.wikipedia.org/wiki/Kategorie:Programmiersprache" title="Kategorie:Programmiersprache">Programmiersprache</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigationsmenü</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Meine Werkzeuge</h3>
+						<ul>
+							<li id="pt-anonuserpage">Nicht angemeldet</li><li id="pt-anontalk"><a href="https://de.wikipedia.org/wiki/Spezial:Meine_Diskussionsseite" title="Diskussion über Änderungen von dieser IP-Adresse [alt-shift-n]" accesskey="n">Diskussionsseite</a></li><li id="pt-anoncontribs"><a href="https://de.wikipedia.org/wiki/Spezial:Meine_Beitr%C3%A4ge" title="Eine Liste der Bearbeitungen, die von dieser IP-Adresse gemacht wurden [alt-shift-y]" accesskey="y">Beiträge</a></li><li id="pt-createaccount"><a href="https://de.wikipedia.org/w/index.php?title=Spezial:Anmelden&amp;returnto=PL%2FSQL&amp;type=signup" title="Wir ermutigen dich dazu, ein Benutzerkonto zu erstellen und dich anzumelden. Es ist jedoch nicht zwingend erforderlich.">Benutzerkonto erstellen</a></li><li id="pt-login"><a href="https://de.wikipedia.org/w/index.php?title=Spezial:Anmelden&amp;returnto=PL%2FSQL" title="Anmelden ist zwar keine Pflicht, wird aber gerne gesehen. [alt-shift-o]" accesskey="o">Anmelden</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namensräume</h3>
+						<ul>
+															<li id="ca-nstab-main" class="selected"><span><a href="https://de.wikipedia.org/wiki/PL/SQL" title="Seiteninhalt anzeigen [alt-shift-c]" accesskey="c">Artikel</a></span></li>
+															<li id="ca-talk"><span><a href="https://de.wikipedia.org/wiki/Diskussion:PL/SQL" title="Diskussion zum Seiteninhalt [alt-shift-t]" accesskey="t" rel="discussion">Diskussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label" tabindex="0">
+							<span>Varianten</span><a href="https://de.wikipedia.org/wiki/PL/SQL#" tabindex="-1"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Ansichten</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="https://de.wikipedia.org/wiki/PL/SQL">Lesen</a></span></li>
+															<li id="ca-edit"><span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit" title="Diese Seite bearbeiten [alt-shift-e]" accesskey="e">Bearbeiten</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=history" title="Frühere Versionen dieser Seite [alt-shift-h]" accesskey="h">Versionsgeschichte</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label" tabindex="0"><span>Mehr</span><a href="https://de.wikipedia.org/wiki/PL/SQL#" tabindex="-1"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Suche</label>
+						</h3>
+
+						<form action="https://de.wikipedia.org/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Suchen" title="Durchsuche die Wikipedia [alt-shift-f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off"><input type="hidden" value="Spezial:Suche" name="title"><input type="submit" name="go" value="Artikel" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite" title="Hauptseite"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite" title="Hauptseite besuchen [alt-shift-z]" accesskey="z">Hauptseite</a></li><li id="n-topics"><a href="https://de.wikipedia.org/wiki/Portal:Wikipedia_nach_Themen">Themenportale</a></li><li id="n-alphindex"><a href="https://de.wikipedia.org/wiki/Spezial:Alle_Seiten">Von A bis Z</a></li><li id="n-randompage"><a href="https://de.wikipedia.org/wiki/Spezial:Zuf%C3%A4llige_Seite" title="Zufällige Seite aufrufen [alt-shift-x]" accesskey="x">Zufälliger Artikel</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-Mitmachen" aria-labelledby="p-Mitmachen-label">
+			<h3 id="p-Mitmachen-label">Mitmachen</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Artikel-verbessern"><a href="https://de.wikipedia.org/wiki/Wikipedia:Beteiligen">Artikel verbessern</a></li><li id="n-Neuerartikel"><a href="https://de.wikipedia.org/wiki/Hilfe:Neuen_Artikel_anlegen">Neuen Artikel anlegen</a></li><li id="n-portal"><a href="https://de.wikipedia.org/wiki/Wikipedia:Autorenportal" title="Info-Zentrum über Beteiligungsmöglichkeiten">Autorenportal</a></li><li id="n-help"><a href="https://de.wikipedia.org/wiki/Hilfe:%C3%9Cbersicht" title="Hilfeseite anzeigen">Hilfe</a></li><li id="n-recentchanges"><a href="https://de.wikipedia.org/wiki/Spezial:Letzte_%C3%84nderungen" title="Liste der letzten Änderungen in Wikipedia [alt-shift-r]" accesskey="r">Letzte Änderungen</a></li><li id="n-contact"><a href="https://de.wikipedia.org/wiki/Wikipedia:Kontakt">Kontakt</a></li><li id="n-sitesupport"><a href="https://spenden.wikimedia.de/?piwik_campaign=de.wikipedia.org&amp;piwik_kwd=sidebar&amp;language=de&amp;country=DE" title="Unterstütze uns">Spenden</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Drucken/­exportieren</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="https://de.wikipedia.org/w/index.php?title=Spezial:Buch&amp;bookcmd=book_creator&amp;referer=PL%2FSQL">Buch erstellen</a></li><li id="coll-download-as-rdf2latex"><a href="https://de.wikipedia.org/w/index.php?title=Spezial:Buch&amp;bookcmd=render_article&amp;arttitle=PL%2FSQL&amp;returnto=PL%2FSQL&amp;oldid=144249792&amp;writer=rdf2latex">Als PDF herunterladen</a></li><li id="t-print"><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;printable=yes" title="Druckansicht dieser Seite [alt-shift-p]" accesskey="p">Druckversion</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Werkzeuge</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="https://de.wikipedia.org/wiki/Spezial:Linkliste/PL/SQL" title="Liste aller Seiten, die hierher verlinken [alt-shift-j]" accesskey="j">Links auf diese Seite</a></li><li id="t-recentchangeslinked"><a href="https://de.wikipedia.org/wiki/Spezial:%C3%84nderungen_an_verlinkten_Seiten/PL/SQL" title="Letzte Änderungen an Seiten, die von hier verlinkt sind [alt-shift-k]" accesskey="k">Änderungen an verlinkten Seiten</a></li><li id="t-specialpages"><a href="https://de.wikipedia.org/wiki/Spezial:Spezialseiten" title="Liste aller Spezialseiten [alt-shift-q]" accesskey="q">Spezialseiten</a></li><li id="t-permalink"><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;oldid=144249792" title="Dauerhafter Link zu dieser Seitenversion">Permanenter Link</a></li><li id="t-info"><a href="https://de.wikipedia.org/w/index.php?title=PL/SQL&amp;action=info" title="Weitere Informationen über diese Seite">Seiten­informationen</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q41574" title="Link zum verbundenen Objekt im Datenrepositorium [alt-shift-g]" accesskey="g">Wikidata-Datenobjekt</a></li><li id="t-cite"><a href="https://de.wikipedia.org/w/index.php?title=Spezial:Zitierhilfe&amp;page=PL%2FSQL&amp;id=144249792" title="Hinweise, wie diese Seite zitiert werden kann">Artikel zitieren</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label"><span class="uls-settings-trigger" title="Spracheinstellungen" tabindex="0" role="button" aria-haspopup="true"></span>
+			<h3 id="p-lang-label">In anderen Sprachen</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Katalanisch" lang="ca" hreflang="ca">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Tschechisch" lang="cs" hreflang="cs">Čeština</a></li><li class="interlanguage-link interwiki-en"><a href="https://en.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Englisch" lang="en" hreflang="en">English</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Spanisch" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%BE%DB%8C%E2%80%8C%D8%A7%D9%84/%D8%A7%D8%B3%E2%80%8C%DA%A9%DB%8C%D9%88%D8%A7%D9%84" title="پی‌ال/اس‌کیوال – Persisch" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Französisch" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Hebräisch" lang="he" hreflang="he">עברית</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Ungarisch" lang="hu" hreflang="hu">Magyar</a></li><li class="interlanguage-link interwiki-is"><a href="https://is.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Isländisch" lang="is" hreflang="is">Íslenska</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Italienisch" lang="it" hreflang="it">Italiano</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Japanisch" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-kk"><a href="https://kk.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Kasachisch" lang="kk" hreflang="kk">Қазақша</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Koreanisch" lang="ko" hreflang="ko">한국어</a></li><li class="interlanguage-link interwiki-lv"><a href="https://lv.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Lettisch" lang="lv" hreflang="lv">Latviešu</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Niederländisch" lang="nl" hreflang="nl">Nederlands</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Polnisch" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Portugiesisch" lang="pt" hreflang="pt">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="https://ro.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Rumänisch" lang="ro" hreflang="ro">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Russisch" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-sk"><a href="https://sk.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Slowakisch" lang="sk" hreflang="sk">Slovenčina</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Schwedisch" lang="sv" hreflang="sv">Svenska</a></li><li class="interlanguage-link interwiki-tg"><a href="https://tg.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Tadschikisch" lang="tg" hreflang="tg">Тоҷикӣ</a></li><li class="interlanguage-link interwiki-th"><a href="https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B5%E0%B9%81%E0%B8%AD%E0%B8%A5/%E0%B9%80%E0%B8%AD%E0%B8%AA%E0%B8%84%E0%B8%B4%E0%B8%A7%E0%B9%81%E0%B8%AD%E0%B8%A5" title="พีแอล/เอสคิวแอล – Thailändisch" lang="th" hreflang="th">ไทย</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Türkisch" lang="tr" hreflang="tr">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Ukrainisch" lang="uk" hreflang="uk">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/PL-SQL" title="PL-SQL – Chinesisch" lang="zh" hreflang="zh">中文</a></li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q41574#sitelinks-wikipedia" title="Links auf Artikel in anderen Sprachen bearbeiten" class="wbc-editpage">Links bearbeiten</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> Diese Seite wurde zuletzt am 21. Juli 2015 um 22:17 Uhr geändert.</li>
+											<li id="footer-info-copyright"><div id="footer-info-copyright-stats"><a class="external" href="http://stats.grok.se/de/latest30/PL/SQL" rel="nofollow">Abrufstatistik</a></div><div id="footer-info-copyright-info"><br>
+Der Text ist unter der Lizenz <a class="internal" href="https://de.wikipedia.org/wiki/Wikipedia:Lizenzbestimmungen_Commons_Attribution-ShareAlike_3.0_Unported">„Creative Commons Attribution/Share Alike“</a> verfügbar; Informationen zu den Urhebern und zum Lizenzstatus eingebundener Mediendateien (etwa Bilder oder Videos) können im Regelfall durch Anklicken dieser abgerufen werden. Möglicherweise unterliegen die Inhalte jeweils zusätzlichen Bedingungen. Durch die Nutzung dieser Website erklären Sie sich mit den <a class="internal" href="https://wikimediafoundation.org/wiki/Nutzungsbedingungen">Nutzungsbedingungen</a> und der <a class="internal" href="https://de.wikipedia.org/wiki/Wikipedia:Datenschutz">Datenschutzrichtlinie</a> einverstanden.<br>
+Wikipedia® ist eine eingetragene Marke der Wikimedia Foundation Inc.</div></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://meta.wikimedia.org/wiki/Privacy_policy/de" title="m:Privacy policy/de">Datenschutz</a></li>
+											<li id="footer-places-about"><a href="https://de.wikipedia.org/wiki/Wikipedia:%C3%9Cber_Wikipedia" title="Wikipedia:Über Wikipedia">Über Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="https://de.wikipedia.org/wiki/Wikipedia:Impressum" title="Wikipedia:Impressum">Haftungsausschluss</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Entwickler</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Stellungnahme zu Cookies</a></li>
+											<li id="footer-places-mobileview"><a href="https://de.m.wikipedia.org/w/index.php?title=PL/SQL&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile Ansicht</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="./PL_SQL – Wikipedia_files/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="https://www.mediawiki.org/"><img src="./PL_SQL – Wikipedia_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.27.0-wmf.12/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.27.0-wmf.12/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ = window.RLQ || []).push(function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.eventLogging.subscriber","ext.gadget.WikiMiniAtlas","ext.gadget.OpenStreetMap","ext.gadget.CommonsDirekt","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.wikimediaEvents","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage","ext.flaggedRevs.advanced"]);
+} );</script><script>(window.RLQ = window.RLQ || []).push(function () {
+mw.config.set({"wgBackendResponseTime":184,"wgHostname":"mw1250"}); /* @nomin */
+} );</script>
+	
+
+<div class="suggestions" style="display: none; font-size: 13px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>
