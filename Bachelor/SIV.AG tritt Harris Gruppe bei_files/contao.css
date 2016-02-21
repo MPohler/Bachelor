@@ -1,0 +1,117 @@
+/* Contao Open Source CMS :: Copyright (C) 2005-2010 Leo Feyer :: LGPL license */
+body{margin:0;padding:0;font-size:100.01%;text-align:left;position:relative;}select,input,textarea{font-size:99%;}form{margin:0;padding:0;}img{border:0;}#left{float:left;}#right{float:right;}#main{width:auto;position:relative;}.inside{position:relative;text-align:left;}.block{overflow:hidden;}.clear,#clear{height:0.1px;font-size:0.1px;line-height:0.1px;clear:both;}
+.invisible{width:0px;height:0px;left:-1000px;top:-1000px;position:absolute;overflow:hidden;display:inline;}.custom{display:block;text-align:left;}.custom:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+
+
+#wrapper-gruppe {width: 680px; background-color: #fff; height: 490px;}
+#logo-wide {margin: 0px 0px 10px 0px;border-top: 1px solid #000;  border-bottom: 1px solid #000; padding: 20px 5px 0px 10px;}
+#logo-wide img {display: block; float: left; margin: 0px 45px 0px 0px;}
+#logo-wide p {float: left; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; margin: 0px 0px 20px 0px;}
+#logo-wide p strong {font-weight: bold;}	
+#logos-klein {margin: 0px 0px 0px 10px; background-color: #fff;}
+.logo-small {background-color: #fff; background-image:url(../tl_files/SIV/bilder/siv-gruppe/arrow-down.jpg); background-repeat:no-repeat; background-position: 35px 0px; margin: -10px 0px 0px 0px; width: 165px; float: left; display:block; min-height: 200px; padding: 40px 0px 0px 0px;}
+.logo-small p {border-bottom: 1px solid #000; font-family: Tahoma, Geneva, sans-serif; font-size: 11px; padding: 0px 0px 10px 0px;}
+.unternehmensgruppe {}
+
+
+#ansprechpartnerformular {
+	position: relative;
+}
+
+#ansprechpartnerformular .explanation span, #ansprechpartnerformular .explanation p{
+	margin: 0 0 10px 0!important;
+	padding: 0 !important;
+	font-size: 1.0rem;
+	color: #545a5d !important;
+	text-shadow: 1px 1px #fff;
+}
+
+#ansprechpartnerformular .formsection label {
+	font-size: 0.7rem;
+	color: #000;
+	position: absolute;
+	top: 51px;
+}
+
+.formsection label:nth-child(2){
+	left: 0px;
+}
+
+#ansprechpartnerformular .formsection {
+	position: relative;
+	height: 55px;
+	margin-bottom: 40px;
+}
+
+#ansprechpartnerformular .formsection input.text {
+	float: left;
+	display: block;
+	width: 220px;
+	margin-right: 5px;
+}
+
+#ansprechpartnerformular hr {
+	width: 97%;
+	padding: 0;
+	margin: 0;
+}
+
+.formsection label:nth-child(2) {left: 0;}
+.formsection label:nth-child(4) {left: 233px;}
+.formsection label:nth-child(6) {right: 220px;}
+
+.submit_container .submit{cursor: pointer;}
+
+#teaser-startseite-mitte .layout_latest {
+	padding-bottom: 5px;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+
+#teaser-startseite-mitte .layout_latest h2 {
+	background-position: 0px 0;
+}
+
+#teaser-startseite-mitte .layout_latest {
+	background-position: 0px 10px;
+	margin-top: 8px;
+}
+
+#teaser-startseite-mitte .layout_latest:last-child a {position: relative; top: 5px;}
+
+#teaser-startseite-mitte .layout_latest a {position: relative; top: -10px;}
+
+#teaser-startseite-mitte .pagination, #teaser-startseite-mitte .more, #teaser-startseite-mitte .teaser, #teaser-startseite-mitte hr {display: none;}
+
+#sivslogan {position: absolute; top: 50px; left: 300px;}
+
+.slogande:after {	
+	content: url(../tl_files/SIV/bilder/siv-slogan.png);
+	position: absolute;
+	left: 170px;
+	top: 35px;
+}
+
+.sloganen:after {	
+	content: url(../tl_files/SIV/bilder/siv-sloganen.png);
+	position: absolute;
+	left: 170px;
+	top: 35px;
+}
+
+.mod_changelanguage {right: 290px!important;}
+
+@media screen and (max-width: 1030px) {	
+	body {zoom: 80% !important;}
+	#ansprechpartnerformular .formsection input.text {
+	float: left;
+	display: block;
+	width: 210px;
+	margin-right: 5px;
+	}
+
+	.formsection label:nth-child(2) {left: 0; margin-top: 5px;}
+	.formsection label:nth-child(4) {left: 238px; margin-top: 5px;}
+	.formsection label:nth-child(6) {right: 212px; margin-top: 5px;}
+}

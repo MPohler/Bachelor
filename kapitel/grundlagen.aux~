@@ -1,32 +1,45 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
 \citation{SIV13}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Theoretische Grundlagen}{7}{chapter.7}}
+\citation{kjd2010}
+\citation{SIV13}
+\citation{wiki:plsql}
+\citation{DB16}
+\citation{Kemper2011}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Theoretische Grundlagen}{6}{chapter.7}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}SIV.\spacefactor \@m AG}{7}{section.8}}
-\newlabel{SIV.\spacefactor \@m AG}{{2.1}{7}{SIV.\@AG}{section.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}kVASy$^\text  {\textregistered }$}{7}{section.9}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}SIV.\spacefactor \@m AG}{6}{section.8}}
+\newlabel{SIV.AG}{{2.1}{6}{SIV.\@AG}{section.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}kVASy$^\text  {\textregistered }$}{6}{section.9}}
+\newlabel{kvasy}{{2.2}{6}{kVASy$^\text {\textregistered }$}{section.9}{}}
+\citation{duden:migra}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Produktfamilie von kVASy$^\text  {\textregistered }$}}{7}{figure.10}}
+\newlabel{pic:kVASy:end}{{2.1}{7}{Produktfamilie von kVASy$^\text {\textregistered }$}{figure.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Datenbankgrundlagen}{7}{section.11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Elemente einer relationalen Datenbank}{7}{subsection.12}}
 \citation{Rossak2013}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Datenbanksysteme}{8}{section.10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Elemente eines relationalen Datenbanksystems}{8}{subsection.11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Beziehungen und Normalformen}{8}{subsection.12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Schema}{8}{subsection.13}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Datenintegration/Datenmigration}{8}{section.14}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}Transformationen}{8}{section.15}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.6}\acrshort {etl}}{8}{section.16}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.1}Extraktion}{9}{subsection.17}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.2}Transformation}{9}{subsection.18}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.3}Laden}{9}{subsection.19}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.7}Qualit\IeC {\"a}tskontrolle/Protokollierung}{9}{section.20}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.8}Kriterien f\IeC {\"u}r erfolgreiche Migrationen}{9}{section.21}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.1}Ziele einer Migration}{9}{subsection.22}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.2}Wirtschaftliche Aspekte}{10}{subsection.23}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.3}Qualitative Aspekte}{10}{subsection.24}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.4}Organisatorische Aspekte}{10}{subsection.25}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.5}Vorgehensweise/Migrationsplanung}{10}{subsection.26}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.6}Anforderung an die Datenmigration}{10}{subsection.27}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Begriffe einer relationaler Datenbanken}}{8}{figure.13}}
+\newlabel{pic:RDB:end}{{2.2}{8}{Begriffe einer relationaler Datenbanken}{figure.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Beziehungen und Normalformen}{8}{subsection.14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Schema}{8}{subsection.15}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Datenintegration/Datenmigration}{8}{section.16}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Transformationen}{8}{section.17}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}\acrshort {etl}-Prozess}{8}{section.18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Begriffe einer relationaler Datenbanken}}{9}{figure.19}}
+\newlabel{pic:RDB:end}{{2.3}{9}{Begriffe einer relationaler Datenbanken}{figure.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.1}Extraktion}{9}{subsection.20}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.2}Transformation}{9}{subsection.21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.3}Laden}{9}{subsection.22}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.7}Qualit\IeC {\"a}tskontrolle/Protokollierung}{9}{section.23}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.8}Kriterien f\IeC {\"u}r erfolgreiche Migrationen}{9}{section.24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.1}Ziele einer Migration}{10}{subsection.25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.2}Wirtschaftliche Aspekte}{10}{subsection.26}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.3}Qualitative Aspekte}{10}{subsection.27}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.4}Organisatorische Aspekte}{10}{subsection.28}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.5}Vorgehensweise/Migrationsplanung}{10}{subsection.29}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.6}Anforderung an die Datenmigration}{10}{subsection.30}}
 \@setckpt{kapitel/grundlagen}{
 \setcounter{page}{11}
 \setcounter{equation}{0}
@@ -43,7 +56,7 @@
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{0}
+\setcounter{figure}{3}
 \setcounter{table}{0}
 \setcounter{subfigure}{0}
 \setcounter{lofdepth}{1}
@@ -71,4 +84,6 @@
 \setcounter{LT@chunks}{0}
 \setcounter{lstlisting}{0}
 \setcounter{section@level}{2}
+}
+}{2}
 }

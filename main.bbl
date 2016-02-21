@@ -13,6 +13,23 @@
 \newblock \emph{Wirtschaftsinformatik}.
 \newblock Pearson Studium, 2010
 
+\bibitem[Dud]{duden:migra}
+\textsc{Duden}:
+\newblock \emph{Migration}. --
+\newblock \url{https://de.wikipedia.org/wiki/Migration} (Abrufdatum am
+  16.02.2016)
+
+\bibitem[IT16]{DB16}
+\textsc{IT} solid:
+\newblock \emph{DB-Engines}.
+\newblock \url{http://db-engines.com/de/ranking}, 2016. --
+\newblock Abrufdatum: 17.02.2016
+
+\bibitem[KE11]{Kemper2011}
+\textsc{Kemper}, Alfons ; \textsc{Eickler}, André:
+\newblock \emph{Datenbanksysteme {E}ine {E}inführung}.
+\newblock Oldenbourg Verlag München, 2011
+
 \bibitem[Ros13]{Rossak2013}
 \textsc{Rossak}, Ines:
 \newblock \emph{Datenintegration}.
@@ -20,7 +37,7 @@
 
 \bibitem[SIV13]{SIV13}
 \textsc{SIV.AG}:
-\newblock \emph{S{I}{V}.{A}{G} {U}nternehmensbroschüre}.
+\newblock \emph{S{I}{V}.{A}{G} {I}magebroschüre}.
 \newblock
   \url{https://www.siv.de/tl_files/SIV/downloads/broschueren/SIV.AG_Imagebroschuere.pdf}.
 \newblock
@@ -28,10 +45,27 @@
 \newblock \,Version:\,2013. --
 \newblock Abrufdatum: 01.02.2016
 
-\bibitem[Wik]{wiki:plsql}
+\bibitem[SIV16]{SIV16}
+\textsc{SIV.AG}:
+\newblock \emph{S{I}{V}.{A}{G} {P}roduktportfolio}.
+\newblock
+  \url{http://www.siv.de/tl_files/SIV/downloads/broschueren/SIV.AG_Produktportfolio.pdf}.
+\newblock
+  \url{http://www.siv.de/tl_files/SIV/downloads/broschueren/SIV.AG_Produktportfolio.pdf}.
+\newblock \,Version:\,2016. --
+\newblock Abrufdatum: 21.02.2016
+
+\bibitem[Wika]{wiki:plsql}
 \textsc{Wikipedia}:
 \newblock \emph{P{L}/{S}{Q}{L} --- {W}ikipedia{,} {D}ie freie {E}nzyklopädie}.
   --
 \newblock \url{https://de.wikipedia.org/wiki/PL/SQL} (Abrufdatum am 09.02.2016)
+
+\bibitem[Wikb]{wiki:rdb}
+\textsc{Wikipedia}:
+\newblock \emph{Relationale {D}atenbank --- {W}ikipedia{,} {D}ie freie
+  {E}nzyklopädie}. --
+\newblock \url{https://de.wikipedia.org/wiki/Relationale_Datenbank} (Abrufdatum
+  am 21.02.2016)
 
 \end{thebibliography}

@@ -1,7 +1,10 @@
-\newacronym{erp}{ERP-System}{Enterprise Resource Planning System}
+\newacronym{erp}{ERP}{Enterprise Resource Planning}
 
 \newacronym{etl}{ETL}{Extraction, Transformation, Loading}
 
+\newacronym{dbms}{DBMS}{Datenbank-Management-System}
+
+\newacronym{plsql}{PL/SQL}{Procedural Language/Structured Query Language}
 
 
 

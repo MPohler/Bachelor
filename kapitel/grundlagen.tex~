@@ -6,15 +6,18 @@
 
 In diesem Kapitel werden zunächst die Grundlagen und Begrifflichkeiten vorgestellt. Weiterhin werden die Kriterien für eine erfolgreiche Migrationen erläutert.
 
-\section{SIV.AG}\label{SIV.AG}
+\section{SIV.\@AG}\label{SIV.AG}
 
-Die SIV.AG ist ein Anbieter für ganzheitliche Lösungen im Bereich der deutschen und internationalen Energie- und Wasserwirtschaft. Das Kernstück vom Unternehmen ist das Softwareprodukt kVASy$^\text{\textregistered}$, ein vollständig integriertes \acrfull{erp}, welches insbesondere auf die Anforderungen und Prozesse der Energie- und Wasserwirtschaft ausgerichtet ist. Das Unternehmen wurde 1990 durch Jörg Sinnig als Software- und Beratungshaus gegründet. Zum gegenwärtigen Zeitpunkt beschäftigt die SIV.AG mehr als 400 Mitarbeiter. Ihr Leistungsportfolio reicht von der Beratung und Analyse über die Implementierung und Bereitstellung der IT-Systeme bis hin zur Datenmigration, Schulung und Pflege.\cite{SIV13}
+Die SIV.\@AG ist ein Anbieter für ganzheitliche Lösungen im Bereich der deutschen und internationalen Energie- und Wasserwirtschaft. Das Kernstück des Unternehmens ist das Softwareprodukt kVASy$^\text{\textregistered}$, ein vollständig integriertes \acrfull{erp}-System, welches insbesondere auf die Anforderungen und Prozesse der Energie- und Wasserwirtschaft ausgerichtet ist. Das Unternehmen wurde 1990 durch Jörg Sinnig als Software- und Beratungshaus gegründet. Zum gegenwärtigen Zeitpunkt beschäftigt die SIV.\@AG mehr als 400 Mitarbeiter. Ihr Leistungsportfolio reicht von der Beratung und Analyse über die Implementierung und Bereitstellung der IT-Systeme bis hin zur Datenmigration, Schulung und Pflege. \cite{SIV13}
 
-\section{kVASy\texorpdfstring$^\text{\textregistered}$}
+\section{kVASy$^\text{\textregistered}$}
 
-Das zuvor bereits erwähnte kVASy$^\text{\textregistered}$ ist ein webbasiertes \acrshort{erp} und bildet das Aushängeschild der SIV.AG. Zu der Produktfamilie gehören die 4 Bereiche Finance (Buchaltung), Billing (Abrechnung) und EDM (Vertragsverwaltung), Technical Assets (Anlagenmanagement) und xRM (Kundenbeziehungsmanagement).
+Das zuvor bereits erwähnte kVASy$^\text{\textregistered}$ ist ein webbasiertes \acrshort{erp}-System und bildet das Aushängeschild der SIV.\@AG. Unter einem \acrshort{erp}-System ist eine integrierte unternehmensweite Anwendung zu verstehen, die zur Koordination wichtiger interner Prozesse eingesetzt wird \cite[Seite 482]{kjd2010}. Zu der Produktfamilie von kVASy$^\text{\textregistered}$ gehören die Module Finance (Buchhaltung), Billing (Abrechnung) und EDM (Vertragsverwaltung), Technical Assets (Anlagenmanagement) und xRM (Kundenbeziehungsmanagement). Auf der Grundlage einer zentralen Datenbasis erfolgt die Kommunikation der Module und Funktionalitäten schnittstellenfrei \cite[Seite15]{SIV13}. Die Umsetzung dessen erfolgt durch ein \acrfull{dbms} von der Firma Oracle, dabei wird das Oracle Database 11g Release 2 eingesetzt. Für die Umsetzung der Applikationslogik wurde \acrshort{plsql} (Procedural Language/Structured Query Language) verwendet, eine proprietäre Programmiersprache der Firma Oracle \cite{wiki:plsql}.
 
 \section{Datenbanksysteme}
+
+
+
 \subsection{Elemente eines relationalen Datenbanksystems}
 \subsection{Beziehungen und Normalformen}
 \subsection{Schema}
@@ -23,7 +26,13 @@ Das zuvor bereits erwähnte kVASy$^\text{\textregistered}$ ist ein webbasiertes 
 
 \section{Transformationen}
 
-\section{ETL-Tools}
+\section{\acrshort{etl}}
+Die Abkürzung \acrshort{etl} setzt sich aus den drei Wörtern Extraktion, Transformation und Laden zusammen. Sie wird oft mit dem Begriff Data Warehouse in Zusammenhang gebracht. Dabei dient \acrshort{etl} dazu, unterschiedliche Bereiche Buchhaltung, Abrechnung, Vertragsverwaltung usw. in eine zentrale Datenbank (Data Warehouse) zusammenzuführen. Ziel ist es z.\,B. eine umfassende Sicht auf den Kunden zu bekommen. Aufbauend darauf können komplexe Analysen entwickelt werden, um eine erfolgreiche und wohl überlegte Geschäftsentscheidung zu treffen. Bei der Abfolge eines \acrshort{etl}-Prozesses werden zunächst Daten aus einer Datenquelle extrahiert. Daraufhin werden diese mit Hilfe von Transformationsregeln homogenisiert. Schließlich werden im letzten Schritt die angereicherten oder bereinigten Daten in das Ziel geladen. Die Bandbreite für den Einsatz eines \acrshort{etl}-Prozesses erstreckt sich über das Datenqualitätsmanagement sowie der Replikation und Synchronisation von Daten bis hin zu der Migration von Daten aus Altsystemen. Letzteres ist für die Bachelorarbeit der wichtigste Aspekt und wird dahin gehend genauer erörtert. \cite{Rossak2013}
+\subsection{Extraktion}
+\subsection{Transformation}
+\subsection{Laden}
+ 
+ 
 
 \section{Qualitätskontrolle/Protokollierung}
 

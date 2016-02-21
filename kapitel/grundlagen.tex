@@ -8,30 +8,59 @@ In diesem Kapitel werden zunächst die Grundlagen und Begrifflichkeiten vorgeste
 
 \section{SIV.\@AG}\label{SIV.AG}
 
-Die SIV.\@AG ist ein Anbieter für ganzheitliche Lösungen im Bereich der deutschen und internationalen Energie- und Wasserwirtschaft. Das Kernstück des Unternehmens ist das Softwareprodukt kVASy$^\text{\textregistered}$, ein vollständig integriertes \acrfull{erp}-System, welches insbesondere auf die Anforderungen und Prozesse der Energie- und Wasserwirtschaft ausgerichtet ist. Das Unternehmen wurde 1990 durch Jörg Sinnig als Software- und Beratungshaus gegründet. Zum gegenwärtigen Zeitpunkt beschäftigt die SIV.\@AG mehr als 400 Mitarbeiter. Ihr Leistungsportfolio reicht von der Beratung und Analyse über die Implementierung und Bereitstellung der IT-Systeme bis hin zur Datenmigration, Schulung und Pflege. \cite{SIV13}
+Die SIV.\@AG ist ein Anbieter für ganzheitliche Lösungen im Bereich der deutschen und internationalen Energie- und Wasserwirtschaft. Das Kernstück des Unternehmens ist das Softwareprodukt kVASy$^\text{\textregistered}$, ein vollständig integriertes \acrfull{erp}-System, welches insbesondere auf die Anforderungen und Prozesse der Energie- und Wasserwirtschaft ausgerichtet ist. Das Unternehmen wurde 1990 durch Jörg Sinnig als Software- und Beratungshaus gegründet und im Februar 2016 an die Harris Computer Corporation, einer Tochtergesellschaft der Constellation Software Inc. verkauft. Zum gegenwärtigen Zeitpunkt beschäftigt die SIV.\@AG mehr als 400 Mitarbeiter. Ihr Leistungsportfolio reicht von der Beratung und Analyse über die Implementierung und Bereitstellung der IT-Systeme bis hin zur Datenmigration, Schulung und Pflege. \cite{SIV13}
 
-\section{kVASy$^\text{\textregistered}$}
+\section{kVASy$^\text{\textregistered}$}\label{kvasy} 
 
-Das zuvor bereits erwähnte kVASy$^\text{\textregistered}$ ist ein webbasiertes \acrshort{erp}-System und bildet das Aushängeschild der SIV.\@AG. Unter einem \acrshort{erp}-System ist eine integrierte unternehmensweite Anwendung zu verstehen, die zur Koordination wichtiger interner Prozesse eingesetzt wird \cite[Seite 482]{kjd2010}. Zu der Produktfamilie von kVASy$^\text{\textregistered}$ gehören die Module Finance (Buchhaltung), Billing (Abrechnung) und EDM (Vertragsverwaltung), Technical Assets (Anlagenmanagement) und xRM (Kundenbeziehungsmanagement). Auf der Grundlage einer zentralen Datenbasis erfolgt die Kommunikation der Module und Funktionalitäten schnittstellenfrei \cite[Seite15]{SIV13}. Die Umsetzung dessen erfolgt durch ein \acrfull{dbms} von der Firma Oracle, dabei wird das Oracle Database 11g Release 2 eingesetzt. Für die Umsetzung der Applikationslogik wurde \acrshort{plsql} (Procedural Language/Structured Query Language) verwendet, eine proprietäre Programmiersprache der Firma Oracle \cite{wiki:plsql}.
+Das zuvor bereits erwähnte kVASy$^\text{\textregistered}$ ist ein webbasiertes \acrshort{erp}-System und bildet das Aushängeschild der SIV.\@AG. Unter einem \acrshort{erp}-System ist eine integrierte unternehmensweite Anwendung zu verstehen, die zur Koordination wichtiger interner Prozesse eingesetzt wird \cite[Seite 482]{kjd2010}. Zu der Produktfamilie von kVASy$^\text{\textregistered}$ gehören die Module Finance (Buchhaltung), Billing (Abrechnung) und EDM (Vertragsverwaltung), Technical Assets (Anlagenmanagement) und xRM (Kundenbeziehungsmanagement).
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[scale=0.25]{bilder/kVASy_Schema.png}
+		\caption{Produktfamilie von kVASy$^\text{\textregistered}$\cite{SIV16}}
+		\label{pic:kVASy:end}
+	\end{center}
+\end{figure}
+Auf der Grundlage einer zentralen Datenbasis erfolgt die Kommunikation der Module und Funktionalitäten schnittstellenfrei \cite[Seite15]{SIV13}. Die Umsetzung dessen erfolgt durch das \acrfull{dbms} Database 11g Release 2 von der Firma Oracle. Für die Umsetzung der Applikationslogik wurde \acrshort{plsql} (Procedural Language/Structured Query Language) verwendet, eine proprietäre Programmiersprache der Firma Oracle \cite{wiki:plsql}.
 
-\section{Datenbanksysteme}
+\section{Datenbankgrundlagen} 
+Indirekt wird bei Datenbanken von dem weit verbreiteten \acrfull{rdbms} ausgegangen. Dieses Datenbankmodell ist eins der Populärsten \acrshort{rdbms} \cite{DB16}. Zu den Aufgaben eines Datenbanksystems gehört es die Daten möglichst effizient und dauerhaft zu speichern. Zudem soll es eine Vereinfachung der Datenverwaltung ermöglichen. Das relationale Datenmodell ist so konzipiert das es eine mengenorientierte Datenverarbeitung erlaubt. Dabei können die Daten aus mehreren Tabellen durch Join-Verknüpfungen in einer großen Tabelle abgebildet werden. Durch die Festlegung von Spalten und Where-Klauseln kann die Menge weiter bearbeitet und somit in der Höhe und Breite eingeschränkt werden. Im Gegensatz zu einem datensatzorientiertem Vorgehen wird die Tabelle, Zeile um Zeile abgerufen und nach bestimmten Kriterien geprüft. Nachdem die Kriterien erfüllt sind werden die Daten weiterverarbeitet. \cite{Kemper2011}[Seite 71]
+
+\subsection{Elemente einer relationalen Datenbank}
+Zu den Elementen gehören Tabellen, Spalten und Zeilen (auch Tupel genannt). In der Regel existieren in einer Datenbank mehrere Tabellen. Die wiederum Attribute oder auch Felder beinhalten, die sogenannten Spalten. Eine Spalte besitzt einen Namen sowie einen Datentyp. Zu den drei wesentlichen Datentypen zählen Number (Zahl), Varchar (Text) und Date (Datum), diese enthalten wiederum noch weitere Varianten \cite{Kemper2011}[Seite 112]. Die Bedeutung eines Datentyps ist zum einen für ein Datenbanksystem und wichtig für ein Datenbanksystem für eine Optimierung des physikalische Datenspeichers sowohl für Damit ist gewährleistet das nur ein bestimmter Datentyp aufgenommen werden kann. 
 
 
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[scale=0.5]{bilder/Begriffe_relationaler_Datenbanken.png}
+		\caption{Begriffe einer relationaler Datenbanken \cite{wiki:rdb}}
+		\label{pic:RDB:end}
+	\end{center}
+\end{figure}
 
-\subsection{Elemente eines relationalen Datenbanksystems}
+
 \subsection{Beziehungen und Normalformen}
 \subsection{Schema}
 
 \section{Datenintegration/Datenmigration}
+Der Begriff Migration stammt von dem lateinischen Begriff migratio und bedeutet (Aus)wanderung, d.\,h. die Übernahme von
+Daten in ein anderes System, um sie dort wieder im vollem Ausmaß zu nutzen \cite{duden:migra}.
+Die Datenmigration oder auch Datenübernahmen genannt, verläuft von einem Quellsystem hinzu einem Zielsystem. Dabei beinhaltet das Quellsystem, die zu migrierenden Daten und das Zielsystem die importierten Daten. In dieser Arbeit wird das in Kapitel \ref{kvasy} auf Seite \pageref{kvasy} beschriebene kVASy$^\text{\textregistered}$, als Zielsystem verwendet. 
 
 \section{Transformationen}
 
-\section{\acrshort{etl}}
-Die Abkürzung \acrshort{etl} setzt sich aus den drei Wörtern Extraktion, Transformation und Laden zusammen. Sie wird oft mit dem Begriff Data Warehouse in Zusammenhang gebracht. Dabei dient \acrshort{etl} dazu, unterschiedliche Bereiche Buchhaltung, Abrechnung, Vertragsverwaltung usw. in eine zentrale Datenbank (Data Warehouse) zusammenzuführen. Ziel ist es z.\,B. eine umfassende Sicht auf den Kunden zu bekommen. Aufbauend darauf können komplexe Analysen entwickelt werden, um eine erfolgreiche und wohl überlegte Geschäftsentscheidung zu treffen. Bei der Abfolge eines \acrshort{etl}-Prozesses werden zunächst Daten aus einer Datenquelle extrahiert. Daraufhin werden diese mit Hilfe von Transformationsregeln homogenisiert. Schließlich werden im letzten Schritt die angereicherten oder bereinigten Daten in das Ziel geladen. Die Bandbreite für den Einsatz eines \acrshort{etl}-Prozesses erstreckt sich über das Datenqualitätsmanagement sowie der Replikation und Synchronisation von Daten bis hin zu der Migration von Daten aus Altsystemen. Letzteres ist für die Bachelorarbeit der wichtigste Aspekt und wird dahin gehend genauer erörtert. \cite{Rossak2013}
+\section{\acrshort{etl}-Prozess}
+Die Abkürzung \acrshort{etl} setzt sich aus den drei Wörtern Extraktion, Transformation und Laden zusammen. Sie wird oft mit dem Begriff Data Warehouse in Zusammenhang gebracht. Dabei dient \acrshort{etl} dazu, unterschiedliche Bereiche Buchhaltung, Abrechnung, Vertragsverwaltung usw. in eine zentrale Datenbank (Data Warehouse) zusammenzuführen. Ziel ist es z.\,B. eine umfassende Sicht auf den Kunden zu bekommen. Aufbauend darauf können komplexe Analysen entwickelt werden, um eine erfolgreiche und wohl überlegte Geschäftsentscheidung zu treffen. Bei der Abfolge eines \acrshort{etl}-Prozesses werden zunächst Daten aus einer Datenquelle extrahiert. Daraufhin werden diese mit Hilfe von Transformationsregeln homogenisiert. Schließlich werden im letzten Schritt die angereicherten oder bereinigten Daten in das Ziel geladen. Die Bandbreite für den Einsatz eines \acrshort{etl}-Prozesses erstreckt sich über das Datenqualitätsmanagement sowie der Replikation und Synchronisation von Daten bis hin zu der Migration von Daten aus Altsystemen. Letzteres ist für die Bachelorarbeit der wichtigste Aspekt und wird dahin gehend genauer untersucht. \cite{Rossak2013}
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[scale=0.65]{bilder/ETL-Prozess.png}
+		\caption{Allgemeiner ETL-Prozess (eig. Abb. nach \cite{Rossak2013}[Seite 38])}
+		\label{pic:ETL:Pro}
+	\end{center}
+\end{figure}
 \subsection{Extraktion}
+
 \subsection{Transformation}
 \subsection{Laden}
- 
  
 
 \section{Qualitätskontrolle/Protokollierung}
@@ -74,7 +103,7 @@ Bevor es zur einer
 % Beispiel für ein Bild in \LaTeX{}
 % \begin{figure}[ht]
 % 	\begin{center}
-% 		\includegraphics[scale=0.3]{bilder/regelkreis.png}
+% 		\includegraphics[scale=0.3]{bilder/kVASy_Schema.jpg}
 % 		\caption{Ein Standard-Regelkreis}
 % 		\label{pic:grund:regelkreis}
 % 	\end{center}

@@ -1,0 +1,5 @@
+/* Style sheet screen-bild-oben */
+.image_container{margin-left:7px; margin-top: 6px;}
+.ce_image{width: 678px; height: 250x; background-image:url("tl_files/SIV/bilder/overlay-bild-678-260.png"); position: relative; margin-left: 41px; background-repeat: no-repeat; margin-top: 15px;}
+.ce_headline{position: absolute; top: 20px;}
+#presse-news h2 a{max-width: 450px; display: block;}

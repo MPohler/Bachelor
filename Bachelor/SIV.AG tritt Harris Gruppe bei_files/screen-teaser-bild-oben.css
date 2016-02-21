@@ -1,0 +1,9 @@
+/* Style sheet screen-teaser-bild-oben */
+#kontakt-teaser{position: absolute; right: 35px; top: 370px; width: 175px;}
+#kontakt-teaser-inner{background-image:url(tl_files/SIV/bilder/back-kontaktteaser.jpg); background-repeat:no-repeat; height: 90px; width: 170px; padding-top: 8px;}
+#kontakt-teaser strong{margin-left:10px;font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-weight:bold;font-size:12px;color:#044669;}
+#kontakt-teaser .subkontakt-teaser{margin-bottom:5px;margin-left:10px;padding-bottom:0;font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-size:11px;color:#737476;display: block;}
+#kontakt-teaser .kontakttxt-teaser{width:50px;margin-top:2px;margin-left:10px;font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-size:11px;color:#555a5d;display: block; float: left;}
+#kontakt-teaser .kontaktdaten-teaser{margin-top:2px;margin-left:10px;font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-size:11px;color:#555a5d;display: block;float: left;}
+#kontakt-teaser h3{font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-weight:bold;font-size:12px;color:#3d424;line-height:16px;text-transform: uppercase;}
+.ce_text p{width:480px;}

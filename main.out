@@ -3,44 +3,44 @@
 \BOOKMARK [0][-]{chapter.7}{Theoretische Grundlagen}{}% 3
 \BOOKMARK [1][-]{section.8}{SIV.AG}{chapter.7}% 4
 \BOOKMARK [1][-]{section.9}{kVASy\256}{chapter.7}% 5
-\BOOKMARK [1][-]{section.10}{Datenbanksysteme}{chapter.7}% 6
-\BOOKMARK [2][-]{subsection.11}{Elemente eines relationalen Datenbanksystems}{section.10}% 7
-\BOOKMARK [2][-]{subsection.12}{Beziehungen und Normalformen}{section.10}% 8
-\BOOKMARK [2][-]{subsection.13}{Schema}{section.10}% 9
-\BOOKMARK [1][-]{section.14}{Datenintegration/Datenmigration}{chapter.7}% 10
-\BOOKMARK [1][-]{section.15}{Transformationen}{chapter.7}% 11
-\BOOKMARK [1][-]{section.16}{etl}{chapter.7}% 12
-\BOOKMARK [2][-]{subsection.17}{Extraktion}{section.16}% 13
-\BOOKMARK [2][-]{subsection.18}{Transformation}{section.16}% 14
-\BOOKMARK [2][-]{subsection.19}{Laden}{section.16}% 15
-\BOOKMARK [1][-]{section.20}{Qualit\344tskontrolle/Protokollierung}{chapter.7}% 16
-\BOOKMARK [1][-]{section.21}{Kriterien f\374r erfolgreiche Migrationen}{chapter.7}% 17
-\BOOKMARK [2][-]{subsection.22}{Ziele einer Migration}{section.21}% 18
-\BOOKMARK [2][-]{subsection.23}{Wirtschaftliche Aspekte}{section.21}% 19
-\BOOKMARK [2][-]{subsection.24}{Qualitative Aspekte}{section.21}% 20
-\BOOKMARK [2][-]{subsection.25}{Organisatorische Aspekte}{section.21}% 21
-\BOOKMARK [2][-]{subsection.26}{Vorgehensweise/Migrationsplanung}{section.21}% 22
-\BOOKMARK [2][-]{subsection.27}{Anforderung an die Datenmigration}{section.21}% 23
-\BOOKMARK [0][-]{chapter.28}{Ist-Stand-Analyse}{}% 24
-\BOOKMARK [1][-]{section.29}{Migrationsprozess}{chapter.28}% 25
-\BOOKMARK [1][-]{section.30}{Transformationen}{chapter.28}% 26
-\BOOKMARK [1][-]{section.31}{Qualit\344tskontrolle/Protokollierung}{chapter.28}% 27
-\BOOKMARK [1][-]{section.32}{Ablaufsteuerung}{chapter.28}% 28
-\BOOKMARK [0][-]{chapter.33}{ETL-Tool Tensei-Data}{}% 29
-\BOOKMARK [1][-]{section.34}{Allgemeine Informationen}{chapter.33}% 30
-\BOOKMARK [1][-]{section.35}{Migrationsprozess}{chapter.33}% 31
-\BOOKMARK [1][-]{section.36}{Transformationen}{chapter.33}% 32
-\BOOKMARK [1][-]{section.37}{Qualit\344tskontrolle/Protokollierung}{chapter.33}% 33
-\BOOKMARK [1][-]{section.38}{Ablaufsteuerung}{chapter.33}% 34
-\BOOKMARK [0][-]{chapter.39}{Implementierung und Test}{}% 35
-\BOOKMARK [0][-]{chapter.40}{Bewertung, Zusammenfassung und Ausblick}{}% 36
-\BOOKMARK [1][-]{section.41}{Bewertung}{chapter.40}% 37
-\BOOKMARK [1][-]{section.42}{Ausblick}{chapter.40}% 38
-\BOOKMARK [1][-]{section.43}{Zusammenfassung}{chapter.40}% 39
-\BOOKMARK [0][-]{chapter*.44}{Literaturverzeichnis}{}% 40
-\BOOKMARK [0][-]{chapter*.45}{Abbildungsverzeichnis}{}% 41
-\BOOKMARK [0][-]{chapter*.46}{Tabellenverzeichnis}{}% 42
-\BOOKMARK [0][-]{section*.47}{Abk\374rzungsverzeichnis}{}% 43
-\BOOKMARK [0][-]{appendix.49}{Auflistung von Quellcode und \344hnliches}{}% 44
-\BOOKMARK [0][-]{appendix*.50}{Selbstst\344ndigkeitserkl\344rung}{}% 45
+\BOOKMARK [1][-]{section.11}{Datenbankgrundlagen}{chapter.7}% 6
+\BOOKMARK [2][-]{subsection.12}{Elemente einer relationalen Datenbank}{section.11}% 7
+\BOOKMARK [2][-]{subsection.14}{Beziehungen und Normalformen}{section.11}% 8
+\BOOKMARK [2][-]{subsection.15}{Schema}{section.11}% 9
+\BOOKMARK [1][-]{section.16}{Datenintegration/Datenmigration}{chapter.7}% 10
+\BOOKMARK [1][-]{section.17}{Transformationen}{chapter.7}% 11
+\BOOKMARK [1][-]{section.18}{etl-Prozess}{chapter.7}% 12
+\BOOKMARK [2][-]{subsection.20}{Extraktion}{section.18}% 13
+\BOOKMARK [2][-]{subsection.21}{Transformation}{section.18}% 14
+\BOOKMARK [2][-]{subsection.22}{Laden}{section.18}% 15
+\BOOKMARK [1][-]{section.23}{Qualit\344tskontrolle/Protokollierung}{chapter.7}% 16
+\BOOKMARK [1][-]{section.24}{Kriterien f\374r erfolgreiche Migrationen}{chapter.7}% 17
+\BOOKMARK [2][-]{subsection.25}{Ziele einer Migration}{section.24}% 18
+\BOOKMARK [2][-]{subsection.26}{Wirtschaftliche Aspekte}{section.24}% 19
+\BOOKMARK [2][-]{subsection.27}{Qualitative Aspekte}{section.24}% 20
+\BOOKMARK [2][-]{subsection.28}{Organisatorische Aspekte}{section.24}% 21
+\BOOKMARK [2][-]{subsection.29}{Vorgehensweise/Migrationsplanung}{section.24}% 22
+\BOOKMARK [2][-]{subsection.30}{Anforderung an die Datenmigration}{section.24}% 23
+\BOOKMARK [0][-]{chapter.31}{Ist-Stand-Analyse}{}% 24
+\BOOKMARK [1][-]{section.32}{Migrationsprozess}{chapter.31}% 25
+\BOOKMARK [1][-]{section.33}{Transformationen}{chapter.31}% 26
+\BOOKMARK [1][-]{section.34}{Qualit\344tskontrolle/Protokollierung}{chapter.31}% 27
+\BOOKMARK [1][-]{section.35}{Ablaufsteuerung}{chapter.31}% 28
+\BOOKMARK [0][-]{chapter.36}{ETL-Tool Tensei-Data}{}% 29
+\BOOKMARK [1][-]{section.37}{Allgemeine Informationen}{chapter.36}% 30
+\BOOKMARK [1][-]{section.38}{Migrationsprozess}{chapter.36}% 31
+\BOOKMARK [1][-]{section.39}{Transformationen}{chapter.36}% 32
+\BOOKMARK [1][-]{section.40}{Qualit\344tskontrolle/Protokollierung}{chapter.36}% 33
+\BOOKMARK [1][-]{section.41}{Ablaufsteuerung}{chapter.36}% 34
+\BOOKMARK [0][-]{chapter.42}{Implementierung und Test}{}% 35
+\BOOKMARK [0][-]{chapter.43}{Bewertung, Zusammenfassung und Ausblick}{}% 36
+\BOOKMARK [1][-]{section.44}{Bewertung}{chapter.43}% 37
+\BOOKMARK [1][-]{section.45}{Ausblick}{chapter.43}% 38
+\BOOKMARK [1][-]{section.46}{Zusammenfassung}{chapter.43}% 39
+\BOOKMARK [0][-]{chapter*.47}{Literaturverzeichnis}{}% 40
+\BOOKMARK [0][-]{chapter*.48}{Abbildungsverzeichnis}{}% 41
+\BOOKMARK [0][-]{chapter*.49}{Tabellenverzeichnis}{}% 42
+\BOOKMARK [0][-]{section*.50}{Abk\374rzungsverzeichnis}{}% 43
+\BOOKMARK [0][-]{appendix.52}{Auflistung von Quellcode und \344hnliches}{}% 44
+\BOOKMARK [0][-]{appendix*.53}{Selbstst\344ndigkeitserkl\344rung}{}% 45
 \BOOKMARK [0][-]{Thesen.0}{Thesen}{}% 46

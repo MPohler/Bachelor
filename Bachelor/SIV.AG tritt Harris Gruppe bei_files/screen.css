@@ -1,0 +1,140 @@
+/* Style sheet screen */
+*{outline: none;}
+body{background:#ffffff url("tl_files/SIV/bilder/background.jpg") left top repeat-x;font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-size:100%;color:#545a5d;line-height:16px;overflow-x: hidden;}
+a{font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;text-decoration:none;color:#7f8385;}
+hr{color: #f00;background-color: #a2a6a9;height: 1px;border: 0;}
+.ce_text{width:660px;font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-size:12px;color:#545a5d;line-height:20px;text-shadow:#ffffff 1px 1px 0px;}
+.ce_downloads{margin-top:50px;font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-size:12px;color:#545a5d;line-height:16px;text-shadow:#ffffff 1px 1px 0px;}
+.ce_download{margin-top:20px;font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-size:12px;color:#545a5d;line-height:16px;text-shadow:#ffffff 1px 1px 0px;}
+.ce_text p{width:650px;margin-top: 5px;margin-bottom: 8px;padding: 5px 0px 10px 0px;line-height: 22px;}
+#main a{color: #0068b8;}
+#pressemitteilungen-detail p{width:660px;margin-top: 5px;margin-bottom: 8px;padding: 5px 0px 10px 5px;line-height: 22px;}
+#pressemitteilungen-detail h2{padding-left: 5px;}
+#siv-presse-2010 p{width: 780px;}
+#footer-left{width:100%;height:221px;bottom:-71px;position:absolute;background-image:url("tl_files/SIV/bilder/back-footer.jpg");background-repeat:repeat-x;z-index: 0;}
+.ce_list{width:650px;font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-size:12px;color:#545a5d;line-height:22px;text-shadow:#ffffff 1px 1px 0px;}
+#wrapper{font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-size:100%;color:#545a5d;line-height:16px;}
+#container{width:985px;background:url("tl_files/SIV/bilder/back-content.png") left top repeat-y;min-height: 580px;}
+#container-start{width:985px;background:url("tl_files/SIV/bilder/back-start.png") left top repeat-y;min-height: 500px;}
+.mod_navigation ul li{width:300px;display: inline;}
+.mod_navigation a:hover{width:300px;text-decoration:underline;font-size:15px;color:#ffffff;}
+#footer{width:960px;height:150px;margin-left:13px;background-color:#ffffff;background-image:url("tl_files/SIV/bilder/back-footer.jpg");background-repeat:repeat-x;z-index: 2;}
+#footer .mod_customnav a{color: #878a8b;}
+#footer h1{margin-left:13px;font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-size:11px;color:#e2e8ec;text-shadow:#000000 1px 1px 0px;}
+#left{margin-top:-90px;margin-left:-80px;font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-size:13px;color:#3e4345;text-shadow: #ffffff 1px 1px 0px;}
+#left ul{margin-left: 0px;}
+#left h1{width:226px;height:44px;margin-left:11px;padding-top:10px;padding-left:30px;background-image:url("tl_files/SIV/bilder/back-subnav-headline.png");background-repeat:no-repeat;font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-size:13px;color:#1b5875;text-shadow:#ffffff 1px 1px 0px;}
+#left li{padding-top:7px;padding-right:0;padding-left:10px;font-weight:bold;font-size:13px;color:#014768;text-shadow:#ffffff 1px 1px 0px;display: block;list-style: none;}
+#left li.active{width:220px;height:23px;margin-top:0;margin-bottom:-5px;padding-left:20px;background-repeat:no-repeat;font-weight:bold;font-size:13px;color:#014768;background-image:url("tl_files/SIV/bilder/back-subnav-active.png");text-shadow:#ffffff 1px 1px 0px;display: block;list-style: none;text-transform: none;}
+#suche{height:50px;right:10px;position:absolute;display: none; cursor:pointer;z-index: 50;}
+#left li:hover{width:220px;height:23px;background-repeat:no-repeat;font-weight:bold;font-size:13px;color:#014768;background-image:url("tl_files/SIV/bilder/back-subnav-active.png");text-shadow:#ffffff 1px 1px 0px;list-style: none;text-transform: none;display: block;margin-bottom: -21px;}
+#left li.active:hover{height:39px;background-repeat:no-repeat;font-weight:bold;font-size:13px;color:#014768;}
+#left a{margin-left:10px;font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-weight:bold;text-decoration:none;font-size:13px;color:#3e4345;text-shadow:#ffffff 1px 1px 0px;display: block;height: 2px;text-transform: none;}
+#footer-inner{background-image:url(tl_files/SIV/bilder/back-footer-2.png); width: 960px; height: 92px;position: absolute; z-index: 3;}
+#footer-inner-left{position:relative;padding-top:14px;padding-left:18px;font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-size:10px;color:#63686b;line-height:16px;text-transform: uppercase;}
+#footer-inner-right{float:right;margin-top:-31px;margin-right:10px;padding-top:14px;padding-left:18px;font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-size:10px;color:#63686b;line-height:16px;text-transform: uppercase;}
+#footer-links{color:#63686b;text-shadow:#ffffff 1px 1px 0px;}
+.footer-links-right{right:10px;position:absolute;color:#63686b;}
+#header{width:985px;height:203px;position:relative;background:url("tl_files/SIV/bilder/header-back.jpg") left top no-repeat;}
+#header-start{width:985px;height:203px;position:relative;background:url("tl_files/SIV/bilder/header-back-start.jpg") left top no-repeat;}
+#footer .footer-links-right a{color: #878a8b;}
+.mod_article{min-height: 650px;}
+.mod_article h1{width:680px;background:url("tl_files/SIV/bilder/content-hl-trenner.jpg") left bottom no-repeat;font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-size:24px;color:#043551;line-height:30px;font-weight: lighter;}
+.mod_article h2{width:700px;font-family: Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;font-size: 14px;color: #065d81;margin: 0px;padding: 0px;}
+.mod_navigation{width:950px;left:75px;top:125px;position:absolute;color:#ffffff;text-shadow:#000000 1px 1px 0px;z-index: 500;font-weight: lighter;}
+.mod_navigation a{width:300px;text-decoration:none;font-size:15px;color:#ffffff;}
+.mod_navigation li.active{width:300px;font-weight:bold;font-size:15px;color:#ffffff;}
+#btn_start{width:16px;height:16px;left:50px;top:138px;position:absolute;margin-top:18px;z-index: 201;}
+#oracale_partner{width:163px;height:42px;right:26px;top:72px;position:absolute;z-index: 10;}
+.mod_customnav{right:35px;top:35px;position:absolute;font-size:10px;z-index: 10;text-transform: uppercase;}
+.image_container{padding:3px; overflow: hidden; height: 250px;}
+.ce_image{width:260px;height:300px; position:absolute; background-image:url("tl_files/SIV/bilder/overlay-bild-260-343.png"); right: 40px; top: 40px; overflow: hidden; z-index: 3;}
+.mod_customnav ul li{width:300px;display: inline;}
+.mod_costumnav a{width:300px;text-decoration:none;font-size:15px;color:#ffffff;}
+#footer .mod_customnav ul li{}
+#footer .mod_customnav{width:165px;left:-215px;top:35px;position:relative;float:left;font-size:10px;color:#7f8385;z-index: 10;text-transform: none;text-shadow: 0px;}
+#left .mod_navigation{width:257px;left:75px;top:0;position:relative;padding-top:125px;color:#ffffff;text-shadow:#000000 1px 1px 0px;overflow: hidden;z-index: 3;}
+#footer a{font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;text-decoration:none;font-size:10px;color:#ffffff;}
+#footer a:hover{font-family:Tahoma, Arial, Helvetica, Verdana, sans-serif, Trebuchet MS;text-decoration:underline;font-size:10px;color:#ffffff;}
+#footer-links a{color:#63686b;text-shadow:#ffffff 1px 1px 0px;}
+#footer-links a:hover{color:#63686b;text-shadow:#ffffff 1px 1px 0px;}
+#lang_select{width:25px;right:262px;top:3px;position:absolute;font-size:10px;z-index: 10;}
+#search{right:-25px;top:1px;position:absolute;font-size:10px;z-index: 10;}
+#logo{width:122px;height:37px;left:43px;top:29px;position:absolute;margin-top:18px;float: left;}
+#suche{width:150px;float:left;display:none;text-transform: none;}
+.pdf_link{position:absolute;right: 25px; bottom: -30px; z-index: 200;}
+#start-trenner{background-image:url(tl_files/SIV/bilder/back-start-trenner.png); width: 958px; height: 200px; position:absolute; z-index:2; top: 330px; margin-left: 14px;}
+#start-trenner2{background-image:url(tl_files/SIV/bilder/back-start-trenner.png); width: 958px; height: 200px; position:absolute; z-index:2; top: 620px; margin-left: 14px;}
+#start-big-slider{background-image:url(tl_files/SIV/bilder/back-big-slider.png); width: 936px; height: 320px; margin-left: 28px; position:absolute; z-index:3;}
+#start-top{background-image:url(tl_files/SIV/bilder/back-start-top.png); width: 988px; height: 174px; position:absolute; z-index:1;}
+#presse-kontakt{width: 600px; font-size: 12px; font-weight: normal;}
+.submenu li{margin: 2px;}
+.mod_sitemap{margin: 10px 0; width: 520px;}
+#main .mod_sitemap ul ul{margin: 0;}
+#main .mod_sitemap ul ul li{margin: 0 0 0 20px;}
+#main .mod_sitemap a{color: #4e535f;background: #eff1f3;padding: 0;text-decoration: none;border-bottom: 1px solid #ccc;display: block;padding: 3px 0 3px 5px;zoom: 1;}
+#main .mod_sitemap a:hover{background: #dee1e6;color: #0d4a88;}
+.mod_sitemap ul ul ul a{border-bottom: none;position: relative;padding: 3px 0 5px 4px;}
+#main .mod_sitemap ul.level_2 li.last a{border-bottom: none;}
+.mod_sitemap img{display: none;}
+.mod_sitemap{font-size: 12px;}
+.mod_sitemap ul{border-top:0px; margin: 0px;}
+.mod_sitemap ul.level_2{margin-top:0;margin-bottom:0; padding-top: 20px;}
+.mod_sitemap ul.level_3{margin-top:0;margin-bottom:0;}
+.mod_changelanguage{position: absolute; top: 30px; right: 255px; z-index: 20;}
+.mod_changelanguage li{list-style: none;}
+#form-hidden{display: none;}
+form#kontaktformular{width: 600px;line-height: 1;padding: 5px 20px 20px 20px;background-color:#eee;border:1px solid #ccc;border-radius:5px;font-size: 12px;  text-shadow:#ffffff 1px 1px 0px;}
+#kontaktformular label{display: block;cursor: pointer;margin: 18px 0 0 0;}
+#kontaktformular .checkbox_container label{display:inline;vertical-align:middle;position: relative; bottom: 2px;}
+#kontaktformular .select{width:100%;margin-top:5px;margin-bottom:5px;}
+#kontaktformular .checkbox_container{margin-top: 1em;}
+#kontaktformular .bewerbungsfile{height: 25px;}
+#kontaktformular .text{width:100%;}
+#kontaktformular .textarea{width:100%height:100px;padding: 3px;}
+#kontaktformular .captcha{width:40px;display:inline;}
+#kontaktformular .submit{font-size: 12px;display: block;margin-top: 10px; height: 18px;width: 135px;border: 0px;padding: 0px;}
+#kontaktformular p.error{color: #005c82; max-width: 400px; padding: 3px; border: 0px solid #f00; margin-bottom: 3px; font-weight: bolder;}
+form#informationsmaterial{width: 600px;line-height: 1;padding: 5px 20px 20px 20px;background-color:#eee;border:1px solid #ccc;border-radius:5px;font-size: 12px;  text-shadow:#ffffff 1px 1px 0px;}
+#informationsmaterial label{display: block; cursor: pointer; margin: 18px 0 3px 0;}
+#informationsmaterial .checkbox_container label{display: inline; position: relative; bottom: 2px;}
+#informationsmaterial .checkbox_container{margin-top: 1em;}
+#informationsmaterial aufzaehlung{padding: 3px; height: 15px; border: 1px solid #00498b;}
+#informationsmaterial span{padding: 3px; height: 15px; border: 0px solid #00498b; display: block;}
+#informationsmaterial .mandatory span{display: inline;}
+#informationsmaterial p.error{color: #005c82; max-width: 400px; padding: 3px; border: 0px solid #f00; margin-bottom: 3px; font-weight: bolder;}
+#informationsmaterial .submit{background-image:url("tl_files/SIV/bilder/submit-back.png");font-size: 11px;display: block;margin-top: 10px;height: 18px;width: 135px;border: 0px;padding: 0px; text-shadow:#535a5d 1px 1px 0px; color: #ffffff;}
+#informationsmaterial .text{width:100%;}
+.input-float-right{float: right;}
+.input-float-left{float: left;}
+.toggler{background-image:url("tl_files/SIV/bilder/back-toggler.png");background-repeat:no-repeat;cursor: pointer;width: 660px;font-size: 13px;margin: 6px;height: 25px; padding-left: 6px; padding-top: 2px; color: #155776;margin-left: 0px;}
+.ce_accordion h1{display: none;}
+.ce_accordion p{width: 635px; padding: 6px;}
+#map-impressum{background-image:url("tl_files/SIV/bilder/back-googlemap-impressum.png");background-repeat:no-repeat;position: absolute; top: 93px; left: 380px; width: 307px; height: 325px; padding-left: 4px; padding-top: 4px; background-position: 0px 0px;}
+#map-kontakt{position: static; background-image: none; float: left; margin-top: -20px; width: 650px; margin-left: -30px;}
+#suche input{height: 12px; width: 150px; float: right; font-size: 10px;}
+.mod_newsarchive{width: 660px;}
+.mod_eventlist{font-size:12px;}
+.mod_eventlist h1{font-size:18px;}
+.info{color:#003452;}
+.mod_newsreader .image_container{margin-right: 40px;}
+.mod_newsreader a{/* 05.12.2013: Änderung der Schriftgröße von 14px auf 12 px*/font-size: 12px;}
+#vorstand{width: 680px; height: 240px;}
+#vorstand img{margin: 5px;}
+#callbackservice{background-image:url(tl_files/SIV/bilder/back-callback.png); height: 107px; width: 195px; position: absolute; text-transform: uppercase; margin-left: 110px; cursor: pointer; background-repeat: no-repeat;}
+.mod_dlh_googlemaps{background-image:url("tl_files/SIV/bilder/back-maps.png");background-repeat:no-repeat;float: right; margin-top: 10px; width: 250px; height: 189px; padding: 16px;}
+#standort{float: left; width: 430px;}
+.pagination ul li{display: inline; font-size: 12px;}
+.mod_newsreader ul li{width: 500px;}
+#trenner-standorte{width: 700px; overflow: hidden;}
+.ce_accordion #trenner-standorte img{width: 700px; overflow: hidden; display: none;}
+#loginartikel .image_container{background:url("tl_files/SIV/bilder/rahmen-bilder-klein.png") left top no-repeat;padding-top: 12px; padding-left: 13px;}
+.submenu .trail{color: #b6b9bb;}
+#siv-suche .ce_text{border-bottom:1px solid #636363;width: 95%;}
+#presse-news p{font-size: 12px; font-weight: normal; width: 480px;}
+.back a{font-size: 12px;}
+.ce_text h2{margin-left: 0px; margin-top: 8px;}
+.submit{background-image:url("tl_files/SIV/bilder/submit-back.png");background-repeat:no-repeat;font-size: 11px; display: block; margin-top: -2px; height: 18px; width: 135px; border: 0px; padding: 0px; text-shadow:#000 1px 1px 0px; color: #535a5d; background-color: transparent; color: #ffffff;}
+#loginbereich .back{display: none;}
+#produktionssteuerung{text-indent: 0px;padding: 0px 0px 0px 20px;}
+#produktionssteuerung img{margin: 0px 0px 0px -20px;}

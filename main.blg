@@ -21,51 +21,68 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: verzeichnisse/literatur.bib
-You're missing a field name---line 78 of file verzeichnisse/literatur.bib
+You're missing a field name---line 85 of file verzeichnisse/literatur.bib
  :   
  :   %Year                     = {2015},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+You're missing a field name---line 95 of file verzeichnisse/literatur.bib
+ :   
+ :   %Year                     = {2015},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 105 of file verzeichnisse/literatur.bib
+ :   
+ :   %Year                     = {2015},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 117 of file verzeichnisse/literatur.bib
+ :   
+ :   %owner                    = {pohl},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty year in duden:migra
 Warning--empty year in wiki:plsql
-You've used 4 entries,
+Warning--empty year in wiki:rdb
+You've used 9 entries,
             4793 wiz_defined-function locations,
-            924 strings with 7149 characters,
-and the built_in function-call counts, 1787 in all, are:
-= -- 166
-> -- 49
-< -- 34
-+ -- 40
-- -- 15
-* -- 101
-:= -- 329
-add.period$ -- 5
-call.type$ -- 4
-change.case$ -- 18
-chr.to.int$ -- 4
-cite$ -- 5
-duplicate$ -- 63
-empty$ -- 142
-format.name$ -- 34
-if$ -- 359
-int.to.chr$ -- 1
+            950 strings with 7841 characters,
+and the built_in function-call counts, 3748 in all, are:
+= -- 365
+> -- 100
+< -- 63
++ -- 74
+- -- 29
+* -- 211
+:= -- 678
+add.period$ -- 10
+call.type$ -- 9
+change.case$ -- 39
+chr.to.int$ -- 8
+cite$ -- 12
+duplicate$ -- 134
+empty$ -- 294
+format.name$ -- 69
+if$ -- 768
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 18
-newline$ -- 33
-num.names$ -- 12
-pop$ -- 31
+missing$ -- 40
+newline$ -- 62
+num.names$ -- 27
+pop$ -- 66
 preamble$ -- 1
-purify$ -- 26
+purify$ -- 57
 quote$ -- 0
-skip$ -- 90
+skip$ -- 186
 stack$ -- 0
-substring$ -- 73
-swap$ -- 10
-text.length$ -- 9
-text.prefix$ -- 3
+substring$ -- 152
+swap$ -- 21
+text.length$ -- 19
+text.prefix$ -- 7
 top$ -- 0
-type$ -- 32
-warning$ -- 1
-while$ -- 15
-width$ -- 7
-write$ -- 57
-(There was 1 error message)
+type$ -- 78
+warning$ -- 3
+while$ -- 32
+width$ -- 12
+write$ -- 120
+(There were 4 error messages)

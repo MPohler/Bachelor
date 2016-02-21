@@ -1,6 +1,9 @@
 \select@language {ngerman}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Produktfamilie von kVASy$^\text {\textregistered }$\cite {SIV16}}}{8}{figure.10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Begriffe einer relationaler Datenbanken \cite {wiki:rdb}}}{9}{figure.13}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Allgemeiner ETL-Prozess (eig. Abb. nach \cite {Rossak2013}[Seite 38])}}{10}{figure.19}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

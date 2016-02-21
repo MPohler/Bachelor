@@ -11,32 +11,30 @@
   Timestamp                = {2014.12.03}
 }
 
-@Misc{python:2or3,
-  Title                    = {Python2or{P}ython3},
+@Book{Rossak2013,
+  Title                    = {Datenintegration},
+  Author                   = {Ines Rossak},
+  Publisher                = {Carl Hanser Verlag},
+  Year                     = {2013},
+}
 
-  Author                   = {Python},
-  Note                     = {\url{https://wiki.python.org/moin/Python2orPython3} [Aufgerufen: 15. Dezember 2014, 10:25]},
-  Year                     = {Bearbeitungsstand vom 13. April 2014},
-
-  Owner                    = {pohl},
-  Timestamp                = {2014.12.15},
-  Url                      = {\url{https://wiki.python.org/moin/Python2orPython3}}
+@Book{kjd2010,
+  Title                    = {Wirtschaftsinformatik},
+  Author                   = {Kenneth C.Laudon and Jane P.Laudon and Detlef Schoder},
+  Publisher                = {Pearson Studium},
+  Year                     = {2010},
 }
 
 @Misc{SIV13,
   title                    = {S{I}{V}.{A}{G} {U}nternehmensbroschüre},
   note                     = {Abrufdatum: 01.02.2016},
   author                   = {SIV.AG},
-  year                     = {2013},
+  Year                     = {2013},
   howpublished             = "\url{https://www.siv.de/tl_files/SIV/downloads/broschueren/SIV.AG_Imagebroschuere.pdf}",
   owner                    = {pohl},
   timestamp                = {2016.02.01},
   url                      = {https://www.siv.de/tl_files/SIV/downloads/broschueren/SIV.AG_Imagebroschuere.pdf}
 }
-
-
-
-
 
 @Book{Dalheimer2005,
   Title                    = {{\LaTeX} kurz \& gut},
@@ -70,4 +68,16 @@
   Owner                    = {drews},
   Timestamp                = {2015.02.12},
   Url                      = {http://de.wikipedia.org/w/index.php?title=BibTeX&oldid=44468732}
+}
+
+@Misc{wiki:plsql,
+  Title                    = {P{L}/{S}{Q}{L} --- {W}ikipedia{,} {D}ie freie {E}nzyklopädie},
+  
+  Author                   = {Wikipedia},
+  Note                     = {\url{https://de.wikipedia.org/wiki/PL/SQL} (Abrufdatum am 09.02.2016)},
+  %Year                     = {2015},
+
+  %LastChecked              = {21. Juli 2015},
+  %Timestamp                = {2015.02.12},
+  %Url                      = {https://de.wikipedia.org/wiki/PL/SQL}
 }
