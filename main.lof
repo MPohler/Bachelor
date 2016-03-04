@@ -3,10 +3,16 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Produktfamilie von kVASy$^\text {\textregistered }$\cite {SIV16}}}{8}{figure.10}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Begriffe einer relationaler Datenbanken \cite {wiki:rdb}}}{9}{figure.13}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Allgemeiner ETL-Prozess (eig. Abb. nach \cite {Rossak2013}[Seite 38])}}{10}{figure.19}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Allgemeiner ETL-Prozess (eig. Abb. nach \cite {Rossak2013}[Seite 38])}}{11}{figure.19}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Migrationsverfahren durch die SIV.AG}}{14}{figure.33}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces dt-Datei Beispiel (eigener Screenshot)}}{27}{figure.58}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Dashboard Tensei-Data (eigener Screenshot)}}{28}{figure.59}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces DFASDL Tensei-Data (eigener Screenshot)}}{29}{figure.60}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Cronjob Tensei-Data (eigener Screenshot)}}{30}{figure.61}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Trigger Tensei-Data (eigener Screenshot)}}{31}{figure.62}

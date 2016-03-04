@@ -16,14 +16,12 @@
 \bibitem[Dud]{duden:migra}
 \textsc{Duden}:
 \newblock \emph{Migration}. --
-\newblock \url{https://de.wikipedia.org/wiki/Migration} (Abrufdatum am
-  16.02.2016)
+\newblock \url{https://de.wikipedia.org/wiki/Migration} Abrufdatum: 16.02.2016
 
-\bibitem[IT16]{DB16}
+\bibitem[IT]{DB16}
 \textsc{IT} solid:
-\newblock \emph{DB-Engines}.
-\newblock \url{http://db-engines.com/de/ranking}, 2016. --
-\newblock Abrufdatum: 17.02.2016
+\newblock \emph{DB-Engines}. --
+\newblock \url{http://db-engines.com/de/ranking} Abrufdatum: 17.02.2016
 
 \bibitem[KE11]{Kemper2011}
 \textsc{Kemper}, Alfons ; \textsc{Eickler}, André:
@@ -34,6 +32,15 @@
 \textsc{Rossak}, Ines:
 \newblock \emph{Datenintegration}.
 \newblock Carl Hanser Verlag, 2013
+
+\bibitem[SIV11]{SIV11}
+\textsc{SIV.AG}:
+\newblock \emph{S{I}{V}.{A}{G} {L}ösungsanbieter für die {E}nergie- und
+  {W}asserwirschaft}.
+\newblock
+  \url{https://www.yumpu.com/de/document/view/5767240/losungsanbieter-fur-die-energie-und-wasserwirtschaft-sivag},
+  2011. --
+\newblock Abrufdatum: 01.03.2016
 
 \bibitem[SIV13]{SIV13}
 \textsc{SIV.AG}:
@@ -55,17 +62,39 @@
 \newblock \,Version:\,2016. --
 \newblock Abrufdatum: 21.02.2016
 
+\bibitem[Wega]{wegtam:use}
+\textsc{Wegtam}:
+\newblock \emph{Anwendungsfälle}. --
+\newblock \url{http://www.tensei-data.com/de/use-cases} Abrufdatum: 23.02.2016
+
+\bibitem[Wegb]{wegtam:liz}
+\textsc{Wegtam}:
+\newblock \emph{Lizenzen}. --
+\newblock \url{http://www.tensei-data.com/de/licenses} Abrufdatum: 23.02.2016
+
+\bibitem[Wegc]{wegtam:supp}
+\textsc{Wegtam}:
+\newblock \emph{Support}. --
+\newblock \url{http://www.tensei-data.com/de/support} Abrufdatum: 23.02.2016
+
+\bibitem[Wegd]{wegtam:prof}
+\textsc{Wegtam}:
+\newblock \emph{Unternehmensprofil}. --
+\newblock
+  \url{http://donar.messe.de/exhibitor/cebit/2014/T816887/unternehmensprofil-ger-277823.pdf}
+  Abrufdatum: 23.02.2016
+
 \bibitem[Wika]{wiki:plsql}
 \textsc{Wikipedia}:
 \newblock \emph{P{L}/{S}{Q}{L} --- {W}ikipedia{,} {D}ie freie {E}nzyklopädie}.
   --
-\newblock \url{https://de.wikipedia.org/wiki/PL/SQL} (Abrufdatum am 09.02.2016)
+\newblock \url{https://de.wikipedia.org/wiki/PL/SQL} Abrufdatum: 09.02.2016
 
 \bibitem[Wikb]{wiki:rdb}
 \textsc{Wikipedia}:
 \newblock \emph{Relationale {D}atenbank --- {W}ikipedia{,} {D}ie freie
   {E}nzyklopädie}. --
-\newblock \url{https://de.wikipedia.org/wiki/Relationale_Datenbank} (Abrufdatum
-  am 21.02.2016)
+\newblock \url{https://de.wikipedia.org/wiki/Relationale_Datenbank} Abrufdatum:
+  21.02.2016
 
 \end{thebibliography}

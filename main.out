@@ -22,25 +22,26 @@
 \BOOKMARK [2][-]{subsection.29}{Vorgehensweise/Migrationsplanung}{section.24}% 22
 \BOOKMARK [2][-]{subsection.30}{Anforderung an die Datenmigration}{section.24}% 23
 \BOOKMARK [0][-]{chapter.31}{Ist-Stand-Analyse}{}% 24
-\BOOKMARK [1][-]{section.32}{Migrationsprozess}{chapter.31}% 25
-\BOOKMARK [1][-]{section.33}{Transformationen}{chapter.31}% 26
-\BOOKMARK [1][-]{section.34}{Qualit\344tskontrolle/Protokollierung}{chapter.31}% 27
-\BOOKMARK [1][-]{section.35}{Ablaufsteuerung}{chapter.31}% 28
-\BOOKMARK [0][-]{chapter.36}{ETL-Tool Tensei-Data}{}% 29
-\BOOKMARK [1][-]{section.37}{Allgemeine Informationen}{chapter.36}% 30
-\BOOKMARK [1][-]{section.38}{Migrationsprozess}{chapter.36}% 31
-\BOOKMARK [1][-]{section.39}{Transformationen}{chapter.36}% 32
-\BOOKMARK [1][-]{section.40}{Qualit\344tskontrolle/Protokollierung}{chapter.36}% 33
-\BOOKMARK [1][-]{section.41}{Ablaufsteuerung}{chapter.36}% 34
-\BOOKMARK [0][-]{chapter.42}{Implementierung und Test}{}% 35
-\BOOKMARK [0][-]{chapter.43}{Bewertung, Zusammenfassung und Ausblick}{}% 36
-\BOOKMARK [1][-]{section.44}{Bewertung}{chapter.43}% 37
-\BOOKMARK [1][-]{section.45}{Ausblick}{chapter.43}% 38
-\BOOKMARK [1][-]{section.46}{Zusammenfassung}{chapter.43}% 39
-\BOOKMARK [0][-]{chapter*.47}{Literaturverzeichnis}{}% 40
-\BOOKMARK [0][-]{chapter*.48}{Abbildungsverzeichnis}{}% 41
-\BOOKMARK [0][-]{chapter*.49}{Tabellenverzeichnis}{}% 42
-\BOOKMARK [0][-]{section*.50}{Abk\374rzungsverzeichnis}{}% 43
-\BOOKMARK [0][-]{appendix.52}{Auflistung von Quellcode und \344hnliches}{}% 44
-\BOOKMARK [0][-]{appendix*.53}{Selbstst\344ndigkeitserkl\344rung}{}% 45
-\BOOKMARK [0][-]{Thesen.0}{Thesen}{}% 46
+\BOOKMARK [1][-]{section.32}{Datenmigrationsprozess}{chapter.31}% 25
+\BOOKMARK [1][-]{section.36}{Transformationen}{chapter.31}% 26
+\BOOKMARK [1][-]{section.37}{Qualit\344tskontrolle/Protokollierung}{chapter.31}% 27
+\BOOKMARK [1][-]{section.38}{Ablaufsteuerung}{chapter.31}% 28
+\BOOKMARK [0][-]{chapter.39}{ETL-Tool Tensei-Data}{}% 29
+\BOOKMARK [1][-]{section.40}{Allgemeine Grundlagen}{chapter.39}% 30
+\BOOKMARK [1][-]{section.42}{Grafische Benutzeroberfl\344che}{chapter.39}% 31
+\BOOKMARK [1][-]{section.43}{Migrationsprozess}{chapter.39}% 32
+\BOOKMARK [1][-]{section.44}{Transformationen}{chapter.39}% 33
+\BOOKMARK [1][-]{section.45}{Qualit\344tskontrolle/Protokollierung}{chapter.39}% 34
+\BOOKMARK [1][-]{section.46}{Ablaufsteuerung}{chapter.39}% 35
+\BOOKMARK [0][-]{chapter.47}{Implementierung und Test}{}% 36
+\BOOKMARK [0][-]{chapter.48}{Bewertung, Zusammenfassung und Ausblick}{}% 37
+\BOOKMARK [1][-]{section.49}{Bewertung}{chapter.48}% 38
+\BOOKMARK [1][-]{section.50}{Ausblick}{chapter.48}% 39
+\BOOKMARK [1][-]{section.51}{Zusammenfassung}{chapter.48}% 40
+\BOOKMARK [0][-]{chapter*.52}{Literaturverzeichnis}{}% 41
+\BOOKMARK [0][-]{chapter*.53}{Abbildungsverzeichnis}{}% 42
+\BOOKMARK [0][-]{chapter*.54}{Tabellenverzeichnis}{}% 43
+\BOOKMARK [0][-]{section*.55}{Abk\374rzungsverzeichnis}{}% 44
+\BOOKMARK [0][-]{appendix.57}{Auflistung von Quellcode und \344hnliches}{}% 45
+\BOOKMARK [0][-]{appendix*.63}{Selbstst\344ndigkeitserkl\344rung}{}% 46
+\BOOKMARK [0][-]{Thesen.0}{Thesen}{}% 47

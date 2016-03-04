@@ -4,42 +4,43 @@
 \contentsline {section}{\numberline {2.1}SIV.\spacefactor \@m AG}{7}{section.8}
 \contentsline {section}{\numberline {2.2}kVASy$^\text {\textregistered }$}{7}{section.9}
 \contentsline {section}{\numberline {2.3}Datenbankgrundlagen}{8}{section.11}
-\contentsline {subsection}{\numberline {2.3.1}Elemente einer relationalen Datenbank}{8}{subsection.12}
-\contentsline {subsection}{\numberline {2.3.2}Beziehungen und Normalformen}{9}{subsection.14}
-\contentsline {subsection}{\numberline {2.3.3}Schema}{9}{subsection.15}
-\contentsline {section}{\numberline {2.4}Datenintegration/Datenmigration}{9}{section.16}
-\contentsline {section}{\numberline {2.5}Transformationen}{9}{section.17}
-\contentsline {section}{\numberline {2.6}\acrshort {etl}-Prozess}{9}{section.18}
-\contentsline {subsection}{\numberline {2.6.1}Extraktion}{10}{subsection.20}
-\contentsline {subsection}{\numberline {2.6.2}Transformation}{10}{subsection.21}
-\contentsline {subsection}{\numberline {2.6.3}Laden}{10}{subsection.22}
-\contentsline {section}{\numberline {2.7}Qualit\IeC {\"a}tskontrolle/Protokollierung}{10}{section.23}
-\contentsline {section}{\numberline {2.8}Kriterien f\IeC {\"u}r erfolgreiche Migrationen}{10}{section.24}
-\contentsline {subsection}{\numberline {2.8.1}Ziele einer Migration}{11}{subsection.25}
-\contentsline {subsection}{\numberline {2.8.2}Wirtschaftliche Aspekte}{11}{subsection.26}
-\contentsline {subsection}{\numberline {2.8.3}Qualitative Aspekte}{11}{subsection.27}
-\contentsline {subsection}{\numberline {2.8.4}Organisatorische Aspekte}{11}{subsection.28}
-\contentsline {subsection}{\numberline {2.8.5}Vorgehensweise/Migrationsplanung}{11}{subsection.29}
-\contentsline {subsection}{\numberline {2.8.6}Anforderung an die Datenmigration}{11}{subsection.30}
-\contentsline {chapter}{\numberline {3}Ist-Stand-Analyse}{12}{chapter.31}
-\contentsline {section}{\numberline {3.1}Migrationsprozess}{12}{section.32}
-\contentsline {section}{\numberline {3.2}Transformationen}{12}{section.33}
-\contentsline {section}{\numberline {3.3}Qualit\IeC {\"a}tskontrolle/Protokollierung}{12}{section.34}
-\contentsline {section}{\numberline {3.4}Ablaufsteuerung}{12}{section.35}
-\contentsline {chapter}{\numberline {4}ETL-Tool Tensei-Data}{13}{chapter.36}
-\contentsline {section}{\numberline {4.1}Allgemeine Informationen}{13}{section.37}
-\contentsline {section}{\numberline {4.2}Migrationsprozess}{13}{section.38}
-\contentsline {section}{\numberline {4.3}Transformationen}{13}{section.39}
-\contentsline {section}{\numberline {4.4}Qualit\IeC {\"a}tskontrolle/Protokollierung}{13}{section.40}
-\contentsline {section}{\numberline {4.5}Ablaufsteuerung}{13}{section.41}
-\contentsline {chapter}{\numberline {5}Implementierung und Test}{14}{chapter.42}
-\contentsline {chapter}{\numberline {6}Bewertung, Zusammenfassung und Ausblick}{15}{chapter.43}
-\contentsline {section}{\numberline {6.1}Bewertung}{15}{section.44}
-\contentsline {section}{\numberline {6.2}Ausblick}{15}{section.45}
-\contentsline {section}{\numberline {6.3}Zusammenfassung}{15}{section.46}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{16}{chapter*.47}
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{17}{chapter*.48}
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{18}{chapter*.49}
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{19}{section*.50}
-\contentsline {chapter}{\numberline {A}Auflistung von Quellcode und \IeC {\"a}hnliches}{20}{appendix.52}
-\contentsline {chapter}{Selbstst\IeC {\"a}ndigkeitserkl\IeC {\"a}rung}{21}{appendix*.53}
+\contentsline {subsection}{\numberline {2.3.1}Elemente einer relationalen Datenbank}{9}{subsection.12}
+\contentsline {subsection}{\numberline {2.3.2}Beziehungen und Normalformen}{10}{subsection.14}
+\contentsline {subsection}{\numberline {2.3.3}Schema}{10}{subsection.15}
+\contentsline {section}{\numberline {2.4}Datenintegration/Datenmigration}{10}{section.16}
+\contentsline {section}{\numberline {2.5}Transformationen}{10}{section.17}
+\contentsline {section}{\numberline {2.6}\acrshort {etl}-Prozess}{10}{section.18}
+\contentsline {subsection}{\numberline {2.6.1}Extraktion}{11}{subsection.20}
+\contentsline {subsection}{\numberline {2.6.2}Transformation}{11}{subsection.21}
+\contentsline {subsection}{\numberline {2.6.3}Laden}{11}{subsection.22}
+\contentsline {section}{\numberline {2.7}Qualit\IeC {\"a}tskontrolle/Protokollierung}{11}{section.23}
+\contentsline {section}{\numberline {2.8}Kriterien f\IeC {\"u}r erfolgreiche Migrationen}{11}{section.24}
+\contentsline {subsection}{\numberline {2.8.1}Ziele einer Migration}{12}{subsection.25}
+\contentsline {subsection}{\numberline {2.8.2}Wirtschaftliche Aspekte}{12}{subsection.26}
+\contentsline {subsection}{\numberline {2.8.3}Qualitative Aspekte}{12}{subsection.27}
+\contentsline {subsection}{\numberline {2.8.4}Organisatorische Aspekte}{12}{subsection.28}
+\contentsline {subsection}{\numberline {2.8.5}Vorgehensweise/Migrationsplanung}{12}{subsection.29}
+\contentsline {subsection}{\numberline {2.8.6}Anforderung an die Datenmigration}{12}{subsection.30}
+\contentsline {chapter}{\numberline {3}Ist-Stand-Analyse}{13}{chapter.31}
+\contentsline {section}{\numberline {3.1}Datenmigrationsprozess}{13}{section.32}
+\contentsline {section}{\numberline {3.2}Transformationen}{16}{section.36}
+\contentsline {section}{\numberline {3.3}Qualit\IeC {\"a}tskontrolle/Protokollierung}{16}{section.37}
+\contentsline {section}{\numberline {3.4}Ablaufsteuerung}{16}{section.38}
+\contentsline {chapter}{\numberline {4}ETL-Tool Tensei-Data}{17}{chapter.39}
+\contentsline {section}{\numberline {4.1}Allgemeine Grundlagen}{17}{section.40}
+\contentsline {section}{\numberline {4.2}Grafische Benutzeroberfl\IeC {\"a}che}{19}{section.42}
+\contentsline {section}{\numberline {4.3}Migrationsprozess}{19}{section.43}
+\contentsline {section}{\numberline {4.4}Transformationen}{19}{section.44}
+\contentsline {section}{\numberline {4.5}Qualit\IeC {\"a}tskontrolle/Protokollierung}{19}{section.45}
+\contentsline {section}{\numberline {4.6}Ablaufsteuerung}{19}{section.46}
+\contentsline {chapter}{\numberline {5}Implementierung und Test}{20}{chapter.47}
+\contentsline {chapter}{\numberline {6}Bewertung, Zusammenfassung und Ausblick}{21}{chapter.48}
+\contentsline {section}{\numberline {6.1}Bewertung}{21}{section.49}
+\contentsline {section}{\numberline {6.2}Ausblick}{21}{section.50}
+\contentsline {section}{\numberline {6.3}Zusammenfassung}{21}{section.51}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{22}{chapter*.52}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{24}{chapter*.53}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{25}{chapter*.54}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{26}{section*.55}
+\contentsline {chapter}{\numberline {A}Auflistung von Quellcode und \IeC {\"a}hnliches}{27}{appendix.57}
+\contentsline {chapter}{Selbstst\IeC {\"a}ndigkeitserkl\IeC {\"a}rung}{32}{appendix*.63}

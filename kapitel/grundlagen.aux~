@@ -2,6 +2,8 @@
 \providecommand\hyper@newdestlabel[2]{}
 \citation{SIV13}
 \citation{kjd2010}
+\citation{SIV16}
+\citation{SIV16}
 \citation{SIV13}
 \citation{wiki:plsql}
 \citation{DB16}
@@ -14,21 +16,26 @@
 \newlabel{SIV.AG}{{2.1}{6}{SIV.\@AG}{section.8}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.2}kVASy$^\text  {\textregistered }$}{6}{section.9}}
 \newlabel{kvasy}{{2.2}{6}{kVASy$^\text {\textregistered }$}{section.9}{}}
-\citation{duden:migra}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Produktfamilie von kVASy$^\text  {\textregistered }$}}{7}{figure.10}}
-\newlabel{pic:kVASy:end}{{2.1}{7}{Produktfamilie von kVASy$^\text {\textregistered }$}{figure.10}{}}
+\citation{Kemper2011}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Produktfamilie von kVASy$^\text  {\textregistered }$\cite  {SIV16}}}{7}{figure.10}}
+\newlabel{pic:kVASy:end}{{2.1}{7}{Produktfamilie von kVASy$^\text {\textregistered }$\cite {SIV16}}{figure.10}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.3}Datenbankgrundlagen}{7}{section.11}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Elemente einer relationalen Datenbank}{7}{subsection.12}}
+\citation{wiki:rdb}
+\citation{wiki:rdb}
+\citation{duden:migra}
 \citation{Rossak2013}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Begriffe einer relationaler Datenbanken}}{8}{figure.13}}
-\newlabel{pic:RDB:end}{{2.2}{8}{Begriffe einer relationaler Datenbanken}{figure.13}{}}
+\citation{Rossak2013}
+\citation{Rossak2013}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Begriffe einer relationaler Datenbanken \cite  {wiki:rdb}}}{8}{figure.13}}
+\newlabel{pic:RDB:end}{{2.2}{8}{Begriffe einer relationaler Datenbanken \cite {wiki:rdb}}{figure.13}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Beziehungen und Normalformen}{8}{subsection.14}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Schema}{8}{subsection.15}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.4}Datenintegration/Datenmigration}{8}{section.16}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.5}Transformationen}{8}{section.17}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.6}\acrshort {etl}-Prozess}{8}{section.18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Begriffe einer relationaler Datenbanken}}{9}{figure.19}}
-\newlabel{pic:RDB:end}{{2.3}{9}{Begriffe einer relationaler Datenbanken}{figure.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Allgemeiner ETL-Prozess (eig. Abb. nach \cite  {Rossak2013}[Seite 38])}}{9}{figure.19}}
+\newlabel{pic:ETL:Pro}{{2.3}{9}{Allgemeiner ETL-Prozess (eig. Abb. nach \cite {Rossak2013}[Seite 38])}{figure.19}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.6.1}Extraktion}{9}{subsection.20}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.6.2}Transformation}{9}{subsection.21}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.6.3}Laden}{9}{subsection.22}}
@@ -85,5 +92,5 @@
 \setcounter{lstlisting}{0}
 \setcounter{section@level}{2}
 }
-}{2}
+}
 }

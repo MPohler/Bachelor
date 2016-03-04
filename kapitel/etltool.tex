@@ -3,7 +3,57 @@
 %--------------------------------------------------------------------------------------------------------------
 
 \chapter{ETL-Tool Tensei-Data}
-\section{Allgemeine Informationen}
+Das in dieser Bachelorarbeit zu untersuchende \textbf{ETL-Tool Tensei-Data} ist von dem Unternehmen Wegtam UG entwickelt worden. Im Jahr 2012 wurde das Unternehmen durch Andre Schütz, Jens Jahnke und Frank Thiessenhusen gegründet, mit seiner Niederlassung in Bentwisch bei Rostock. Zu den Hauptaufgaben von Wegtam UG gehören die Software und Produktentwicklung, sowie die IT Technologieberatung, IT Projektentwicklung und IT Online Vermarktung. Der Firmenname entstammt aus der altnordischen Mythologie und wird dort Wörtlich übersetzt als „Der Wanderer“. Neben dem besagtem Tensei-Data führt das Unternehmen noch den Wegtam Suchagent. Für private Anwender dient es, als eine freie und anonyme Metasuchmaschine. Im Bereich der Firmenkunden ermöglicht die Wegtam Suchmaschinentechnologie eine Suche über verteilte Datenquellen. \cite{wegtam:prof}
+
+\section{Allgemeine Grundlagen}
+Das Produkt Tensei-Data ist in zwei verschiedenen \textbf{Lizenzmodellen} erhältlich. Das erste Lizenzmodell ist die gemeinsam genutzte Lizenz. Sie erstreckt sich von der kostenlosen, die 14 Tage genutzt werden kann, über die Small Business, Professional und  Enterprise Version mit einem festgelegten Zeitraum von einem Jahr. Die zweite Variante ist eine individuelle Lizenz, mit ihr ist es möglich Anpassung auf die jeweiligen Bedürfnisse zu gewährleisten. Angenommen die nötige Lizenz wurde erworben, erhält man die aktuellste Software-Version von Tensei-Data 1.7. \cite{wegtam:liz}
+Die nachstehende Tabelle \textbf{\ref{tab:lizenz:wegtam}} enthält eine Beschreibung der Komponenten die in der Lizenz für das Tool Tensei-Data von Bedeutung sind. Der Preis und Umfang einer Lizenz richtet sich, dann nach der Anzahl der eingesetzten Komponenten.
+\begin{table}[h]
+	\begin{center}
+		\caption{Lizenzinhalt}
+		\begin{tabularx}{\textwidth}{|X|X|}
+			\hline
+			\textbf{Begriff}& \textbf{Informelle Bedeutung}\\
+			\hline
+			Nutzer& Jemand der sich am System anmeldet und Transformationen bearbeitet und starten kann\\
+			\hline
+			Agent& Führt eine Transformation durch des Weiteren begrenzt die Anzahl der Agenten die Anzahl der gleichzeitig durchführbaren Transformationen\\
+			\hline
+			Transformationskonfiguration& Ist eine Beschreibung des Arbeitsablaufs für einen Agenten (Datenquellen, Rezepte, Datenziele, etc.)\\
+			\hline
+			Cronjob& Führt zu einem gewünschten Zeitpunkt eine Transformationskonfiguration aus\\
+			\hline
+			Trigger& Mit Hilfe eines Signals stößt er eine Transformationskonfiguration an\\
+			\hline
+			Updates& Beinhaltet grundsätzlich alle Updates und Upgrades innerhalb der Laufzeit\\
+			\hline
+			Rezepte& Beschreibt eine Transformation zwischen verschiedenen Formaten via \acrfull{dfasdl}  \\
+			\hline
+		\end{tabularx}
+		\label{tab:lizenz:wegtam}
+	\end{center}
+\end{table}
+\newpage
+Generell ergeben sich in allen Bereichen \textbf{Anwendungsfälle}. Die Lösungen von Tensei-Data finden ihren Einsatz bei Kleinstproblemen bis hin zu Datenbanken oder Data-Warehouse Szenarien. Daher ist es wirtschaftlich vor allem für kleine und mittlere Unternehmen interessant. \cite{wegtam:use} Einige Beispiele für den Tensei-Data Einsatz sind:
+\begin{itemize}
+  \item Anbinden von Kundensystemen bzw. Integration von Kundendaten in das eigene Zielsystem
+  \item Webseitenumzug von \acrfull{cms}
+  \item Zusammenführung von verschiedensten Datenquellen in firmeneigene Data-Warehouse-Systeme
+  \item Ablösung, Wechsel oder Upgrade von Softwaresystemen (z.B. Buchhaltung, Lager, \acrfull{crm}, \acrshort{erp}, Email-Clients etc.)
+  \item Anpassung der Daten während der Integration/Migration zur Säuberung von z.B. Kundendaten
+  \item Extrahieren von Daten aus einer Datenbank in eine CSV Datei, Laden von Daten aus Dateien in eine Datenbank, etc.
+\end{itemize}
+Mit der Anschaffung von einer Software ist es meist nicht getan. Entscheidend ist die sogenannte Pflege der Software, welches durch das zentrale Element dem \textbf{Support} realisiert wird. Im Folgenden werden einige Beispiele aufgeführt, die Wegtam als Supportleistung für Tensei-Data bereitstellt. \cite{wegtam:supp}
+\begin{itemize}
+  \item Software-Einführung von Tensei-Data für die Unterstützung des intuitiven Frontend und der umfangreichen Dokumentation
+  \item Individuelle und anwendungsbezogene Trainings für die Mitarbeiter um mit dem System effektiv umzugehen
+  \item Die Konfiguration und komplette Einrichtung des Systems, sowie eine individuelle Anpassung (z.B. spezifischer Transformatoren)
+\end{itemize}
+
+\section{Grafische Benutzeroberfläche}
+Die Bedienung des Tensei-Data Systems erfolgt über eine grafische Benutzeroberfläche (Tensei Server Gui), die mit Hilfe eines Browsers realisiert wird. Als Startseite für den Überblickt dient das Dashboard (vgl. Bild \ref{pic:Dash:Tensei}). Es zeigt die konfigurierten Transformationskonfigurationen und die verfügbaren Agenten. Darüber erfolgt eine kontinuierliche Aktualisierung der automatisch oder manuell ausgeführten Transformationskonfigurationen. Im oberen Bereich des Fensters befindet sich ein Dropdown-Menü, mit den Punkten Resources, Cookbooks, Service und Statistics. Die wiederum enthalten bis auf Cookbooks noch Unterpunkte.
+
+
 \section{Migrationsprozess}
 \section{Transformationen}
 \section{Qualitätskontrolle/Protokollierung}

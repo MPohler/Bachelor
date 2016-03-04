@@ -12,7 +12,7 @@ Die SIV.\@AG ist ein Anbieter für ganzheitliche Lösungen im Bereich der deutsc
 
 \section{kVASy$^\text{\textregistered}$}\label{kvasy} 
 
-Das zuvor bereits erwähnte kVASy$^\text{\textregistered}$ ist ein webbasiertes \acrshort{erp}-System und bildet das Aushängeschild der SIV.\@AG. Unter einem \acrshort{erp}-System ist eine integrierte unternehmensweite Anwendung zu verstehen, die zur Koordination wichtiger interner Prozesse eingesetzt wird \cite[Seite 482]{kjd2010}. Zu der Produktfamilie von kVASy$^\text{\textregistered}$ gehören die Module Finance (Buchhaltung), Billing (Abrechnung) und EDM (Vertragsverwaltung), Technical Assets (Anlagenmanagement) und xRM (Kundenbeziehungsmanagement).
+Das zuvor bereits erwähnte kVASy$^\text{\textregistered}$ ist ein webbasiertes \acrshort{erp}-System und bildet das Aushängeschild der SIV.\@AG. Unter einem \acrshort{erp}-System ist eine integrierte unternehmensweite Anwendung zu verstehen, die zur Koordination wichtiger interner Prozesse eingesetzt wird \cite[Seite 482]{kjd2010}. Zu der Produktfamilie von kVASy$^\text{\textregistered}$ gehören die Module Finance (Buchhaltung), Billing (Abrechnung) und EDM (Vertragsverwaltung), Technical Assets (Anlagenmanagement) und xRM (Kundenbeziehungsmanagement) (vgl. Bild \ref{pic:kVASy:end}).
 \begin{figure}[ht]
 	\begin{center}
 		\includegraphics[scale=0.25]{bilder/kVASy_Schema.png}
@@ -20,15 +20,14 @@ Das zuvor bereits erwähnte kVASy$^\text{\textregistered}$ ist ein webbasiertes 
 		\label{pic:kVASy:end}
 	\end{center}
 \end{figure}
-Auf der Grundlage einer zentralen Datenbasis erfolgt die Kommunikation der Module und Funktionalitäten schnittstellenfrei \cite[Seite15]{SIV13}. Die Umsetzung dessen erfolgt durch das \acrfull{dbms} Database 11g Release 2 von der Firma Oracle. Für die Umsetzung der Applikationslogik wurde \acrshort{plsql} (Procedural Language/Structured Query Language) verwendet, eine proprietäre Programmiersprache der Firma Oracle \cite{wiki:plsql}.
+Auf der Grundlage einer zentralen Datenbasis erfolgt die Kommunikation der Module und Funktionalitäten schnittstellenfrei \cite[Seite15]{SIV13}. Die Umsetzung dessen erfolgt durch das \acrfull{dbms} Database 11g Release 2 von der Firma Oracle. Für die Umsetzung der Applikationslogik wurde \acrfull{plsql} verwendet, eine proprietäre Programmiersprache der Firma Oracle \cite{wiki:plsql}.
 
 \section{Datenbankgrundlagen} 
-Indirekt wird bei Datenbanken von dem weit verbreiteten \acrfull{rdbms} ausgegangen. Dieses Datenbankmodell ist eins der Populärsten \acrshort{rdbms} \cite{DB16}. Zu den Aufgaben eines Datenbanksystems gehört es die Daten möglichst effizient und dauerhaft zu speichern. Zudem soll es eine Vereinfachung der Datenverwaltung ermöglichen. Das relationale Datenmodell ist so konzipiert das es eine mengenorientierte Datenverarbeitung erlaubt. Dabei können die Daten aus mehreren Tabellen durch Join-Verknüpfungen in einer großen Tabelle abgebildet werden. Durch die Festlegung von Spalten und Where-Klauseln kann die Menge weiter bearbeitet und somit in der Höhe und Breite eingeschränkt werden. Im Gegensatz zu einem datensatzorientiertem Vorgehen wird die Tabelle, Zeile um Zeile abgerufen und nach bestimmten Kriterien geprüft. Nachdem die Kriterien erfüllt sind werden die Daten weiterverarbeitet. \cite{Kemper2011}[Seite 71]
+Indirekt wird bei Datenbanken von dem weit verbreiteten \acrfull{rdbms} ausgegangen. Dieses Datenbankmodell ist eins der Populärsten \acrshort{rdbms} \cite{DB16}. Ein Datenbanksytem besteht Zu den Aufgaben eines Datenbanksystems gehört es die Daten möglichst effizient und dauerhaft zu speichern. Zudem soll es eine Vereinfachung der Datenverwaltung ermöglichen. Das relationale Datenmodell ist so konzipiert das es eine mengenorientierte Datenverarbeitung erlaubt. Dabei können die Daten aus mehreren Tabellen durch Join-Verknüpfungen in einer großen Tabelle abgebildet werden. Durch die Festlegung von Spalten und Where-Klauseln kann die Menge weiter bearbeitet und somit in der Höhe und Breite eingeschränkt werden. Im Gegensatz zu einem datensatzorientiertem Vorgehen wird die Tabelle, Zeile um Zeile abgerufen und nach bestimmten Kriterien geprüft. Nachdem die Kriterien erfüllt sind werden die Daten weiterverarbeitet. \cite{Kemper2011}[Seite 71] Somit wird die mengenorientierte Datenverarbeitung durch die Datenbanksprache SQL ausgeführt und die datensatzorientierte Verarbeitung beispielsweise durch eine Programmiersprache C\texttt{++} oder Java. Die relationale Datenbank von Oracle die in der Bachelorarbeit verwendet wird, bietet die Möglichkeit eine Programmiersprache, wie etwa \acrshort{plsql} die eigens von Oracle entwickelt worden ist einzusetzen. Durch \acrshort{plsql} ist es somit Möglich Java-Programme oder C\texttt{++}\,-Programme in einem \acrshort{plsql}-Programm auszuführen.
 
 \subsection{Elemente einer relationalen Datenbank}
-Zu den Elementen gehören Tabellen, Spalten und Zeilen (auch Tupel genannt). In der Regel existieren in einer Datenbank mehrere Tabellen. Die wiederum Attribute oder auch Felder beinhalten, die sogenannten Spalten. Eine Spalte besitzt einen Namen sowie einen Datentyp. Zu den drei wesentlichen Datentypen zählen Number (Zahl), Varchar (Text) und Date (Datum), diese enthalten wiederum noch weitere Varianten \cite{Kemper2011}[Seite 112]. Die Bedeutung eines Datentyps ist zum einen für ein Datenbanksystem und wichtig für ein Datenbanksystem für eine Optimierung des physikalische Datenspeichers sowohl für Damit ist gewährleistet das nur ein bestimmter Datentyp aufgenommen werden kann. 
-
-
+Zu den Elementen gehören Tabellen, Spalten und Zeilen (auch Tupel genannt). In der Regel besteht eine Datenbank aus mindestens einer, meistens aber aus mehreren \textbf{Tabellen} (Relationen). Die wiederum Attribute oder auch Felder beinhalten, die sogenannten Spalten. Eine \textbf{Spalte} besitzt einen Namen sowie einen Datentyp. Zu den drei wesentlichen Datentypen zählen Number (Zahl), Varchar (Text) und Date (Datum), diese enthalten wiederum noch weitere Varianten \cite{Kemper2011}[Seite 112]. Die Bedeutung eines Datentyps ist zum einen für ein Datenbanksystem, sowie für den Anwender wichtig. Bei einem Datenbanksystem ist eine Optimierung des physikalischen Datenspeichers möglich. Beim Anwender dient der Datentypen zur Überprüfung der Eingabe, die er getätigt hat. Sollte der vorgegeben Datentyp dem nicht Entsprechen würde es in so einem Fall zu einer Fehlerausgabe führen. Damit kann der Anwender darauf reagieren und die Eingabe korrigieren.
+Die \textbf{Zeilen} (Tupel) bezeichnen die eigentlichen Datensätze. Eine Zeile beinhaltet für jede Spalte einen Wert. Sollte kein Wert angegeben sein wird die Spalte mit dem Wert NULL befüllt. NULL ist somit als Wert zusehen und steht nur für die Abwesenheit eines Wertes. Die Abbildung \ref{pic:RDB:end} zeigt noch einmal eine Tabelle mit den Begrifflichkeiten die im Bereich der relationalen Datenbanken zum Einsatz kommen.
 \begin{figure}[ht]
 	\begin{center}
 		\includegraphics[scale=0.5]{bilder/Begriffe_relationaler_Datenbanken.png}
@@ -37,8 +36,19 @@ Zu den Elementen gehören Tabellen, Spalten und Zeilen (auch Tupel genannt). In 
 	\end{center}
 \end{figure}
 
+Zu den Vorteilen einer relationalen Datenbank gehören neben der Mehrbenutzerfähigkeit und Transaktionen auch Datensicherheit und Datenintegrität.
+Eine Transaktion bezeichnet eine Folge von Datenverarbeitungsbefehlen (lesen, verändern, einfügen, löschen), welches den Datenbestand in einen konsistenten Zustand überführt. Eine Transaktion sollte daher entweder vollständig und fehlerfrei oder gar nicht ausgeführt werden. \cite{Kemper2011}[Seite 285] Zur Datensicherheit zählt sowohl der Schutz vor Datenverlust, als auch der unerlaubte Zugriff durch Dritte. Die Datenintegrität wird durch sogenannte Constraints erreicht. Sie definieren Bedingungen, die beim Einfügen, Ändern und Löschen von Datensätzen in der Datenbank erfüllt werden müssen. Zu den Constraints einer relationalen Datenbank zählen \cite{Kemper2011}[Seite 161]:
+
+\begin{itemize}
+  \item PRIMARY KEY
+  \item FOREIGN KEY
+  \item UNIQUE
+\end{itemize}
 
 \subsection{Beziehungen und Normalformen}
+
+
+
 \subsection{Schema}
 
 \section{Datenintegration/Datenmigration}

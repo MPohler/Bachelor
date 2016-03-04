@@ -45,26 +45,25 @@
 \bibcite{DB16}{IT}
 \bibcite{Kemper2011}{KE11}
 \bibcite{Rossak2013}{Ros13}
-\bibcite{SIV11}{SIV11}
 \bibcite{SIV13}{SIV13}
 \bibcite{SIV16}{SIV16}
 \bibcite{wegtam:use}{Wega}
 \bibcite{wegtam:liz}{Wegb}
 \bibcite{wegtam:supp}{Wegc}
-\@writefile{toc}{\contentsline {chapter}{\nonumberline Literaturverzeichnis}{22}{chapter*.52}}
+\bibcite{wegtam:prof}{Wegd}
+\bibcite{wiki:plsql}{Wika}
+\@writefile{toc}{\contentsline {chapter}{\nonumberline Literaturverzeichnis}{20}{chapter*.51}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
-\bibcite{wegtam:prof}{Wegd}
-\bibcite{wiki:plsql}{Wika}
 \bibcite{wiki:rdb}{Wikb}
-\citation{SIV16}
-\citation{wiki:rdb}
-\citation{Rossak2013}
-\@writefile{toc}{\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{24}{chapter*.53}}
-\@writefile{toc}{\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{25}{chapter*.54}}
-\@writefile{toc}{\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{26}{section*.55}}
+\@writefile{toc}{\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{22}{chapter*.52}}
+\@writefile{toc}{\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{23}{chapter*.53}}
+\@writefile{toc}{\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{24}{section*.54}}
 \@input{kapitel/anhang.aux}
 \@input{kapitel/selbststaendigkeitserklaerung.aux}
+\@input{kapitel/thesen.aux}
+\global\@altsecnumformattrue
+}
 \@input{kapitel/thesen.aux}
 \global\@altsecnumformattrue

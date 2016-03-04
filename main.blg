@@ -21,9 +21,24 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: verzeichnisse/literatur.bib
-You're missing a field name---line 85 of file verzeichnisse/literatur.bib
+You're missing a field name---line 51 of file verzeichnisse/literatur.bib
  :   
- :   %Year                     = {2015},
+ :   %Year                     = {2014},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 62 of file verzeichnisse/literatur.bib
+ :   
+ :   %Year                     = {2012},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 73 of file verzeichnisse/literatur.bib
+ :   
+ :   %Year                     = {2012},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 84 of file verzeichnisse/literatur.bib
+ :   
+ :   %Year                     = {2012},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 You're missing a field name---line 95 of file verzeichnisse/literatur.bib
@@ -36,53 +51,68 @@ You're missing a field name---line 105 of file verzeichnisse/literatur.bib
  :   %Year                     = {2015},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 117 of file verzeichnisse/literatur.bib
+You're missing a field name---line 115 of file verzeichnisse/literatur.bib
  :   
- :   %owner                    = {pohl},
+ :   %Year                     = {2015},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 125 of file verzeichnisse/literatur.bib
+ :   
+ :   %Year                     = {2016},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 140 of file verzeichnisse/literatur.bib
+ :   
+ :   %url                      = {http://www.siv.de/tl_files/SIV/downloads/broschueren/SIV.AG_Produktportfolio.pdf}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--empty year in duden:migra
+Warning--empty year in DB16
+Warning--empty year in wegtam:use
+Warning--empty year in wegtam:liz
+Warning--empty year in wegtam:supp
+Warning--empty year in wegtam:prof
 Warning--empty year in wiki:plsql
 Warning--empty year in wiki:rdb
-You've used 9 entries,
+You've used 14 entries,
             4793 wiz_defined-function locations,
-            950 strings with 7841 characters,
-and the built_in function-call counts, 3748 in all, are:
-= -- 365
-> -- 100
-< -- 63
-+ -- 74
-- -- 29
-* -- 211
-:= -- 678
+            967 strings with 8459 characters,
+and the built_in function-call counts, 5430 in all, are:
+= -- 540
+> -- 140
+< -- 73
++ -- 87
+- -- 39
+* -- 311
+:= -- 983
 add.period$ -- 10
-call.type$ -- 9
-change.case$ -- 39
-chr.to.int$ -- 8
-cite$ -- 12
-duplicate$ -- 134
-empty$ -- 294
-format.name$ -- 69
-if$ -- 768
-int.to.chr$ -- 2
+call.type$ -- 14
+change.case$ -- 59
+chr.to.int$ -- 10
+cite$ -- 22
+duplicate$ -- 199
+empty$ -- 424
+format.name$ -- 99
+if$ -- 1123
+int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 40
-newline$ -- 62
-num.names$ -- 27
-pop$ -- 66
+missing$ -- 60
+newline$ -- 87
+num.names$ -- 42
+pop$ -- 111
 preamble$ -- 1
-purify$ -- 57
+purify$ -- 87
 quote$ -- 0
-skip$ -- 186
+skip$ -- 244
 stack$ -- 0
-substring$ -- 152
-swap$ -- 21
-text.length$ -- 19
-text.prefix$ -- 7
+substring$ -- 212
+swap$ -- 31
+text.length$ -- 29
+text.prefix$ -- 12
 top$ -- 0
-type$ -- 78
-warning$ -- 3
-while$ -- 32
-width$ -- 12
-write$ -- 120
-(There were 4 error messages)
+type$ -- 128
+warning$ -- 8
+while$ -- 47
+width$ -- 18
+write$ -- 175
+(There were 9 error messages)
