@@ -40,30 +40,12 @@
 \@input{kapitel/implementierungundtest.aux}
 \@input{kapitel/schluss.aux}
 \bibdata{verzeichnisse/literatur}
-\bibcite{kjd2010}{CPS10}
-\bibcite{duden:migra}{Dud}
-\bibcite{DB16}{IT}
-\bibcite{Kemper2011}{KE11}
-\bibcite{Rossak2013}{Ros13}
-\bibcite{SIV13}{SIV13}
-\bibcite{SIV16}{SIV16}
-\bibcite{wegtam:use}{Wega}
-\bibcite{wegtam:liz}{Wegb}
-\bibcite{wegtam:supp}{Wegc}
-\bibcite{wegtam:prof}{Wegd}
-\bibcite{wiki:plsql}{Wika}
-\@writefile{toc}{\contentsline {chapter}{\nonumberline Literaturverzeichnis}{20}{chapter*.51}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{lol}{\addvspace {10\p@ }}
-\bibcite{wiki:rdb}{Wikb}
-\@writefile{toc}{\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{22}{chapter*.52}}
-\@writefile{toc}{\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{23}{chapter*.53}}
-\@writefile{toc}{\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{24}{section*.54}}
+\@writefile{toc}{\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{21}{chapter*.52}}
+\@writefile{toc}{\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{22}{chapter*.53}}
+\@writefile{toc}{\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{23}{section*.54}}
 \@input{kapitel/anhang.aux}
 \@input{kapitel/selbststaendigkeitserklaerung.aux}
 \@input{kapitel/thesen.aux}
-\global\@altsecnumformattrue
-}
+\global\@altsecnumformattrue}
 \@input{kapitel/thesen.aux}
 \global\@altsecnumformattrue

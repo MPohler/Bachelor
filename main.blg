@@ -21,19 +21,9 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: verzeichnisse/literatur.bib
-You're missing a field name---line 51 of file verzeichnisse/literatur.bib
- :   
- :   %Year                     = {2014},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 62 of file verzeichnisse/literatur.bib
- :   
- :   %Year                     = {2012},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 You're missing a field name---line 73 of file verzeichnisse/literatur.bib
  :   
- :   %Year                     = {2012},
+ :   %Year                     = {2014},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 You're missing a field name---line 84 of file verzeichnisse/literatur.bib
@@ -43,25 +33,35 @@ You're missing a field name---line 84 of file verzeichnisse/literatur.bib
 I'm skipping whatever remains of this entry
 You're missing a field name---line 95 of file verzeichnisse/literatur.bib
  :   
- :   %Year                     = {2015},
+ :   %Year                     = {2012},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 105 of file verzeichnisse/literatur.bib
+You're missing a field name---line 106 of file verzeichnisse/literatur.bib
+ :   
+ :   %Year                     = {2012},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 117 of file verzeichnisse/literatur.bib
  :   
  :   %Year                     = {2015},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 115 of file verzeichnisse/literatur.bib
+You're missing a field name---line 127 of file verzeichnisse/literatur.bib
  :   
  :   %Year                     = {2015},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 125 of file verzeichnisse/literatur.bib
+You're missing a field name---line 137 of file verzeichnisse/literatur.bib
+ :   
+ :   %Year                     = {2015},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 147 of file verzeichnisse/literatur.bib
  :   
  :   %Year                     = {2016},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 140 of file verzeichnisse/literatur.bib
+You're missing a field name---line 162 of file verzeichnisse/literatur.bib
  :   
  :   %url                      = {http://www.siv.de/tl_files/SIV/downloads/broschueren/SIV.AG_Produktportfolio.pdf}
 (Error may have been on previous line)
@@ -74,45 +74,45 @@ Warning--empty year in wegtam:supp
 Warning--empty year in wegtam:prof
 Warning--empty year in wiki:plsql
 Warning--empty year in wiki:rdb
-You've used 14 entries,
+You've used 16 entries,
             4793 wiz_defined-function locations,
-            967 strings with 8459 characters,
-and the built_in function-call counts, 5430 in all, are:
-= -- 540
-> -- 140
-< -- 73
-+ -- 87
-- -- 39
-* -- 311
-:= -- 983
-add.period$ -- 10
-call.type$ -- 14
-change.case$ -- 59
-chr.to.int$ -- 10
-cite$ -- 22
-duplicate$ -- 199
-empty$ -- 424
-format.name$ -- 99
-if$ -- 1123
+            981 strings with 9141 characters,
+and the built_in function-call counts, 6480 in all, are:
+= -- 656
+> -- 156
+< -- 117
++ -- 131
+- -- 43
+* -- 353
+:= -- 1153
+add.period$ -- 16
+call.type$ -- 16
+change.case$ -- 67
+chr.to.int$ -- 12
+cite$ -- 24
+duplicate$ -- 229
+empty$ -- 494
+format.name$ -- 111
+if$ -- 1337
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 60
-newline$ -- 87
-num.names$ -- 42
-pop$ -- 111
+missing$ -- 72
+newline$ -- 103
+num.names$ -- 48
+pop$ -- 121
 preamble$ -- 1
-purify$ -- 87
+purify$ -- 99
 quote$ -- 0
-skip$ -- 244
+skip$ -- 319
 stack$ -- 0
-substring$ -- 212
-swap$ -- 31
-text.length$ -- 29
-text.prefix$ -- 12
+substring$ -- 276
+swap$ -- 35
+text.length$ -- 33
+text.prefix$ -- 14
 top$ -- 0
-type$ -- 128
+type$ -- 148
 warning$ -- 8
-while$ -- 47
-width$ -- 18
-write$ -- 175
+while$ -- 53
+width$ -- 21
+write$ -- 209
 (There were 9 error messages)

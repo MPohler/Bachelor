@@ -5,8 +5,8 @@
 \BOOKMARK [1][-]{section.9}{kVASy\256}{chapter.7}% 5
 \BOOKMARK [1][-]{section.11}{Datenbankgrundlagen}{chapter.7}% 6
 \BOOKMARK [2][-]{subsection.12}{Elemente einer relationalen Datenbank}{section.11}% 7
-\BOOKMARK [2][-]{subsection.14}{Beziehungen und Normalformen}{section.11}% 8
-\BOOKMARK [2][-]{subsection.15}{Schema}{section.11}% 9
+\BOOKMARK [2][-]{subsection.14}{Beziehungen}{section.11}% 8
+\BOOKMARK [2][-]{subsection.15}{Schema und Auspr\344gung}{section.11}% 9
 \BOOKMARK [1][-]{section.16}{Datenintegration/Datenmigration}{chapter.7}% 10
 \BOOKMARK [1][-]{section.17}{Transformationen}{chapter.7}% 11
 \BOOKMARK [1][-]{section.18}{etl-Prozess}{chapter.7}% 12
@@ -14,34 +14,34 @@
 \BOOKMARK [2][-]{subsection.21}{Transformation}{section.18}% 14
 \BOOKMARK [2][-]{subsection.22}{Laden}{section.18}% 15
 \BOOKMARK [1][-]{section.23}{Qualit\344tskontrolle/Protokollierung}{chapter.7}% 16
-\BOOKMARK [1][-]{section.24}{Kriterien f\374r erfolgreiche Migrationen}{chapter.7}% 17
+\BOOKMARK [1][-]{section.24}{Kriterien f\374r eine Softwaremigration}{chapter.7}% 17
 \BOOKMARK [2][-]{subsection.25}{Ziele einer Migration}{section.24}% 18
-\BOOKMARK [2][-]{subsection.26}{Wirtschaftliche Aspekte}{section.24}% 19
-\BOOKMARK [2][-]{subsection.27}{Qualitative Aspekte}{section.24}% 20
-\BOOKMARK [2][-]{subsection.28}{Organisatorische Aspekte}{section.24}% 21
-\BOOKMARK [2][-]{subsection.29}{Vorgehensweise/Migrationsplanung}{section.24}% 22
-\BOOKMARK [2][-]{subsection.30}{Anforderung an die Datenmigration}{section.24}% 23
-\BOOKMARK [0][-]{chapter.31}{Ist-Stand-Analyse}{}% 24
-\BOOKMARK [1][-]{section.32}{Datenmigrationsprozess}{chapter.31}% 25
-\BOOKMARK [1][-]{section.36}{Transformationen}{chapter.31}% 26
-\BOOKMARK [1][-]{section.37}{Qualit\344tskontrolle/Protokollierung}{chapter.31}% 27
-\BOOKMARK [1][-]{section.38}{Ablaufsteuerung}{chapter.31}% 28
-\BOOKMARK [0][-]{chapter.39}{ETL-Tool Tensei-Data}{}% 29
-\BOOKMARK [1][-]{section.40}{Allgemeine Grundlagen}{chapter.39}% 30
-\BOOKMARK [1][-]{section.42}{Grafische Benutzeroberfl\344che}{chapter.39}% 31
-\BOOKMARK [1][-]{section.43}{Migrationsprozess}{chapter.39}% 32
-\BOOKMARK [1][-]{section.44}{Transformationen}{chapter.39}% 33
-\BOOKMARK [1][-]{section.45}{Qualit\344tskontrolle/Protokollierung}{chapter.39}% 34
-\BOOKMARK [1][-]{section.46}{Ablaufsteuerung}{chapter.39}% 35
-\BOOKMARK [0][-]{chapter.47}{Implementierung und Test}{}% 36
-\BOOKMARK [0][-]{chapter.48}{Bewertung, Zusammenfassung und Ausblick}{}% 37
-\BOOKMARK [1][-]{section.49}{Bewertung}{chapter.48}% 38
-\BOOKMARK [1][-]{section.50}{Ausblick}{chapter.48}% 39
-\BOOKMARK [1][-]{section.51}{Zusammenfassung}{chapter.48}% 40
-\BOOKMARK [0][-]{chapter*.52}{Literaturverzeichnis}{}% 41
-\BOOKMARK [0][-]{chapter*.53}{Abbildungsverzeichnis}{}% 42
-\BOOKMARK [0][-]{chapter*.54}{Tabellenverzeichnis}{}% 43
-\BOOKMARK [0][-]{section*.55}{Abk\374rzungsverzeichnis}{}% 44
-\BOOKMARK [0][-]{appendix.57}{Auflistung von Quellcode und \344hnliches}{}% 45
-\BOOKMARK [0][-]{appendix*.63}{Selbstst\344ndigkeitserkl\344rung}{}% 46
+\BOOKMARK [2][-]{subsection.26}{Vorgehensweise/Migrationsplanung}{section.24}% 19
+\BOOKMARK [2][-]{subsection.27}{Wirtschaftliche Aspekte}{section.24}% 20
+\BOOKMARK [2][-]{subsection.28}{Qualitative Aspekte}{section.24}% 21
+\BOOKMARK [2][-]{subsection.34}{Organisatorische Aspekte}{section.24}% 22
+\BOOKMARK [2][-]{subsection.35}{Anforderung an die Datenmigration}{section.24}% 23
+\BOOKMARK [0][-]{chapter.36}{Ist-Stand-Analyse}{}% 24
+\BOOKMARK [1][-]{section.37}{Datenmigrationsprozess}{chapter.36}% 25
+\BOOKMARK [1][-]{section.41}{Transformationen}{chapter.36}% 26
+\BOOKMARK [1][-]{section.42}{Qualit\344tskontrolle/Protokollierung}{chapter.36}% 27
+\BOOKMARK [1][-]{section.43}{Ablaufsteuerung}{chapter.36}% 28
+\BOOKMARK [0][-]{chapter.44}{ETL-Tool Tensei-Data}{}% 29
+\BOOKMARK [1][-]{section.45}{Allgemeine Grundlagen}{chapter.44}% 30
+\BOOKMARK [1][-]{section.47}{Grafische Benutzeroberfl\344che}{chapter.44}% 31
+\BOOKMARK [1][-]{section.48}{Migrationsprozess}{chapter.44}% 32
+\BOOKMARK [1][-]{section.49}{Transformationen}{chapter.44}% 33
+\BOOKMARK [1][-]{section.50}{Qualit\344tskontrolle/Protokollierung}{chapter.44}% 34
+\BOOKMARK [1][-]{section.51}{Ablaufsteuerung}{chapter.44}% 35
+\BOOKMARK [0][-]{chapter.52}{Implementierung und Test}{}% 36
+\BOOKMARK [0][-]{chapter.53}{Bewertung, Zusammenfassung und Ausblick}{}% 37
+\BOOKMARK [1][-]{section.54}{Bewertung}{chapter.53}% 38
+\BOOKMARK [1][-]{section.55}{Ausblick}{chapter.53}% 39
+\BOOKMARK [1][-]{section.56}{Zusammenfassung}{chapter.53}% 40
+\BOOKMARK [0][-]{chapter*.57}{Literaturverzeichnis}{}% 41
+\BOOKMARK [0][-]{chapter*.58}{Abbildungsverzeichnis}{}% 42
+\BOOKMARK [0][-]{chapter*.59}{Tabellenverzeichnis}{}% 43
+\BOOKMARK [0][-]{section*.60}{Abk\374rzungsverzeichnis}{}% 44
+\BOOKMARK [0][-]{appendix.62}{Auflistung von Quellcode und \344hnliches}{}% 45
+\BOOKMARK [0][-]{appendix*.68}{Selbstst\344ndigkeitserkl\344rung}{}% 46
 \BOOKMARK [0][-]{Thesen.0}{Thesen}{}% 47

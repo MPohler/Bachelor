@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.24)  4 MAR 2016 18:30
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.24)  8 MAR 2016 22:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1356,100 +1356,115 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 41.
  [9 <./bilder/Begriffe_relationaler_Datenbanken.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 46.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 49.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 53.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 53.
+ [10]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 54.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 54.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 56.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 59.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 61.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 56.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\acrshort' on input line 61.
+(hyperref)                removing `\acrshort' on input line 56.
 
-<bilder/ETL-Prozess.png, id=356, 647.41875pt x 218.31563pt>
+<bilder/ETL-Prozess.png, id=363, 647.41875pt x 218.31563pt>
 File: bilder/ETL-Prozess.png Graphic file (type png)
 
 <use bilder/ETL-Prozess.png>
-Package pdftex.def Info: bilder/ETL-Prozess.png used on input line 65.
+Package pdftex.def Info: bilder/ETL-Prozess.png used on input line 60.
 (pdftex.def)             Requested size: 420.8172pt x 141.90346pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 65.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 70.
- [10]
+(babel)             in language  on input line 65.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 67.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 67.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 68.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 71.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 71.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 73.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 73.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 76.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 76.
+(babel)             in language  on input line 75.
+ [11]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 85.
+ [12 <./bilder/ETL-Prozess.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 91.
+(babel)             in language  on input line 87.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 91.
+(babel)             in language  on input line 87.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 94.
- [11 <./bilder/ETL-Prozess.png>]
+(babel)             in language  on input line 99.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 105.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 105.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 101.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 101.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 107.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 107.
+ [13]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 126.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 126.
+ [14]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 137.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 139.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 139.
 )
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 39.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 39.
- [12]
+
+[15]
 \openout2 = `kapitel/iststand.aux'.
 
-
-(./kapitel/iststand.tex
+ (./kapitel/iststand.tex
 Kapitel 3.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 5.
@@ -1459,7 +1474,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 8.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 8.
-<bilder/migrationsverfahren.png, id=379, 482.55281pt x 275.52937pt>
+<bilder/migrationsverfahren.png, id=412, 482.55281pt x 275.52937pt>
 File: bilder/migrationsverfahren.png Graphic file (type png)
 
 <use bilder/migrationsverfahren.png>
@@ -1469,7 +1484,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 26.
- [13
+ [16
 
 
 
@@ -1478,12 +1493,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 38.
- [14 <./bilder/migrationsverfahren.png>]
+ [17 <./bilder/migrationsverfahren.png>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 47.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 47.
- [15]
+ [18]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 48.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1501,7 +1516,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 40.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 40.
- [16]
+ [19]
 \openout2 = `kapitel/etltool.aux'.
 
  (./kapitel/etltool.tex
@@ -1526,7 +1541,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 36.
-[17
+[20
 
 
 
@@ -1535,7 +1550,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 45.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 45.
- [18]
+ [21]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 53.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1561,7 +1576,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 41.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 41.
- [19]
+ [22]
 \openout2 = `kapitel/implementierungundtest.aux'.
 
  (./kapitel/implementierungundtest.tex
@@ -1575,7 +1590,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 42.
- [20
+ [23
 
 
 
@@ -1605,7 +1620,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 43.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 43.
- [21
+ [24
 
 
 
@@ -1615,75 +1630,135 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-Underfull \hbox (badness 1939) in paragraph at lines 37--44
+Underfull \hbox (badness 10000) in paragraph at lines 22--32
+[]\T1/lmr/m/sc/12 Informationstechnik\T1/lmr/m/n/12 , Die Be-auf-tra-ge der Bun
+-des-re-gie-rung für:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--32
+\T1/lmr/m/it/12 Mi-gra-ti-ons-lei-t-fa-den - Leit-fa-den für die Mi-gra-ti-on v
+on Soft-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--32
+\T1/lmr/m/it/12 wa-re\T1/lmr/m/n/12 .  [][]$\T1/lmtt/m/n/12 http : / / www . ci
+o . bund . de / SharedDocs / Publikationen /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--32
+\T1/lmtt/m/n/12 DE / Architekturen-[]und-[]Standards / migrationsleitfaden _ 4 
+_ 0 _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--32
+\T1/lmtt/m/n/12 download . pdf ? _ _ blob = publicationFile$[][]\T1/lmr/m/n/12 
+.  [][]$\T1/lmtt/m/n/12 http : / / www . cio . bund .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--32
+\T1/lmtt/m/n/12 de / SharedDocs / Publikationen / DE / Architekturen-[]und-[]St
+andards /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--32
+\T1/lmtt/m/n/12 migrationsleitfaden _ 4 _ 0 _ download . pdf ? _ _ blob = publi
+cationFile$[][]\T1/lmr/m/n/12 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--42
+[]\T1/lmr/m/sc/12 ISO\T1/lmr/m/n/12 :  \T1/lmr/m/it/12 ISO/IEC 25010:2011\T1/lm
+r/m/n/12 .  [][]$\T1/lmtt/m/n/12 http : / / www . iso . org / iso / iso _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--42
+\T1/lmtt/m/n/12 catalogue / catalogue _ tc / catalogue _ detail . htm ? csnumbe
+r = 35733$[][]\T1/lmr/m/n/12 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--42
+[][]$\T1/lmtt/m/n/12 http : / / www . iso . org / iso / iso _ catalogue / catal
+ogue _ tc / catalogue _
+ []
+
+
+Underfull \hbox (badness 2426) in paragraph at lines 59--66
 []\T1/lmr/m/sc/12 SIV.AG\T1/lmr/m/n/12 :  \T1/lmr/m/it/12 SIV.AG Lö-sungs-an-bi
 e-ter für die Energie- und Was-ser-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--44
+Underfull \hbox (badness 10000) in paragraph at lines 59--66
 \T1/lmr/m/it/12 wir-schaft\T1/lmr/m/n/12 .  [][]$\T1/lmtt/m/n/12 https : / / ww
 w . yumpu . com / de / document / view / 5767240 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--44
+Underfull \hbox (badness 10000) in paragraph at lines 59--66
 \T1/lmtt/m/n/12 losungsanbieter-[]fur-[]die-[]energie-[]und-[]wasserwirtschaft-
 []sivag$[][]\T1/lmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 7576) in paragraph at lines 46--54
+Underfull \hbox (badness 10000) in paragraph at lines 68--76
 []\T1/lmr/m/sc/12 SIV.AG\T1/lmr/m/n/12 :  \T1/lmr/m/it/12 SIV.AG Image-bro-schü
 -re\T1/lmr/m/n/12 .  [][]$\T1/lmtt/m/n/12 https : / / www . siv . de / tl _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--54
+Underfull \hbox (badness 10000) in paragraph at lines 68--76
 \T1/lmtt/m/n/12 files / SIV / downloads / broschueren / SIV . AG _ Imagebroschu
 ere . pdf$[][]\T1/lmr/m/n/12 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--54
+Underfull \hbox (badness 10000) in paragraph at lines 68--76
 [][]$\T1/lmtt/m/n/12 https : / / www . siv . de / tl _ files / SIV / downloads 
 / broschueren / SIV . AG _
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 76.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 76.
+[25
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--64
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 78--86
 []\T1/lmr/m/sc/12 SIV.AG\T1/lmr/m/n/12 :  \T1/lmr/m/it/12 SIV.AG Pro-dukt-port-
 fo-lio\T1/lmr/m/n/12 .  [][]$\T1/lmtt/m/n/12 http : / / www . siv . de / tl _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--64
+Underfull \hbox (badness 10000) in paragraph at lines 78--86
 \T1/lmtt/m/n/12 files / SIV / downloads / broschueren / SIV . AG _ Produktportf
 olio . pdf$[][]\T1/lmr/m/n/12 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--64
+Underfull \hbox (badness 10000) in paragraph at lines 78--86
 [][]$\T1/lmtt/m/n/12 http : / / www . siv . de / tl _ files / SIV / downloads /
  broschueren / SIV . AG _
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 66--69
+Underfull \hbox (badness 2165) in paragraph at lines 88--91
 []\T1/lmr/m/sc/12 Wegtam\T1/lmr/m/n/12 :  \T1/lmr/m/it/12 An-wen-dungs-fäl-le\T
 1/lmr/m/n/12 . --  [][]$\T1/lmtt/m/n/12 http : / / www . tensei-[]data . com / 
 de /
  []
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 80.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 80.
-[22
 
-
-]
-Underfull \hbox (badness 5119) in paragraph at lines 81--86
+Underfull \hbox (badness 10000) in paragraph at lines 103--108
 \T1/lmtt/m/n/12 cebit / 2014 / T816887 / unternehmensprofil-[]ger-[]277823 . pd
 f$[][] \T1/lmr/m/n/12 Ab-ruf-da-
  []
@@ -1693,7 +1768,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 56.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 56.
- [23]
+ [26]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 56.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1706,7 +1781,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 57.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 57.
- [24
+ [27
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
@@ -1722,7 +1797,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [25
+ [28
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
@@ -1734,7 +1809,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 64.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 64.
- [26
+ [29
 
 
 ]
@@ -1747,7 +1822,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 10.
-<bilder/tdDatei.png, id=541, 948.54375pt x 554.82281pt>
+<bilder/tdDatei.png, id=582, 948.54375pt x 554.82281pt>
 File: bilder/tdDatei.png Graphic file (type png)
 
 <use bilder/tdDatei.png>
@@ -1758,7 +1833,7 @@ Overfull \hbox (47.47935pt too wide) in paragraph at lines 14--15
  [] 
  []
 
-<bilder/dashboard.png, id=542, 524.96124pt x 1283.79625pt>
+<bilder/dashboard.png, id=583, 524.96124pt x 1283.79625pt>
 File: bilder/dashboard.png Graphic file (type png)
 
 <use bilder/dashboard.png>
@@ -1768,19 +1843,19 @@ Package pdftex.def Info: bilder/dashboard.png used on input line 22.
 
 LaTeX Warning: Float too large for page by 13.513pt on input line 26.
 
-<bilder/dfasdl.png, id=543, 1084.05pt x 1927.2pt>
+<bilder/dfasdl.png, id=584, 1084.05pt x 1927.2pt>
 File: bilder/dfasdl.png Graphic file (type png)
  <use bilder/dfasdl.png>
 Package pdftex.def Info: bilder/dfasdl.png used on input line 30.
 (pdftex.def)             Requested size: 325.21751pt x 578.16447pt.
 
-<bilder/cronjob.png, id=544, 1084.05pt x 1927.2pt>
+<bilder/cronjob.png, id=585, 1084.05pt x 1927.2pt>
 File: bilder/cronjob.png Graphic file (type png)
  <use bilder/cronjob.png>
 Package pdftex.def Info: bilder/cronjob.png used on input line 38.
 (pdftex.def)             Requested size: 325.21751pt x 578.16447pt.
 
-<bilder/trigger.png, id=545, 1084.05pt x 1927.2pt>
+<bilder/trigger.png, id=586, 1084.05pt x 1927.2pt>
 File: bilder/trigger.png Graphic file (type png)
  <use bilder/trigger.png>
 Package pdftex.def Info: bilder/trigger.png used on input line 46.
@@ -1791,7 +1866,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 64.
 
-[27
+[30
 
 
  <./bilder/tdDatei.png>]
@@ -1799,22 +1874,22 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 64.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 64.
- [28 <./bilder/dashboard.png>]
+ [31 <./bilder/dashboard.png>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 64.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 64.
- [29 <./bilder/dfasdl.png>]
+ [32 <./bilder/dfasdl.png>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 64.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 64.
- [30 <./bilder/cronjob.png>]
+ [33 <./bilder/cronjob.png>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 64.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 64.
- [31 <./bilder/trigger.png>]
+ [34 <./bilder/trigger.png>]
 \openout2 = `kapitel/selbststaendigkeitserklaerung.aux'.
 
 
@@ -1828,7 +1903,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 70.
- [32
+ [35
 
 
 
@@ -1846,7 +1921,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 72.
 
-[33
+[36
 
 
 ]
@@ -1861,14 +1936,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 14A8FF3B79BD28A191467A4A5620F45C;3080.
+(rerunfilecheck)             Checksum: 49BA177A9D3EDD47A94C64E115419AB5;3079.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
  ) 
 Here is how much of TeX's memory you used:
- 16242 strings out of 493304
- 243815 string characters out of 6139871
+ 16254 strings out of 493304
+ 243923 string characters out of 6139871
  458714 words of memory out of 5000000
- 19078 multiletter control sequences out of 15000+600000
+ 19080 multiletter control sequences out of 15000+600000
  84986 words of font info for 65 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  59i,14n,72p,2295b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1918,10 +1993,10 @@ hare/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmtt12.pfb>
-Output written on main.pdf (33 pages, 1303273 bytes).
+Output written on main.pdf (36 pages, 1314223 bytes).
 PDF statistics:
- 666 PDF objects out of 1000 (max. 8388607)
- 584 compressed objects within 6 object streams
- 132 named destinations out of 1000 (max. 500000)
+ 710 PDF objects out of 1000 (max. 8388607)
+ 624 compressed objects within 7 object streams
+ 142 named destinations out of 1000 (max. 500000)
  427 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -373,6 +373,7 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
 INPUT bilder/Begriffe_relationaler_Datenbanken.png
 INPUT ./bilder/Begriffe_relationaler_Datenbanken.png
 INPUT ./bilder/Begriffe_relationaler_Datenbanken.png
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT bilder/ETL-Prozess.png
 INPUT ./bilder/ETL-Prozess.png
 INPUT ./bilder/ETL-Prozess.png
@@ -382,7 +383,6 @@ INPUT kapitel/iststand.tex
 INPUT bilder/migrationsverfahren.png
 INPUT ./bilder/migrationsverfahren.png
 INPUT ./bilder/migrationsverfahren.png
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbxi10.tfm
 OUTPUT kapitel/etltool.aux
 INPUT kapitel/etltool.tex
